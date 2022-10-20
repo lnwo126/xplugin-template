@@ -1,0 +1,15 @@
+[
+    {
+        "type": "text",
+        "key": "lightId",
+        "label": "文本示例",
+        "placeholder": "",
+        "description": "",
+        "value": "",
+        "hidden": false,
+        "readonly": false,
+        "required": false,
+        "prefix": "",
+        "suffix": ""
+    }
+]

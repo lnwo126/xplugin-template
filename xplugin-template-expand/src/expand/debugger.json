@@ -1,0 +1,8 @@
+{
+    "condition": {
+        "name": "园区",
+        "where": "classType",
+        "classType": "Campus"
+    },
+    "config": {}
+}
