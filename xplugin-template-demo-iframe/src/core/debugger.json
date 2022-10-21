@@ -1,0 +1,27 @@
+{
+    "iframeResponseObject": "",
+    "eventName": "kkk",
+    "eventValue": "jjj",
+    "selectObject": {
+        "id": "",
+        "propName": "0000",
+        "queryType": "IFRAME"
+    },
+    "flyToObject": {
+        "id": "",
+        "propName": "",
+        "queryType": "IFRAME"
+    },
+    "activeBusiness": {
+        "businessName": "",
+        "businessPropName": "",
+        "queryType": "ASSIGN"
+    },
+    "activeLayer": {
+        "layerName": "",
+        "layerPropName": "",
+        "queryType": "ASSIGN"
+    },
+    "triggerType": "selectObject",
+    "collapse_1001": true
+}

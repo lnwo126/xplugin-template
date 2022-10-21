@@ -1,0 +1,401 @@
+[
+  {
+    "key": "baseConfig",
+    "label": "事件配置",
+    "description": "",
+    "type": "title"
+  },
+  {
+    "label": "折叠",
+    "key": "collapse_1001",
+    "value": true,
+    "description": "",
+    "prefix": "",
+    "suffix": "",
+    "type": "collapse",
+    "groups": [
+      {
+        "key": "eventName",
+        "label": "事件名称属性名",
+        "placeholder": "",
+        "description": "",
+        "value": "test",
+        "hidden": false,
+        "readonly": false,
+        "required": true,
+        "prefix": "",
+        "suffix": "",
+        "type": "text"
+      },
+      {
+        "key": "eventValue",
+        "label": "事件名称属性值",
+        "placeholder": "",
+        "description": "",
+        "value": "value",
+        "hidden": false,
+        "readonly": false,
+        "required": true,
+        "prefix": "",
+        "suffix": "",
+        "type": "text"
+      },
+      {
+        "key": "triggerType",
+        "label": "触发事件",
+        "value": "selectObject",
+        "placeholder": "",
+        "description": "",
+        "prefix": "",
+        "suffix": "",
+        "dataset": [
+          {
+            "value": "selectObject",
+            "label": "选中孪生体"
+          },
+          {
+            "value": "flyToObject",
+            "label": "飞向孪生体"
+          },
+          {
+            "value": "changeBusiness",
+            "label": "激活业务"
+          },
+          {
+            "value": "activeLayer",
+            "label": "激活场景图层"
+          }
+        ],
+        "linkage": [
+          {
+            "key": "selectObject",
+            "label": "选中孪生体",
+            "value": "selectObject",
+            "hidden": false,
+            "readonly": false
+          },
+          {
+            "key": "flyToObject",
+            "label": "飞向孪生体",
+            "value": "flyToObject",
+            "hidden": false,
+            "readonly": false
+          },
+          {
+            "key": "changeBusiness",
+            "label": "激活业务",
+            "value": "changeBusiness",
+            "hidden": false,
+            "readonly": false
+          },
+          {
+            "key": "activeLayer",
+            "label": "激活场景图层",
+            "value": "activeLayer",
+            "hidden": false,
+            "readonly": false
+          }
+        ],
+        "type": "linkage-select",
+        "groups": [
+          {
+            "label": "",
+            "key": "selectObject",
+            "value": "",
+            "description": "",
+            "prefix": "",
+            "suffix": "",
+            "type": "container",
+            "groups": [
+              {
+                "key": "queryType",
+                "label": "",
+                "value": "ASSIGN",
+                "description": "",
+                "prefix": "",
+                "suffix": "",
+                "dataset": [
+                  {
+                    "value": "ASSIGN",
+                    "label": "通过孪生体ID获取"
+                  },
+                  {
+                    "value": "IFRAME",
+                    "label": "获取iframe数据"
+                  }
+                ],
+                "linkage": [
+                  {
+                    "key": "id",
+                    "label": "通过业务名称获取",
+                    "value": "ASSIGN",
+                    "hidden": false,
+                    "readonly": false
+                  },
+                  {
+                    "key": "propName",
+                    "label": "获取iframe数据",
+                    "value": "IFRAME",
+                    "hidden": false,
+                    "readonly": false
+                  }
+                ],
+                "type": "linkage-radio",
+                "groups": [
+                  {
+                    "key": "id",
+                    "label": "孪生体ID",
+                    "placeholder": "",
+                    "description": "",
+                    "value": "",
+                    "hidden": false,
+                    "readonly": false,
+                    "required": false,
+                    "prefix": "",
+                    "suffix": "",
+                    "type": "text"
+                  },
+                  {
+                    "key": "propName",
+                    "label": "孪生体ID属性名",
+                    "placeholder": "",
+                    "description": "",
+                    "value": "prop",
+                    "hidden": false,
+                    "readonly": false,
+                    "required": false,
+                    "prefix": "",
+                    "suffix": "",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "",
+            "key": "flyToObject",
+            "value": "",
+            "description": "",
+            "prefix": "",
+            "suffix": "",
+            "type": "container",
+            "groups": [
+              {
+                "key": "queryType",
+                "label": "",
+                "value": "ASSIGN",
+                "description": "",
+                "prefix": "",
+                "suffix": "",
+                "dataset": [
+                  {
+                    "value": "ASSIGN",
+                    "label": "通过孪生体ID获取"
+                  },
+                  {
+                    "value": "IFRAME",
+                    "label": "获取iframe数据"
+                  }
+                ],
+                "linkage": [
+                  {
+                    "key": "id",
+                    "label": "通过业务名称获取",
+                    "value": "ASSIGN",
+                    "hidden": false,
+                    "readonly": false
+                  },
+                  {
+                    "key": "propName",
+                    "label": "获取iframe数据",
+                    "value": "IFRAME",
+                    "hidden": false,
+                    "readonly": false
+                  }
+                ],
+                "type": "linkage-radio",
+                "groups": [
+                  {
+                    "key": "id",
+                    "label": "孪生体ID",
+                    "placeholder": "",
+                    "description": "",
+                    "value": "",
+                    "hidden": false,
+                    "readonly": false,
+                    "required": false,
+                    "prefix": "",
+                    "suffix": "",
+                    "type": "text"
+                  },
+                  {
+                    "key": "propName",
+                    "label": "孪生体ID属性名",
+                    "placeholder": "",
+                    "description": "",
+                    "value": "",
+                    "hidden": false,
+                    "readonly": false,
+                    "required": false,
+                    "prefix": "",
+                    "suffix": "",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "",
+            "key": "changeBusiness",
+            "value": "",
+            "description": "",
+            "prefix": "",
+            "suffix": "",
+            "type": "container",
+            "groups": [
+              {
+                "key": "queryType",
+                "label": "",
+                "value": "ASSIGN",
+                "description": "",
+                "prefix": "",
+                "suffix": "",
+                "dataset": [
+                  {
+                    "value": "ASSIGN",
+                    "label": "通过业务名称获取"
+                  },
+                  {
+                    "value": "IFRAME",
+                    "label": "获取iframe数据"
+                  }
+                ],
+                "linkage": [
+                  {
+                    "key": "businessName",
+                    "label": "通过业务名称获取",
+                    "value": "ASSIGN",
+                    "hidden": false,
+                    "readonly": false
+                  },
+                  {
+                    "key": "businessPropName",
+                    "label": "获取iframe数据",
+                    "value": "IFRAME",
+                    "hidden": false,
+                    "readonly": false
+                  }
+                ],
+                "type": "linkage-radio",
+                "groups": [
+                  {
+                    "key": "businessName",
+                    "label": "业务名称",
+                    "placeholder": "",
+                    "description": "",
+                    "value": "",
+                    "hidden": false,
+                    "readonly": false,
+                    "required": false,
+                    "prefix": "",
+                    "suffix": "",
+                    "type": "text"
+                  },
+                  {
+                    "key": "businessPropName",
+                    "label": "业务名称属性名",
+                    "placeholder": "",
+                    "description": "",
+                    "value": "",
+                    "hidden": false,
+                    "readonly": false,
+                    "required": false,
+                    "prefix": "",
+                    "suffix": "",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "",
+            "key": "activeLayer",
+            "value": "",
+            "description": "",
+            "prefix": "",
+            "suffix": "",
+            "type": "container",
+            "groups": [
+              {
+                "key": "queryType",
+                "label": "",
+                "value": "ASSIGN",
+                "description": "",
+                "prefix": "",
+                "suffix": "",
+                "dataset": [
+                  {
+                    "value": "ASSIGN",
+                    "label": "通过场景图层名称获取"
+                  },
+                  {
+                    "value": "IFRAME",
+                    "label": "获取iframe数据"
+                  }
+                ],
+                "linkage": [
+                  {
+                    "key": "layerName",
+                    "label": "通过场景图层名称获取",
+                    "value": "ASSIGN",
+                    "hidden": false,
+                    "readonly": false
+                  },
+                  {
+                    "key": "layerPropName",
+                    "label": "获取iframe数据",
+                    "value": "IFRAME",
+                    "hidden": false,
+                    "readonly": false
+                  }
+                ],
+                "type": "linkage-radio",
+                "groups": [
+                  {
+                    "key": "layerName",
+                    "label": "场景图层名称",
+                    "placeholder": "",
+                    "description": "",
+                    "value": "",
+                    "hidden": false,
+                    "readonly": false,
+                    "required": false,
+                    "prefix": "",
+                    "suffix": "",
+                    "type": "text"
+                  },
+                  {
+                    "key": "layerPropName",
+                    "label": "场景图层名称属性名",
+                    "placeholder": "",
+                    "description": "",
+                    "value": "",
+                    "hidden": false,
+                    "readonly": false,
+                    "required": false,
+                    "prefix": "",
+                    "suffix": "",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
