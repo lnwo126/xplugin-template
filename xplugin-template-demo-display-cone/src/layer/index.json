@@ -1,0 +1,37 @@
+[
+    {
+        "key": "layerType",
+        "label": "图层类型",
+        "placeholder": "",
+        "description": "",
+        "value": "显示孪生体",
+        "hidden": false,
+        "readonly": true,
+        "required": false,
+        "prefix": "",
+        "suffix": "",
+        "type": "text"
+    },
+    {
+        "key": "query",
+        "label": "显示孪生体",
+        "value": {},
+        "placeholder": [
+            "",
+            ""
+        ],
+        "description": "",
+        "hidden": false,
+        "readonly": false,
+        "required": false,
+        "prefix": "",
+        "suffix": "",
+        "dataset": [
+            {
+                "value": "value",
+                "label": "label"
+            }
+        ],
+        "type": "selector-select"
+    }
+]
