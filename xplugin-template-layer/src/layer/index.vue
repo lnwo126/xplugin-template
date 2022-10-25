@@ -41,6 +41,7 @@ export default {
 
 .layer-example {
     font: optional;
+    position: absolute;
 }
 
 </style>

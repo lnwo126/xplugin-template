@@ -40,7 +40,7 @@ export default {
 
 .extend-example {
     font: optional;
-    /* position: absolute; */
+    position: absolute;
 }
 
 </style>
