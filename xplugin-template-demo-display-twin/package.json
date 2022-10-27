@@ -71,8 +71,8 @@
         "webpack-obfuscator": "^3.5.1"
     },
     "dependencies": {
-        "@thingjs-x/xplugin-bundle": "file:///home/uino/uinotools/uino-xplugin/bundle/thingjs-x-xplugin-bundle-0.2.3.tgz",
+        "@thingjs-x/xplugin-bundle": "^0.2.3",
         "@thingjs-x/xplugin-core": "^0.2.0",
-        "@thingjs-x/xplugin-plugin": "file:///home/uino/uinotools/uino-xplugin/xplugin-plugin/thingjs-x-xplugin-plugin-0.2.5.tgz"
+        "@thingjs-x/xplugin-plugin": "^0.2.5"
     }
 }
