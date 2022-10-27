@@ -5,7 +5,7 @@
     "main": "index.js",
     "defineXPlugin": {
         "id": "6987950438838435840",
-        "name": "DisplayTwinPlugin"
+        "name": "显示孪生体"
     },
     "scripts": {
         "test": "xprobe",
@@ -71,11 +71,8 @@
         "webpack-obfuscator": "^3.5.1"
     },
     "dependencies": {
-        "@thingjs-x/xplugin-bundle": "^0.2.0",
+        "@thingjs-x/xplugin-bundle": "file:///home/uino/uinotools/uino-xplugin/bundle/thingjs-x-xplugin-bundle-0.2.3.tgz",
         "@thingjs-x/xplugin-core": "^0.2.0",
-        "@thingjs-x/xplugin-plugin": "^0.2.0",
-        "chai": "^4.3.6",
-        "lodash": "^4.17.21",
-        "mocha": "^10.1.0"
+        "@thingjs-x/xplugin-plugin": "file:///home/uino/uinotools/uino-xplugin/xplugin-plugin/thingjs-x-xplugin-plugin-0.2.5.tgz"
     }
 }

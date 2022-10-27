@@ -1,21 +1,14 @@
 [
   {
-    "key": "layerType",
-    "label": "图层类型",
-    "placeholder": "",
+    "key": "title_3211",
+    "label": "基础配置",
     "description": "",
-    "value": "显示孪生体",
-    "hidden": false,
-    "readonly": true,
-    "required": false,
-    "prefix": "",
-    "suffix": "",
-    "type": "text"
+    "type": "title"
   },
   {
-    "key": "query",
-    "label": "显示孪生体",
-    "value": {},
+    "key": "digitalTwinsSelector",
+    "label": "应用孪生体集合",
+    "value": [],
     "placeholder": [
       "",
       ""
@@ -26,12 +19,56 @@
     "required": false,
     "prefix": "",
     "suffix": "",
-    "dataset": [
+    "type": "multiple-selector-attachment"
+  },
+  {
+    "key": "title_3222",
+    "label": "显示效果",
+    "description": "",
+    "type": "title"
+  },
+  {
+    "key": "effect",
+    "label": "",
+    "value": [
       {
-        "value": "value",
-        "label": "label"
+        "type": "effect1",
+        "value": "",
+        "label": ""
+      },
+      {
+        "type": "effect2",
+        "value": "",
+        "label": ""
+      },
+      {
+        "type": "effect3",
+        "value": "",
+        "label": ""
+      },
+      {
+        "type": "effect4",
+        "value": "",
+        "label": ""
+      },
+      {
+        "type": "effect5",
+        "value": "",
+        "label": ""
+      },
+      {
+        "type": "effect6",
+        "value": "",
+        "label": ""
       }
     ],
-    "type": "selector-select"
+    "description": "",
+    "placeholder": "",
+    "hidden": false,
+    "readonly": false,
+    "required": false,
+    "prefix": "",
+    "suffix": "",
+    "type": "effect"
   }
 ]

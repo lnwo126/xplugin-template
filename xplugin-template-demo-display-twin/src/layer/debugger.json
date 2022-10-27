@@ -5,14 +5,18 @@
     "classType": "Campus"
   },
   "config": {
-    "pluginName": "test",
-    "query": {
-      "condition": {
-        "uid": "C94C055710E000017E3847D09D006030",
-        "name": "建筑",
-        "type": 0
+    "digitalTwinsSelector": [
+      {
+        "condition": ".Building",
+        "value": "垃圾桶-顶部标题-太空旅客"
       },
-      "value": ""
-    }
+      {
+        "condition": ".Floor"
+      },
+      {
+        "condition": ".Room",
+        "value": "垃圾桶-顶部标题-太空旅客11"
+      }
+    ]
   }
 }
