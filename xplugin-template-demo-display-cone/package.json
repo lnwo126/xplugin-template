@@ -70,9 +70,9 @@
         "address": "^1.2.1"
     },
     "dependencies": {
-        "@thingjs-x/xplugin-bundle": "^0.2.0",
+        "@thingjs-x/xplugin-bundle": "^0.2.3",
         "@thingjs-x/xplugin-core": "^0.2.0",
-        "@thingjs-x/xplugin-plugin": "^0.2.0",
+        "@thingjs-x/xplugin-plugin": "^0.2.5",
         "chai": "^4.3.6",
         "lodash": "^4.17.21",
         "mocha": "^10.1.0",

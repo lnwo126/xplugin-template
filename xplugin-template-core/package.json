@@ -69,8 +69,8 @@
     "webpack-obfuscator": "^3.5.1"
   },
   "dependencies": {
-    "@thingjs-x/xplugin-bundle": "^0.2.0",
+    "@thingjs-x/xplugin-bundle": "^0.2.3",
     "@thingjs-x/xplugin-core": "^0.2.0",
-    "@thingjs-x/xplugin-plugin": "^0.2.2"
+    "@thingjs-x/xplugin-plugin": "^0.2.5"
   }
 }
