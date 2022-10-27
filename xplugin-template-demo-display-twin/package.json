@@ -5,7 +5,7 @@
     "main": "index.js",
     "defineXPlugin": {
         "id": "6987950438838435840",
-        "name": "显示孪生体"
+        "name": "教程示例模板(显示孪生体插件)"
     },
     "scripts": {
         "test": "xprobe",
