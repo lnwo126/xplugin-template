@@ -21,7 +21,7 @@ const devServer = {
 
 const sceneServer = {
     debugger: {
-        addr: "http://10.100.32.63:1662/thing/share/8rwggfht7dtmbsxu",//场景地址
+        addr: "http://192.168.1.78:1662/thing/dtwin/index.html?name=%E5%BC%A0%E5%85%89%E5%85%89%E6%B5%8B%E8%AF%95",//场景地址
     },
     // deploy: {//部署信息- 目前暂未支持，todo 
     //     ip: "127.0.0.1",

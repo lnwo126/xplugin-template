@@ -1,7 +1,7 @@
 # xplugin-template for ThingJS-X 插件模板代码
 
 ```javascript
-    // 共计5个子工程模板插件代码
+    // 共计9个子工程模板插件代码
     // 可依据模板插件代码快速进行开发
 
     /**
