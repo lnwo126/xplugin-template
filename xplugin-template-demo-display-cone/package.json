@@ -67,7 +67,9 @@
         "webpack-cli": "^4.10.0",
         "webpack-dev-server": "^4.10.1",
         "webpack-obfuscator": "^3.5.1",
-        "address": "^1.2.1"
+        "address": "^1.2.1",
+        "chai": "^4.3.6",
+        "mocha": "^10.1.0"
     },
     "dependencies": {
         "@thingjs-x/xplugin-bundle": "^0.2.3",

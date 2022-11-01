@@ -65,16 +65,14 @@ export default class extends CorePlugin {
                 default:
                     console.log("...");
             }
-
-
-            //通知加载完成,发送加载完成到顶层窗口
-            let returnMessageEvent = {
-                type: 'ThingJS-X::IframeMessageEngineLoaded',
-                message: ' [ IFRAME消息监听器 ] 初始化完成，可以进行ThingJS-X::iframe postmessage 通信.'
-            };
-            console.info('%c [ IFRAME消息监听器 ] ::DONE:: to return the message: ', 'background: #ccffcc;', returnMessageEvent);
-            window.top.postMessage(returnMessageEvent, "*");
         });
+        //通知加载完成,发送加载完成到顶层窗口
+        let returnMessageEvent = {
+            type: 'ThingJS-X::IframeMessageEngineLoaded',
+            message: ' [ IFRAME消息监听器 ] 初始化完成，可以进行ThingJS-X::iframe postmessage 通信.'
+        };
+        console.info('%c [ IFRAME消息监听器 ] ::DONE:: to return the message: ', 'background: #ccffcc;', returnMessageEvent);
+        window.top.postMessage(returnMessageEvent, "*");
     }
 
     onUninstall() {
