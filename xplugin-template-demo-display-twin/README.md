@@ -346,6 +346,7 @@
 		- npm run test         -- environmental testing,测试运行环境是否满足要求
 		- npm run dev          -- to build the project for development
 		- npm run start        -- to run the project
+		- npm run mocha        -- to perform a unit test
 		- npm run build:prod   -- to build the project for production
 		- npm run build:pack   -- to pack the project for production
 		- xplugin upgrade      -- 升级模板代码	
