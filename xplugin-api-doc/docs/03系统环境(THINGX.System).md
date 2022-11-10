@@ -63,7 +63,7 @@
 * 示例
     ```javascript
 
-        // version
+        // versions
         // 示例1: 获取ThingJS-X 零代码当前系统版本号
         const version = THINGX.System.Version.version;  
         console.warn("ThingJS-X 零代码系统版本号: %s",version);
@@ -141,68 +141,7 @@
     ```
     ***
 
-<!-- 
-##### *<a href="#">#</a>* THINGX.System.Resource.getAbsoluteUrl
-> 通过应用系统资源（插件）名称获取（公共域）下的该资源的绝对地址  THINGX.Timer.getAbsoluteUrl(name:string):string
 
-* 参数
-  ||||||
-  |-|-|-|-|-|
-  |名称|类型|必填|默认值|描述|
-  |name|string|是| - |资源（或插件）定义名称|   
-* 类型: string
-* 示例
-    ```javascript
-
-            // TODO
-            // getAbsoluteUrl  公共域
-            // 示例: 通过应用系统资源（插件）名称获取（公共域）下的该资源的绝对地址
-            const absoluteUrl = THINGX.System.Resource.getAbsoluteUrl("孪生体变色");
-
-    ```
-    ***
-
-##### *<a href="#">#</a>* THINGX.System.Resource.getRelativeUrl
-> 通过应用系统资源（插件）名称获取（公共域）下的该资源的相对地址  THINGX.Timer.getRelativeUrl(name:string):string
-> * 参数
-  ||||||
-  |-|-|-|-|-|
-  |名称|类型|必填|默认值|描述|
-  |name|string|是| - |资源（或插件）定义名称|   
-* 类型: string
-* 示例
-    ```javascript
-         //   TODO
-    ```
-    ***
-
-##### *<a href="#">#</a>* THINGX.System.Resource.getAbsoluteUrlWithDomain
-> 通过应用系统资源（插件）名称获取（用户域）下的该资源的绝对地址  THINGX.Timer.getAbsoluteUrlWithDomain(name:string):string
-> * 参数
-  ||||||
-  |-|-|-|-|-|
-  |名称|类型|必填|默认值|描述|
-  |name|string|是| - |资源（或插件）定义名称|   
-* 类型: string
-* 示例
-    ```javascript
-       //   TODO
-    ```
-    ***
-
-##### *<a href="#">#</a>* THINGX.System.Resource.getRelativeUrlWithDomain
-> 通过应用系统资源（插件）名称获取（用户域）下的该资源的相对地址  THINGX.Timer.getRelativeUrlWithDomain(name:string):string
-* 参数
-  ||||||
-  |-|-|-|-|-|
-  |名称|类型|必填|默认值|描述|
-  |name|string|是| - |资源（或插件）定义名称|  
-* 类型: string
-* 示例
-    ```javascript
-       //   TODO
-    ```
-    *** -->
 
 
 #### 系统加载控制库(THINGX.System.Loading)
@@ -230,35 +169,11 @@
 * 类型: void
 * 示例
     ```javascript
-        //   TODO  sequence  交替切换？？  尺寸调整，同时建议升级该模块，目前功能较弱  //sequence去除  只留show hide 即可不需要参数
 
         // 示例1. 显示系统默认加载进度
         THINGX.System.Loading.show();
 
-        //系统默认显示效果 如下
     ```
-    ![系统默认显示效果](http://192.168.1.78:1662/thing/screen/video/default.png)
-    
-    ```javascript
-
-        // 示例2. 显示配置的加载进度，替换默认效果
-
-        //效果地址
-        const url = `https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp0.itc.cn%2Fimages01%2F20200914%2F36d4822c28984baca13a5a71c60441d8.gif&refer=http%3A%2F%2Fp0.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1670315189&t=8a997887c9ca56769cd1a5005a235412`;
-        //显示加载进度
-        THINGX.System.Loading.show(url);
-
-        //系统默认显示效果 如下
-    ```
-    ![系统默认显示效果](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp0.itc.cn%2Fimages01%2F20200914%2F36d4822c28984baca13a5a71c60441d8.gif&refer=http%3A%2F%2Fp0.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1670315189&t=8a997887c9ca56769cd1a5005a235412)
-
-    ```javascript
-
-        // 示例3. 显示加载其它类型资源进度
-
-        //TODO
-    ```
-
 
     ***
 
