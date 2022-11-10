@@ -3,15 +3,15 @@
 <!-- code_chunk_output -->
 
 - [图层模块操作相关(THINGX.Layer)](#图层模块操作相关thingxlayer)
-    - [*#* THINGX.Layer.hide](#a-hrefa-thingxlayerhide)
-    - [*#* THINGX.Layer.show](#a-hrefa-thingxlayershow)
-    - [*#* THINGX.Layer.activate](#a-hrefa-thingxlayeractivate)
-    - [*#* THINGX.Layer.deactivate](#a-hrefa-thingxlayerdeactivate)
-    - [*#* THINGX.Layer.deactivateAll](#a-hrefa-thingxlayerdeactivateall)
-    - [*#* THINGX.Layer.refresh](#a-hrefa-thingxlayerrefresh)
-    - [*#* THINGX.Layer.getActivatedNames](#a-hrefa-thingxlayergetactivatednames)
-    - [*#* THINGX.Layer.getMutexsConfig](#a-hrefa-thingxlayergetmutexsconfig)
-    - [*#* THINGX.Layer.getPanelConfig](#a-hrefa-thingxlayergetpanelconfig)
+    - [*#* THINGX.Layer.hide](#-thingxlayerhide)
+    - [*#* THINGX.Layer.show](#-thingxlayershow)
+    - [*#* THINGX.Layer.activate](#-thingxlayeractivate)
+    - [*#* THINGX.Layer.deactivate](#-thingxlayerdeactivate)
+    - [*#* THINGX.Layer.deactivateAll](#-thingxlayerdeactivateall)
+    - [*#* THINGX.Layer.refresh](#-thingxlayerrefresh)
+    - [*#* THINGX.Layer.getActivatedNames](#-thingxlayergetactivatednames)
+    - [*#* THINGX.Layer.getMutexsConfig](#-thingxlayergetmutexsconfig)
+    - [*#* THINGX.Layer.getPanelConfig](#-thingxlayergetpanelconfig)
 
 <!-- /code_chunk_output -->
 

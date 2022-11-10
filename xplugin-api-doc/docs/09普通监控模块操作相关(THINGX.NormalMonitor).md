@@ -17,11 +17,11 @@
 ```javascript
 
 
-    - 监控(术语的解释)
-        - 对真实场景中设备实时监控，并可视化展示监控结果。通过与其他监控系统的对接，将监控数据在三维场景中以标记、面板、图表等形式进行展示。 
-    - 监控分类(普通监控、事件监控)
-        - 普通监控(NormalMonitor)   : 孪生体指标监控,被动激活
-        - 事件监控(EventMonitor)    : 孪生体事件监控
+    // - 监控(术语的解释)
+    //     - 对真实场景中设备实时监控，并可视化展示监控结果。通过与其他监控系统的对接，将监控数据在三维场景中以标记、面板、图表等形式进行展示。 
+    // - 监控分类(普通监控、事件监控)
+    //     - 普通监控(NormalMonitor)   : 孪生体指标监控,被动激活
+    //     - 事件监控(EventMonitor)    : 孪生体事件监控
 
 ```
 
@@ -54,14 +54,11 @@
                         //立即通过接口向后端请求监控数据
             // - setRequestInterface(callback):void   //////???????????????????/TODOOOOOOOOOOOOO
         //                 //替换系统中默认的监控接口
-        
-        // Type Definitions
-        //     CallbackMonitorData
 
 ```
 
 ##### *<a href="#">#</a>* THINGX.NormalMonitor.isActivated
-> 监控是否激活（开启）, THINGX.Business.isActivated():boolean
+> 监控是否激活（开启）, THINGX.NormalMonitor.isActivated():boolean
  
 * 类型: boolean
 * 示例
@@ -79,7 +76,7 @@
 
 
 ##### *<a href="#">#</a>* THINGX.NormalMonitor.add
-> 将孪生体添加到监控中，当监控中有孪生体，自动开启并请求后台接口, THINGX.Business.add(digitalTwin [, purpose]):Array.<THING.BaseObject>
+> 将孪生体添加到监控中，当监控中有孪生体，自动开启并请求后台接口, THINGX.NormalMonitor.add(digitalTwin [, purpose]):Array.<THING.BaseObject>
 
 * 参数
   ||||||
@@ -137,7 +134,7 @@
     ***
 
 ##### *<a href="#">#</a>* THINGX.NormalMonitor.isInMonitorSet
-> 孪生体是否在监控集合中, THINGX.Business.isInMonitorSet(digitalTwin):boolean
+> 孪生体是否在监控集合中, THINGX.NormalMonitor.isInMonitorSet(digitalTwin):boolean
 
 * 参数
   ||||||
@@ -162,7 +159,7 @@
 
 
 ##### *<a href="#">#</a>* THINGX.NormalMonitor.setRequestInterval
-> 设置监控接口请求间隔时间 （间隔时间，单位秒）, THINGX.Business.setRequestInterval(time:number):void
+> 设置监控接口请求间隔时间 （间隔时间，单位秒）, THINGX.NormalMonitor.setRequestInterval(time:number):void
 
 * 参数
   ||||||
@@ -184,7 +181,7 @@
 
 
 ##### *<a href="#">#</a>* THINGX.NormalMonitor.setRequestTimeout
-> 设置监控接口请求超时时间 （间隔时间，单位秒）, THINGX.Business.setRequestTimeout(time:number):void
+> 设置监控接口请求超时时间 （间隔时间，单位秒）, THINGX.NormalMonitor.setRequestTimeout(time:number):void
 
 * 参数
   ||||||
@@ -204,7 +201,7 @@
     ***
 
 ##### *<a href="#">#</a>* THINGX.NormalMonitor.refresh
-> 立即通过接口向后端请求监控数据, THINGX.Business.refresh( [ids]:Array.<string> | string):void
+> 立即通过接口向后端请求监控数据, THINGX.NormalMonitor.refresh( [ids]:Array.<string> | string):void
 
 * 参数
   ||||||

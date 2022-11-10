@@ -194,18 +194,26 @@
 ```javascript
 
     // 使用说明 主要用于系统提示信息的api
-    // 目前主要提供了 提示信息、成功提示、警告提示、错误提示、加载提示、销毁提示、全局配置提示信息的相关能力
+    // 目前主要提供了 提示信息、成功提示、警告提示、错误提示、加载提示、销毁提示、全局配置
+    // 提示信息的相关能力
     
     // THINGX.System.Message 解构
     THINGX.System.Message:namespace
         Methods
-            - setConfig(config:Config||string):void     //设置全局配置信息提示    #不推荐在插件开发中进行全局设置   
-            - info(config:Config||string):void          //显示提示信息
-            - success(config:Config||string):void       //显示成功信息
-            - warning(config:Config||string):void       //显示警告信息
-            - error(config:Config||string):void         //显示错误信息
-            - loading(config:Config||string):void       //显示加载信息
-            - destory():void                            //销毁当前提示框
+            - setConfig(config:Config||string):void     
+                            //设置全局配置信息提示    #不推荐在插件开发中进行全局设置   
+            - info(config:Config||string):void          
+                            //显示提示信息
+            - success(config:Config||string):void       
+                            //显示成功信息
+            - warning(config:Config||string):void       
+                            //显示警告信息
+            - error(config:Config||string):void         
+                            //显示错误信息
+            - loading(config:Config||string):void       
+                            //显示加载信息
+            - destory():void                            
+                            //销毁当前提示框
         Type Definitions
             - Config (信息配置)               
                 - onClose:function              //关闭时的回调
