@@ -182,21 +182,23 @@
     ***
 
 ##### *<a href="#">#</a>* THINGX.Business.hidePanel
-> 隐藏业务面板, THINGX.Business.showPanel(name):void
+> 隐藏业务面板, THINGX.Business.hidePanel(name):void
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |name|string|是| - | 业务名称 |   
+  |name|string|-| - | 业务名称 ,为空隐藏所有已显示面板|   
 * 类型: void
 * 示例
     ```javascript
 
         //隐藏业务面板
-        //注：业务项之间是互斥关系，同一时有且仅有一项业务被激活, 不可同时激活多个业务
-        //  当一个业务激活时，已存在激活的业务会被取消，然后激活当前业务
 
-        //示例. （隐藏`智慧消防`业务面板）
+
+        //示例1. （隐藏所有已显示的业务面板）
+        THINGX.Business.hidePanel();
+
+        //示例2. （隐藏`智慧消防`业务面板）
         THINGX.Business.hidePanel("智慧消防");
         //即可将业务面板隐藏并不会取消业务项，仅仅隐藏业务面板
 
