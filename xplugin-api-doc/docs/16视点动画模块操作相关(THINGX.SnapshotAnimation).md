@@ -9,7 +9,7 @@
     - [*#* THINGX.SnapshotAnimation.pause](#-thingxsnapshotanimationpause)
     - [*#* THINGX.SnapshotAnimation.resume](#-thingxsnapshotanimationresume)
     - [*#* THINGX.SnapshotAnimation.stop](#-thingxsnapshotanimationstop)
-    - [*#* THINGX.SnapshotAnimation.setMode](#-thingxsnapshotanimationsetmode)
+    - [*#* THINGX.SnapshotAnimation.setPlayMode](#-thingxsnapshotanimationsetplaymode)
 
 <!-- /code_chunk_output -->
 
@@ -140,13 +140,13 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.SnapshotAnimation.setMode
-> 设置视点动画播放模式, THINGX.SnapshotAnimation.setMode(mode:string):void
+##### *<a href="#">#</a>* THINGX.SnapshotAnimation.setPlayMode
+> 设置视点动画播放模式, THINGX.SnapshotAnimation.setPlayMode(mode:string):void
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |mode|string|否|once  | 设置视点动画播放模式 </br>once:不循环,只执行一次、repeat:不断循环  |    
+  |mode|string|否|once  | 设置视点动画播放模式 </br>once:不循环,只执行一次、repeat:不断循环 ,listloop:列表循环 |    
 * 类型: void
 * 示例
     ```javascript
@@ -155,7 +155,7 @@
         // 视点动画播放模目前支持 once、repeat
 
         //示例. 循环播放`园区巡游`视点动画
-        THINGX.SnapshotAnimation.setMode("repeat");
+        THINGX.SnapshotAnimation.setPlayMode("repeat");
         THINGX.SnapshotAnimation.play("园区巡游").then((result)=>{
              console.warn("视点动画播放: %s", result);
         });
