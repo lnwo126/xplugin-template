@@ -145,7 +145,7 @@
 > *<a href="#">#</a>* XMonitor (孪生体监控数据改变事件) 
 ```javascript
 
-    //监听 app&BaseObject
+    //监听 BaseObject
     
     // 示例1. 孪生体监控数据改变事件
     THING.App.current.level.current.on(THINGX.EventType.XMonitor, (ev) => {
@@ -648,6 +648,20 @@
     // 示例. 取消激活场景控制之前
     THING.App.current.on(THINGX.EventType.XBeforeDeactivateSceneControlItem, (ev) => {
         console.warn('XBeforeDeactivateSceneControlItem', '取消激活场景控制之前', ev);
+        // ev.currentLevel	THING.BaseObject	当前层级
+        // ev.name	Array.<Object>	场景控制名称      
+    });
+
+```
+
+> *<a href="#">#</a>* XSceneControlItemDeactivated (取消激活场景控制) 
+```javascript
+
+    //监听  app&BaseObject
+    
+    // 示例. 取消激活场景控制
+    THING.App.current.on(THINGX.EventType.XSceneControlItemDeactivated, (ev) => {
+        console.warn('XSceneControlItemDeactivated', '取消激活场景控制', ev);
         // ev.currentLevel	THING.BaseObject	当前层级
         // ev.name	Array.<Object>	场景控制名称      
     });

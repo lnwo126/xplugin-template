@@ -3,14 +3,14 @@
 <!-- code_chunk_output -->
 
 - [监控模块操作相关(THINGX.Monitor)](#监控模块操作相关thingxmonitor)
-    - [*#* THINGX.Monitor.isActivated](#-thingxmonitorisactivated)
-    - [*#* THINGX.Monitor.add](#-thingxmonitoradd)
-    - [*#* THINGX.Monitor.remove](#-thingxmonitorremove)
-    - [*#* THINGX.Monitor.isInMonitorSet](#-thingxmonitorisinmonitorset)
-    - [*#* THINGX.Monitor.setRequestInterval](#-thingxmonitorsetrequestinterval)
-    - [*#* THINGX.Monitor.setRequestTimeout](#-thingxmonitorsetrequesttimeout)
-    - [*#* THINGX.Monitor.refresh](#-thingxmonitorrefresh)
-    - [*#* THINGX.Monitor.setRequestInterface](#-thingxmonitorsetrequestinterface)
+    - [*<a href="#">#</a>* THINGX.Monitor.isActivated](#-thingxmonitorisactivated)
+    - [*<a href="#">#</a>* THINGX.Monitor.add](#-thingxmonitoradd)
+    - [*<a href="#">#</a>* THINGX.Monitor.remove](#-thingxmonitorremove)
+    - [*<a href="#">#</a>* THINGX.Monitor.isInMonitorSet](#-thingxmonitorisinmonitorset)
+    - [*<a href="#">#</a>* THINGX.Monitor.setRequestInterval](#-thingxmonitorsetrequestinterval)
+    - [*<a href="#">#</a>* THINGX.Monitor.setRequestTimeout](#-thingxmonitorsetrequesttimeout)
+    - [*<a href="#">#</a>* THINGX.Monitor.refresh](#-thingxmonitorrefresh)
+    - [*<a href="#">#</a>* THINGX.Monitor.setRequestInterface](#-thingxmonitorsetrequestinterface)
 
 <!-- /code_chunk_output -->
 
@@ -59,7 +59,7 @@
             - remove(digitalTwin [, purpose]):Array.<THING.BaseObject>          
                         //将孪生体从监控中移除，当监控中没有孪生体，监控关闭
             - isActivated():boolean
-                        //监控是否激活( 有一个监控开启（激活） 即为 true)                
+                        //监控是否激活               
             - isInMonitorSet(digitalTwin):boolean  
                         //孪生体是否在监控集合中
             - setRequestInterval(time:number):void                  
@@ -129,7 +129,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked disabled> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|否| default | 监控目的 |     
 * 类型: void
 * 示例
@@ -144,8 +144,7 @@
         //即普通监控模块 会自动开启监控进行数据请求
 
         //示例2. 给所有建筑添加监控,使用 thingjs query syntax expression  （监控目的：园区巡游）
-        const buildings = THING.App.current.query('.building')[0];//THING.BaseObject
-        THINGX.Monitor.add(buildings, "园区巡游");
+        THINGX.Monitor.add('.Building', "园区巡游");
         //即普通监控模块 会自动开启监控进行数据请求
 
     ```
@@ -159,7 +158,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked disabled> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|否| default | 监控目的 |     
 * 类型: void
 * 示例
@@ -174,8 +173,7 @@
 
 
         //示例2. 移除所有建筑监控,使用 thingjs query syntax expression  （监控目的：园区巡游）
-        const buildings = THING.App.current.query('.building')[0];//THING.BaseObject
-        THINGX.Monitor.remove(buildings, "园区巡游");
+        THINGX.Monitor.remove('.Building', "园区巡游");
         //即普通监控模块移除后，当监控中没有孪生体，自动关闭监控
 
     ```
@@ -188,7 +186,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS语法表达式/不支持孪生体集合</br> <input type="checkbox"> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS语法表达式/不支持孪生体集合</br> <input type="checkbox" disabled> support thingjs query syntax expression for DigitalTwin |   
 * 类型: boolean
 * 示例
     ```javascript
@@ -265,7 +263,7 @@
         //示例. 给建筑 `B23A` 添加监控后, 立即通过接口向后端请求监控数据
         const building = THING.App.current.query('#B23A')[0];//THING.BaseObject
         THINGX.Monitor.add(building);
-        THINGX.Monitor.refresh(building._DBID_);
+        THINGX.Monitor.refresh(building.userData._DBID_);
   
     ```
     ***

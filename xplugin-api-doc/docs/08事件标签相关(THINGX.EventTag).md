@@ -90,7 +90,7 @@
     THING.App.current.pauseEvent(THING.EventType.Select, '.BaseObject', THINGX.EventTag.XShowDigitalTwinDefaultEffect);
 
 ```
-> *<a href="#">#</a>* XUpdateMonitorEffect(更新监控效果)
+> ~~*<a href="#">#</a>* XUpdateMonitorEffect(更新监控效果)~~ 弃用
 ```javascript
     
     //App 操作

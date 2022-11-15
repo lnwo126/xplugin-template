@@ -303,7 +303,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |config|THINGX.Alarm.RequestConfig|-| - | 告警查询配置,详情查看 Type Definitions ： THINGX.Alarm.RequestConfig |    
+  |config|THINGX.Alarm.RequestConfig|-| - | 告警查询配置,传入的参数会与当前告警查询配置进行合并,详情查看 Type Definitions ： THINGX.Alarm.RequestConfig |    
   |isRemoteData|boolean|-| true |	立即请求告警 |    
 * 类型: void
 * 示例
