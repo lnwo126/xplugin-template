@@ -82,68 +82,68 @@
 |-|-|-|-|-|-|
 ||事件名称|描述|当前阶段|应用监听|孪生体监听|
 |-|XAlarm|告警事件||||
-||THINGX.EventType.XAlarm|告警数据发生变化事件|release| <input type="checkbox" >| <input type="checkbox" checked>|
-||THINGX.EventType.XAlarmRemove|移除告警事件|release|<input type="checkbox" >| <input type="checkbox" checked>|
-||THINGX.EventType.XAlarmDataRequest|告警数据更新</br>请求完成事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XAlarmChangeUnderCurrentSceneLevel|告警在当前场景层级下</br>变化层级切换</br>告警数据变化事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XAlarmActivate|激活告警|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XAlarmDeactivate|取消告警|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XAlarmEffectActivate|激活告警效果|proposal|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XAlarmEffectDeactivate|取消告警效果|proposal|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XAlarmSoundActivate|激活告警声音|proposal|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XAlarmSoundDeactivate|取消告警声音|proposal|<input type="checkbox" checked>|<input type="checkbox" >|
+||THINGX.EventType.XAlarm|告警数据发生变化事件|release| <input type="checkbox" disabled>| <input type="checkbox" checked disabled>|
+||THINGX.EventType.XAlarmRemove|移除告警事件|release|<input type="checkbox" disabled>| <input type="checkbox" checked disabled>|
+||THINGX.EventType.XAlarmDataRequest|告警数据更新</br>请求完成事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled >|
+||THINGX.EventType.XAlarmChangeUnderCurrentSceneLevel|告警在当前场景层级下</br>变化层级切换</br>告警数据变化事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XAlarmActivate|激活告警|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XAlarmDeactivate|取消告警|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XAlarmEffectActivate|激活告警效果|proposal|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XAlarmEffectDeactivate|取消告警效果|proposal|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XAlarmSoundActivate|激活告警声音|proposal|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XAlarmSoundDeactivate|取消告警声音|proposal|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
 |-|XMonitor|监控事件||||
-||THINGX.EventType.XMonitor|监控数据改变事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XMonitorActivate|监控激活事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XMonitorDeactivate|取消监控事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XMonitorDataRequest|监控数据更新,请求完成事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
+||THINGX.EventType.XMonitor|监控数据改变事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XMonitorActivate|监控激活事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XMonitorDeactivate|取消监控事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XMonitorDataRequest|监控数据更新,请求完成事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
 |-|XMarker|标记事件||||
-||THINGX.EventType.XMarkerLoad|标记加载完成事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XMarkerDestroy|标记销毁完成事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
+||THINGX.EventType.XMarkerLoad|标记加载完成事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XMarkerDestroy|标记销毁完成事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
 |-|XDigitalTwin|孪生体相关事件||||
-||THINGX.EventType.XDigitalTwinPanelActivate|孪生体面板激活事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XDigitalTwinPanelDeactivate|孪生体面板取消事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XDigitalTwinPanelTabActivate|孪生体面板页签激活事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
-||THINGX.EventType.XDigitalTwinPanelTabDeactivate|孪生体面板页签取消事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
+||THINGX.EventType.XDigitalTwinPanelActivate|孪生体面板激活事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XDigitalTwinPanelDeactivate|孪生体面板取消事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XDigitalTwinPanelTabActivate|孪生体面板页签激活事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
+||THINGX.EventType.XDigitalTwinPanelTabDeactivate|孪生体面板页签取消事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
 |-|XLoad|加载事件||||
-||THINGX.EventType.XLoad|应用系统加载完成事件|release|<input type="checkbox" checked>|<input type="checkbox" >|
+||THINGX.EventType.XLoad|应用系统加载完成事件|release|<input type="checkbox" checked disabled>|<input type="checkbox" disabled>|
 |-|XLevel|层级事件||||
-||THINGX.EventType.XLeaveLevelBackward|反向离开层级|release|<input type="checkbox" checked>|<input type="checkbox" checked>|
-||THINGX.EventType.XEnterLevelForward|正向进入层级|release|<input type="checkbox" checked>|<input type="checkbox" checked>|
+||THINGX.EventType.XLeaveLevelBackward|反向离开层级|release|<input type="checkbox" checked disabled>|<input type="checkbox" checked disabled>|
+||THINGX.EventType.XEnterLevelForward|正向进入层级|release|<input type="checkbox" checked disabled>|<input type="checkbox" checked disabled>|
 ||~~THINGX.EventType.XLoadAfterChangeLevel~~|~~层级改变后</br>业务模块加载完成事件~~|~~proposal~~|-|-|
 ||~~THINGX.EventType.XLayerRefreshedAfterChangeLevel~~|~~层级切换后</br>图层刷新完成~~|~~proposal~~|||
 ||~~THINGX.EventType.XCameraFlyEnd~~|~~层级切换后</br>相机飞行完成事件~~|~~proposal~~|-|-|
 |-|XBusiness|业务模块事件||||
-||THINGX.EventType.XBeforeRefreshBusiness|业务模块刷新之前事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBusinessRefreshed|业务模块刷新事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBeforeActivateBusinessItem|业务激活之前事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBusinessItemActivated|业务激活事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBeforeDeactivateBusinessItem|业务取消之前事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBusinessItemDeactivated|业务取消事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBusinessUIShow|业务模块显示事件|proposal|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBusinessUIHide|业务模块隐藏事件|proposal|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBusinessPanelShow|业务面板显示事件|proposal|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBusinessPanelHide|业务面板隐藏事件|proposal|<input type="checkbox" checked>|-|
+||THINGX.EventType.XBeforeRefreshBusiness|业务模块刷新之前事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBusinessRefreshed|业务模块刷新事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBeforeActivateBusinessItem|业务激活之前事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBusinessItemActivated|业务激活事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBeforeDeactivateBusinessItem|业务取消之前事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBusinessItemDeactivated|业务取消事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBusinessUIShow|业务模块显示事件|proposal|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBusinessUIHide|业务模块隐藏事件|proposal|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBusinessPanelShow|业务面板显示事件|proposal|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBusinessPanelHide|业务面板隐藏事件|proposal|<input type="checkbox" checked disabled>|-|
 |-|XLayer|图层模块事件||||
-||THINGX.EventType.XBeforeRefreshLayer|图层模块刷新之前事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XLayerRefreshed|图层模块刷新事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBeforeActivateLayerItem|图层激活之前事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XLayerItemActivated|图层激活事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBeforeDeactivateLayerItem|图层取消之前事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XLayerItemDeactivated|图层取消事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XLayerUIShow|图层模块显示事件|proposal|<input type="checkbox" checked>|-|
-||THINGX.EventType.XLayerUIHide|图层模块隐藏事件|proposal|<input type="checkbox" checked>|-|
-||THINGX.EventType.XLayerPanelShow|图层面板显示事件|proposal|<input type="checkbox" checked>|-|
-||THINGX.EventType.XLayerPanelHide|图层面板隐藏事件|proposal|<input type="checkbox" checked>|-|
+||THINGX.EventType.XBeforeRefreshLayer|图层模块刷新之前事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XLayerRefreshed|图层模块刷新事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBeforeActivateLayerItem|图层激活之前事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XLayerItemActivated|图层激活事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBeforeDeactivateLayerItem|图层取消之前事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XLayerItemDeactivated|图层取消事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XLayerUIShow|图层模块显示事件|proposal|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XLayerUIHide|图层模块隐藏事件|proposal|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XLayerPanelShow|图层面板显示事件|proposal|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XLayerPanelHide|图层面板隐藏事件|proposal|<input type="checkbox" checked disabled>|-|
 |-|XSceneControl|场景控制模块事件||||
-||THINGX.EventType.XBeforeRefreshSceneControl|场景控制模块刷新之前事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XSceneControlRefreshed|场景控制模块刷新事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBeforeActivateSceneControlItem|场景控制激活之前事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XSceneControlItemActivated|场景控制激活事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XBeforeDeactivateSceneControlItem|场景控制取消激活之前事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XSceneControlItemDeactivated|场景控制取消事件|release|<input type="checkbox" checked>|-|
-||THINGX.EventType.XSceneControlUIShow|场景控制模块显示事件|proposal|<input type="checkbox" checked>|-|
-||THINGX.EventType.XSceneControlUIHide|场景控制模块隐藏事件|proposal|<input type="checkbox" checked>|-|
+||THINGX.EventType.XBeforeRefreshSceneControl|场景控制模块刷新之前事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XSceneControlRefreshed|场景控制模块刷新事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBeforeActivateSceneControlItem|场景控制激活之前事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XSceneControlItemActivated|场景控制激活事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XBeforeDeactivateSceneControlItem|场景控制取消激活之前事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XSceneControlItemDeactivated|场景控制取消事件|release|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XSceneControlUIShow|场景控制模块显示事件|proposal|<input type="checkbox" checked disabled>|-|
+||THINGX.EventType.XSceneControlUIHide|场景控制模块隐藏事件|proposal|<input type="checkbox" checked disabled>|-|
 
 ### 事件标签(tag)一栏表
 > pre release stage 事件标签一栏表

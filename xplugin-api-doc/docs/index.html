@@ -12,11 +12,28 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: '插件开发 API文档',
+      repo: '',
+      coverpage: false,
+      loadSidebar: true,
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        placeholder: '搜索',
+        noData: '未搜索到合适的结果',
+        // 搜索标题的最大层级, 1 - 6
+        depth: 3,
+      },
+      // docsify-copy-code (defaults)
+      copyCode: {
+        buttonText : '复制',
+        errorText  : '复制发生错误',
+        successText: '复制成功'
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
