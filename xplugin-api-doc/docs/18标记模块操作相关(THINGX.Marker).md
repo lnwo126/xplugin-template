@@ -51,13 +51,13 @@
 
         //给孪生体添加标记
 
-        //示例1. 给建筑添加显示名称 `情境一` 的标记
-        const building = THING.App.current.query('#一号教学楼')[0];//THING.BaseObject
-        THINGX.Marker.add(building,"情境一");
+        //示例1. 给建筑添加显示名称 `政府-右侧标题-安德` 的标记
+        const building = THING.App.current.query('#政府大楼')[0];//THING.BaseObject
+        THINGX.Marker.add(building,"政府-右侧标题-安德");
         
-        //示例2. 给所有名称为建筑的孪生体添加显示名称 `情境一` 的标记，使用 thingjs query syntax expression 
+        //示例2. 给所有名称为建筑的孪生体添加显示名称 '政府-右侧标题-安德' 的标记，使用 thingjs query syntax expression 
         //support thingjs query syntax expression for DigitalTwin
-        THINGX.Marker.add("[name=建筑]","情境一");
+        THINGX.Marker.add("[name=建筑]","政府-右侧标题-安德");
 
 
     ```
@@ -80,17 +80,17 @@
 
         //移除孪生体标记
 
-        //示例1. 移除建筑添上名称为 `情境一` 的标记
+        //示例1. 移除建筑添上名称为 `政府-右侧标题-安德` 的标记
         const building = THING.App.current.query('#一号教学楼')[0];//THING.BaseObject
-        const result = THINGX.Marker.remove(building,"情境一");
-        console.warn("建筑上情境一的标记移除完成: %s", result);
-         //print result: 建筑上情境一的标记移除完成: true
+        const result = THINGX.Marker.remove(building,"政府-右侧标题-安德");
+        console.warn("建筑上政府-右侧标题-安德的标记移除完成: %s", result);
+         //print result: 建筑上政府-右侧标题-安德的标记移除完成: true
         
-        //示例2. 给所有名称为建筑的孪生体移除 `情境一` 的标记，使用 thingjs query syntax expression 
+        //示例2. 给所有名称为建筑的孪生体移除 `政府-右侧标题-安德` 的标记，使用 thingjs query syntax expression 
         //support thingjs query syntax expression for DigitalTwin
-        const result = THINGX.Marker.remove("[name=建筑]","情境一");
-        console.warn("名称为建筑的孪生体 `情境一` 的标记移除完成: %s", result);
-        //print result: 名称为建筑的孪生体 `情境一` 的标记移除完成: true
+        const result = THINGX.Marker.remove("[name=建筑]","政府-右侧标题-安德");
+        console.warn("名称为建筑的孪生体 `政府-右侧标题-安德` 的标记移除完成: %s", result);
+        //print result: 名称为建筑的孪生体 `政府-右侧标题-安德` 的标记移除完成: true
 
 
     ```
@@ -119,11 +119,11 @@
         
         //示例2. 给所有名称为建筑的孪生体显示 `顶部标题-建筑` 的标记，使用 thingjs query syntax expression 
         //support thingjs query syntax expression for DigitalTwin
-        THINGX.Marker.remove("[name=建筑]","顶部标题-建筑");
+        THINGX.Marker.show("[name=建筑]","顶部标题-建筑");
 
         //示例3. 使用`智慧安防`业务下 给所有名称为路灯的孪生体显示 `顶部标题-路灯` 的标记，使用 thingjs query syntax expression 
         //support thingjs query syntax expression for DigitalTwin
-        THINGX.Marker.remove("[name=路灯]","顶部标题-路灯","智慧安防");
+        THINGX.Marker.show("[name=路灯]","顶部标题-路灯","智慧安防");
 
     ```
     ***
@@ -188,7 +188,7 @@
 
 
 ##### *<a href="#">#</a>* THINGX.Marker.getPreloadName
-> 获取孪生体预加载的标记, THINGX.Marker.getPreloadName(digitalTwin:THING.BaseObjec):THING.BaseObject
+> 获取孪生体预加载标记的名称, THINGX.Marker.getPreloadName(digitalTwin:THING.BaseObjec):THING.BaseObject
 
 * 参数
   ||||||
@@ -205,15 +205,15 @@
 
         //示例1. 获取建筑上预加载的标记
         const building = THING.App.current.query('#一号教学楼')[0];//THING.BaseObject
-        const buildingMakerInstance = THINGX.Marker.getPreloadName(building);
-        console.warn("建筑上预加载的标记实例: ", buildingMakerInstance);
+        const buildingMakerName = THINGX.Marker.getPreloadName(building);
+        console.warn("建筑上预加载标记的名称: ", buildingMakerName);
         // print result: 建筑上预加载的标记实例: THING.BaseObject
  
     ```
     ***
 
 ##### *<a href="#">#</a>* THINGX.Marker.getAll
-> 获取孪生体上所有的标记, THINGX.Marker. getAll(digitalTwin:THING.BaseObject):Map.<string, THING.BaseObject>
+> 获取孪生体上所有的标记, THINGX.Marker.getAll(digitalTwin:THING.BaseObject):Map.<string, THING.BaseObject>
 
 * 参数
   ||||||

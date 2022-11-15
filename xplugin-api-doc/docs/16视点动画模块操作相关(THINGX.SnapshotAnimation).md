@@ -26,10 +26,10 @@
         - hide():void                           //视点动画模块隐藏    
         - show():void                           //视点动画模块显示
         - play(name:string):Promise.<boolean>   //播放视点动画
-        - pause():boolean                       //暂停播放视点动画
-        - resume():boolean                      //恢复播放视点动画
-        - stop():boolean                        //停止播放视点动画
-        - setMode(mode:string):boolean          //设置视点动画播放模式 [once:不循环,只执行一次、repeat:不断循环] 
+        - pause():void                          //暂停播放视点动画
+        - resume():void                         //恢复播放视点动画
+        - stop():void                           //停止播放视点动画
+        - setPlayMode(mode:string):void         //设置视点动画播放模式 [once:不循环,只执行一次、repeat:不断循环] 
 
 ```
 
@@ -89,17 +89,16 @@
     ***
 
 ##### *<a href="#">#</a>* THINGX.SnapshotAnimation.pause
-> 暂停播放视点动画, THINGX.SnapshotAnimation.pause():boolean
+> 暂停播放视点动画, THINGX.SnapshotAnimation.pause():void
    
-* 类型: boolean
+* 类型: void
 * 示例
     ```javascript
 
-        //暂停播放视点动画
+        //暂停当前视点动画
 
         //示例. 暂停播放当前视点动画
-        const result = THINGX.SnapshotAnimation.pause();
-        console.warn("视点动画暂停播放: %s", result);
+        THINGX.SnapshotAnimation.pause();
         //print result: 视点动画暂停播放: true
         
 
@@ -107,17 +106,16 @@
     ***
 
 ##### *<a href="#">#</a>* THINGX.SnapshotAnimation.resume
-> 恢复播放视点动画, THINGX.SnapshotAnimation.resume():boolean
+> 恢复播放视点动画, THINGX.SnapshotAnimation.resume():void
    
-* 类型: boolean
+* 类型: void
 * 示例
     ```javascript
 
-        //暂停播放视点动画模块
+        //恢复当前视点动画
 
         //示例. 暂停播放当前视点动画
-        const result = THINGX.SnapshotAnimation.resume();
-        console.warn("视点动画暂停播放: %s", result);
+        THINGX.SnapshotAnimation.resume();
          //print result: 视点动画暂停播放: true
        
 
@@ -127,15 +125,14 @@
 ##### *<a href="#">#</a>* THINGX.SnapshotAnimation.stop
 > 停止播放视点动画, THINGX.SnapshotAnimation.stop():boolean
    
-* 类型: boolean
+* 类型: void
 * 示例
     ```javascript
 
-        //停止播放视点动画
+        //停止播放当前视点动画
 
         //示例. 停止播放视点动画
-        const result = THINGX.SnapshotAnimation.stop();
-        console.warn("视点动画停止播放: %s", result);
+        THINGX.SnapshotAnimation.stop();
         //print result: 视点动画停止播放: true
     ```
     ***

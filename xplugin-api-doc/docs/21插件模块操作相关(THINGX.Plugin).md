@@ -113,7 +113,7 @@
     ```
     ***
 ##### *<a href="#">#</a>* THINGX.Plugin.getPluginWithTypeAndName
-> 通过插件类型和名称获取插, THINGX.Plugin.getPluginWithTypeAndName(type:string, name:string):BasePlugin
+> 通过插件类型和名称获取插件, THINGX.Plugin.getPluginWithTypeAndName(type:string, name:string):BasePlugin
 
 * 参数
   ||||||
@@ -150,7 +150,6 @@
         //通过插件实例ID获取插件
 
         //示例 获取扩展插件实例
-        const type = THINGX.Plugin.Type.EXPAND;
         const xplugin = THINGX.Plugin.getPluginWithInstanceId('插件实例uuid');
         // xplugin: THINGX.Plugin.BasePlugin 相关能耐参考 Class THINGX.Plugin.BasePlugin 
 
