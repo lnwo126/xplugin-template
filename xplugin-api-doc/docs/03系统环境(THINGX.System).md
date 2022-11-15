@@ -4,20 +4,20 @@
 
 - [系统环境(THINGX.System)](#系统环境thingxsystem)
   - [系统版本库(THINGX.System.Version)](#系统版本库thingxsystemversion)
-    - [*#* THINGX.System.Version.成员属性](#-thingxsystemversion成员属性)
+    - [*<a href="#"><font color="grey">#</font></a>* THINGX.System.Version.成员属性](#font-colorgreyfont-thingxsystemversion成员属性)
   - [系统资源库(THINGX.System.Resource)](#系统资源库thingxsystemresource)
-    - [*#* THINGX.System.Resource.成员属性](#-thingxsystemresource成员属性)
+    - [*<a href="#"><font color="red">#</font></a>* THINGX.System.Resource.成员属性](#font-colorredfont-thingxsystemresource成员属性)
   - [系统加载控制库(THINGX.System.Loading)](#系统加载控制库thingxsystemloading)
-    - [*#* THINGX.System.Loading.show](#-thingxsystemloadingshow)
-    - [*#* THINGX.System.Loading.hide](#-thingxsystemloadinghide)
+    - [*<a href="#">#</a>* THINGX.System.Loading.show](#-thingxsystemloadingshow)
+    - [*<a href="#">#</a>* THINGX.System.Loading.hide](#-thingxsystemloadinghide)
   - [系统提示信息库(THINGX.System.Message)](#系统提示信息库thingxsystemmessage)
-    - [*#* THINGX.System.Message.setConfig](#-thingxsystemmessagesetconfig)
-    - [*#* THINGX.System.Message.info](#-thingxsystemmessageinfo)
-    - [*#* THINGX.System.Message.success](#-thingxsystemmessagesuccess)
-    - [*#* THINGX.System.Message.warning](#-thingxsystemmessagewarning)
-    - [*#* THINGX.System.Message.error](#-thingxsystemmessageerror)
-    - [*#* THINGX.System.Message.loading](#-thingxsystemmessageloading)
-    - [*#* THINGX.System.Message.destory](#-thingxsystemmessagedestory)
+    - [*<a href="#">#</a>* THINGX.System.Message.setConfig](#-thingxsystemmessagesetconfig)
+    - [*<a href="#">#</a>* THINGX.System.Message.info](#-thingxsystemmessageinfo)
+    - [*<a href="#">#</a>* THINGX.System.Message.success](#-thingxsystemmessagesuccess)
+    - [*<a href="#">#</a>* THINGX.System.Message.warning](#-thingxsystemmessagewarning)
+    - [*<a href="#">#</a>* THINGX.System.Message.error](#-thingxsystemmessageerror)
+    - [*<a href="#">#</a>* THINGX.System.Message.loading](#-thingxsystemmessageloading)
+    - [*<a href="#">#</a>* THINGX.System.Message.destory](#-thingxsystemmessagedestory)
 
 <!-- /code_chunk_output -->
 
@@ -423,7 +423,6 @@
 
         // 示例1. 销毁当前生效中的提示框  常与 loading() 配合使用
          THINGX.System.Message.destory();
-
 
         // 示例2. 与 loading() 配合使用创建加载提示框, 5秒后销毁该loading 提示框
         //配置loading 提示框参数，加载显示30秒后默认关闭

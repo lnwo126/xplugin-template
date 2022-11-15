@@ -4,12 +4,12 @@
 <!-- code_chunk_output -->
 
 - [系统全局调度器(THINGX.Timer)](#系统全局调度器thingxtimer)
-    - [*#* THINGX.Timer.addInterval](#-thingxtimeraddinterval)
-    - [*#* THINGX.Timer.addTimeout](#-thingxtimeraddtimeout)
-    - [*#* THINGX.Timer.remove](#-thingxtimerremove)
-    - [*#* THINGX.Timer.removeAll](#-thingxtimerremoveall)
-    - [*#* THINGX.Timer.get](#-thingxtimerget)
-    - [*#* THINGX.Timer.getAll](#-thingxtimergetall)
+    - [*<a href="#">#</a>* THINGX.Timer.addInterval](#-thingxtimeraddinterval)
+    - [*<a href="#">#</a>* THINGX.Timer.addTimeout](#-thingxtimeraddtimeout)
+    - [*<a href="#">#</a>* THINGX.Timer.remove](#-thingxtimerremove)
+    - [*<a href="#">#</a>* THINGX.Timer.removeAll](#-thingxtimerremoveall)
+    - [*<a href="#">#</a>* THINGX.Timer.get](#-thingxtimerget)
+    - [*<a href="#">#</a>* THINGX.Timer.getAll](#-thingxtimergetall)
 <!-- /code_chunk_output -->
 
 ### 系统全局调度器(THINGX.Timer)
@@ -99,7 +99,6 @@
 * 类型: string
 * 示例
     ```javascript
-
 
         //示例1. 延时 10s 后执行一次打印输出(给定唯一标识)（仅执行一次）
         //return value interval unique identifier （返回指定的定时器唯一标识:forklift）
