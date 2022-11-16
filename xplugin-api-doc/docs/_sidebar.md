@@ -27,6 +27,9 @@
   - [标记模块操作相关(THINGX.Marker)](18标记模块操作相关(THINGX.Marker).md)
   - [插件模块操作相关(THINGX.Plugin)](21插件模块操作相关(THINGX.Plugin).md)
 - **Links** 
+- [![Github](./lib/github.svg)Github](https://github.com/GuangGuangZhang/xplugin-template)
+- [![NPM](./lib/npm.svg)NPM](https://www.npmjs.com/package/@thingjs-x/xplugin-cli)
+
 
 
 
