@@ -1,6 +1,14 @@
 
-- [概览](README)
-- [THINGX content of pre release stage](pre-release-stage-content)
+- [Introduction](README)
+- [Specification](xplugin-specification.md)
+- [Configuration](xplugin-configuration.md)
+- [Namespace](pre-release-stage-content)
+- [XPlugin-cli](xplugin-cli.md)
+- [XPlugin-template](xplugin-template.md)
+- [Tutorial](tutorial.md)
+  - [消息监听](tutorial-消息监听.md)
+  - [显示孪生体](tutorial-显示孪生体.md)
+- [Changelog](changelog)
 - **api list** 
   - [系统调试器(THINGX.Debugger)](01系统调试器(THINGX.Debugger).md)
   - [系统全局调度器(THINGX.Timer)](02系统全局调度器(THINGX.Timer).md)

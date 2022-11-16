@@ -9,6 +9,7 @@
   - [事件标签(EventTag)](#事件标签eventtag)
 - [pre release stage](#pre-release-stage)
 - [next stage release](#next-stage-release)
+- [contact & support](#contact--support)
 <!-- /code_chunk_output -->
 # THINGX framework of pre release stage
 
@@ -304,3 +305,11 @@
 
 
 ```
+
+# contact & support
+!> 联系我们获得支持   
+**关于api 使用中的问题或错误欢迎联系我们进行反馈**
+- Follow 👨🏻‍💻 @zhangguang on U知 and GitHub for announcements
+- Create a 💬 GitHub issue for bug reports, feature requests, or questions
+- Add a ⭐️ star on GitHub and promote the project
+- Email zhangguang@uino.com

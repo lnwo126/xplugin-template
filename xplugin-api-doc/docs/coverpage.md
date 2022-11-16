@@ -1,6 +1,6 @@
-# 插件开发 API文档
+# 插件开发指南
 
-> 阅读便捷的插件开发API文档 for [ThingJS-X 系统](https://x.thingjs.com/)
+> 阅读便捷的插件开发指南 for [ThingJS-X 系统](https://x.thingjs.com/)
 
 - version status, pre release stage
 - supported versions for ThingJS-X 4.2.0 +
