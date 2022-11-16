@@ -2,13 +2,13 @@
 
 <!-- code_chunk_output -->
 
-- [系统调试器(THINGX.Debugger)](#系统调试器thingxdebugger)
-    - [*#* THINGX.Debugger.getLevel](#-thingxdebuggergetlevel)
-    - [*#* THINGX.Debugger.setLevel](#-thingxdebuggersetlevel)
+- [*<a href="#"><font color="grey">#</font></a>*  解构(THINGX.Debugger)](#font-colorgreyfont--解构thingxdebugger)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.Debugger.getLevel](#font-colorgreyfont--thingxdebuggergetlevel)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.Debugger.setLevel](#font-colorgreyfont--thingxdebuggersetlevel)
 
 <!-- /code_chunk_output -->
 
-### 系统调试器(THINGX.Debugger)
+###  *<a href="#"><font color="grey">#</font></a>*  解构(THINGX.Debugger)
 > THINGX.Debugger:namespace
 ```javascript
 
@@ -29,7 +29,7 @@
     
 ```
 
-##### *<a href="#">#</a>* THINGX.Debugger.getLevel
+###  *<a href="#"><font color="grey">#</font></a>*  THINGX.Debugger.getLevel
 > 获取调试等级  THINGX.Debugger.getLevel()
 * 类型: string
 * 示例
@@ -39,7 +39,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Debugger.setLevel
+###  *<a href="#"><font color="grey">#</font></a>*  THINGX.Debugger.setLevel
 > 设置调试等级  THINGX.Debugger.setLevel([level:string][,storage:boolean]) 
 * 参数
   ||||||

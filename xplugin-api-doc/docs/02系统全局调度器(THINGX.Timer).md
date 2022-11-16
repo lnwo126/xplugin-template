@@ -3,16 +3,16 @@
 
 <!-- code_chunk_output -->
 
-- [系统全局调度器(THINGX.Timer)](#系统全局调度器thingxtimer)
-    - [*<a href="#">#</a>* THINGX.Timer.addInterval](#-thingxtimeraddinterval)
-    - [*<a href="#">#</a>* THINGX.Timer.addTimeout](#-thingxtimeraddtimeout)
-    - [*<a href="#">#</a>* THINGX.Timer.remove](#-thingxtimerremove)
-    - [*<a href="#">#</a>* THINGX.Timer.removeAll](#-thingxtimerremoveall)
-    - [*<a href="#">#</a>* THINGX.Timer.get](#-thingxtimerget)
-    - [*<a href="#">#</a>* THINGX.Timer.getAll](#-thingxtimergetall)
+- [*<a href="#"><font color="grey">#</font></a>*  解构(THINGX.Timer)](#font-colorgreyfont--解构thingxtimer)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.addInterval](#font-colorgreyfont--thingxtimeraddinterval)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.addTimeout](#font-colorgreyfont--thingxtimeraddtimeout)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.remove](#font-colorgreyfont--thingxtimerremove)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.removeAll](#font-colorgreyfont--thingxtimerremoveall)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.get](#font-colorgreyfont--thingxtimerget)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.getAll](#font-colorgreyfont--thingxtimergetall)
 <!-- /code_chunk_output -->
 
-### 系统全局调度器(THINGX.Timer)
+###  *<a href="#"><font color="grey">#</font></a>*  解构(THINGX.Timer)
 > THINGX.Timer:namespace
 ```javascript
 
@@ -51,7 +51,7 @@
                 
 ```
 
-##### *<a href="#">#</a>* THINGX.Timer.addInterval
+###  *<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.addInterval
 > 添加重复(或循环)执行定时器 THINGX.Timer.addInterval(callback:function,delay:number[,id:string,params:Array<any>])
 * 参数
   ||||||
@@ -85,7 +85,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Timer.addTimeout
+###  *<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.addTimeout
 > 添加一次执行定时器 THINGX.Timer.addTimeout(callback:function,delay:number[,id:string,params:Array<any>])
 * 参数
   ||||||
@@ -121,7 +121,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Timer.remove
+###  *<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.remove
 > 移除特定(指定)定时器 THINGX.Timer.remove(id:string)
 * 参数
   ||||||
@@ -140,7 +140,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Timer.removeAll
+###  *<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.removeAll
 > 移除Timer调度器内所有定时器 THINGX.Timer.removeAll()
 <!-- * 参数: 无
 * 类型: 无 -->
@@ -153,7 +153,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Timer.get
+###  *<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.get
 > 获取特定定时器实例  THINGX.Timer.get(id):Instance||null   
 * 参数
   ||||||
@@ -174,7 +174,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Timer.getAll
+###  *<a href="#"><font color="grey">#</font></a>*  THINGX.Timer.getAll
 > 获取Timer调度器内所有定时器 THINGX.Timer.getAll()
 * 类型: Array.<Instance> （Timer: Type Definitions）
 * 示例
