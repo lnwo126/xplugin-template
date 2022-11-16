@@ -2,16 +2,16 @@
 
 <!-- code_chunk_output -->
 
-- [*<a href="#"><font color="grey">#</font></a>* 解构(THINGX.Utils)](#font-colorgreyfont-解构thingxutils)
-- [数据请求库(THINGX.Utils.Http)](#数据请求库thingxutilshttp)
-  - [*<a href="#"><font color="grey">#</font></a>* THINGX.Utils.Http.get](#font-colorgreyfont-thingxutilshttpget)
-  - [*<a href="#"><font color="grey">#</font></a>* THINGX.Utils.Http.post](#font-colorgreyfont-thingxutilshttppost)
-- [空间计算库(THINGX.Utils.Space)](#空间计算库thingxutilsspace)
-  - [*<a href="#"><font color="grey">#</font></a>* THINGX.Utils.Space.queryBySphere](#font-colorgreyfont-thingxutilsspacequerybysphere)
+- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.Utils)](#font-colorgreynamespacefont-解构thingxutils)
+- [*<a><font color="grey">Namespace</font></a>* 数据请求库(THINGX.Utils.Http)](#font-colorgreynamespacefont-数据请求库thingxutilshttp)
+  - [*<a><font color="grey">Method</font></a>* THINGX.Utils.Http.get](#font-colorgreymethodfont-thingxutilshttpget)
+  - [*<a><font color="grey">Method</font></a>* THINGX.Utils.Http.post](#font-colorgreymethodfont-thingxutilshttppost)
+- [*<a><font color="grey">Namespace</font></a>* 空间计算库(THINGX.Utils.Space)](#font-colorgreynamespacefont-空间计算库thingxutilsspace)
+  - [*<a><font color="grey">Method</font></a>* THINGX.Utils.Space.queryBySphere](#font-colorgreymethodfont-thingxutilsspacequerybysphere)
 
 <!-- /code_chunk_output -->
 
-###  *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.Utils)
+###  *<a><font color="grey">Namespace</font></a>* 解构(THINGX.Utils)
 > THINGX.Utils:namespace
 ```javascript
     //系统工具命名空间下暂无具体实现
@@ -27,7 +27,7 @@
 
 ```
 
-### 数据请求库(THINGX.Utils.Http)
+###  *<a><font color="grey">Namespace</font></a>* 数据请求库(THINGX.Utils.Http)
 > THINGX.Utils.Http:namespace
 ```javascript
 
@@ -51,7 +51,7 @@
     
 ```
 
-#### *<a href="#"><font color="grey">#</font></a>* THINGX.Utils.Http.get
+#### *<a><font color="grey">Method</font></a>* THINGX.Utils.Http.get
 > HTTP GET请求, THINGX.Utils.Http.get(url, data, config):Promise
 * 参数
   ||||||
@@ -88,7 +88,7 @@
     ```
     ***
 
-#### *<a href="#"><font color="grey">#</font></a>* THINGX.Utils.Http.post
+#### *<a><font color="grey">Method</font></a>* THINGX.Utils.Http.post
 > HTTP GET请求, THINGX.Utils.Http.get(url, data, config):Promise
 * 参数
   ||||||
@@ -125,7 +125,7 @@
     ***
 
 
-### 空间计算库(THINGX.Utils.Space)
+###  *<a><font color="grey">Namespace</font></a>* 空间计算库(THINGX.Utils.Space)
 > THINGX.Utils.Space:namespace
 ```javascript
 
@@ -142,7 +142,7 @@
     
 ```
 
-#### *<a href="#"><font color="grey">#</font></a>* THINGX.Utils.Space.queryBySphere
+#### *<a><font color="grey">Method</font></a>* THINGX.Utils.Space.queryBySphere
 > 查询计算空间对象, THINGX.Utils.Space.queryBySphere(filter, center, radius [, queryLevel]):THING.Selector
 * 参数
   ||||||

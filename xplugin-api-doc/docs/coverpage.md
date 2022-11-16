@@ -2,7 +2,7 @@
 
 > 阅读便捷的插件开发API文档 for [ThingJS-X 系统](https://x.thingjs.com/)
 
-- author zhangguang@uino.com
+- author ThingJS-X 团队
 - copyrights © 2022 北京优锘科技有限公司
 
 [快速开始](README.md)

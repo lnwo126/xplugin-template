@@ -13,7 +13,7 @@
 
 
 
-### *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.Alarm)
+### *<a><font color="grey">Namespace</font></a>* 解构(THINGX.Alarm)
 > THINGX.Alarm:namespace
 ```javascript
 
@@ -126,7 +126,7 @@
 ```
 
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.Alarm.isInitialized
+### *<a><font color="grey">Method</font></a>* THINGX.Alarm.isInitialized
 > 告警系统是否初始化完成, THINGX.Alarm.isInitialized():boolean
  
 * 类型: boolean
@@ -143,7 +143,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.Alarm.activate
+### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.activate
 > 激活告警系统, THINGX.Alarm.activate([purpose:string]):boolean
 * 参数
   ||||||
@@ -164,7 +164,7 @@
     ```
     ***
    
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.Alarm.deactivate
+### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.deactivate
 > 取消激活告警系统, THINGX.Alarm.deactivate([purpose:string]):boolean
 * 参数
   ||||||
@@ -185,7 +185,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.Alarm.isActivated
+### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.isActivated
 > 告警系统是否激活  , THINGX.Alarm.isActivated():boolean
 
 * 类型: boolean
@@ -202,7 +202,7 @@
     ***
 
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.Alarm.getPurposes
+### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.getPurposes
 > 获取已存在的激活告警系统的目的  , THINGX.Alarm.getPurposes():Array.<string>
 
 * 类型: boolean
@@ -218,7 +218,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.Alarm.refresh
+### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.refresh
 > 立即进行一次告警请求并刷新告警数据 , THINGX.Alarm.refresh():void 
 
 * 类型: void
@@ -233,7 +233,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.Alarm.getHighestOnDigitalTwin
+### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.getHighestOnDigitalTwin
 > 获取孪生体上最高告警级别数据, THINGX.Alarm.getHighestOnDigitalTwin(digitalTwin, isTraverse:boolean):object
 * 参数
   ||||||
@@ -261,7 +261,7 @@
     ***
 
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.Alarm.getLevelConfig
+### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.getLevelConfig
 > 获取告警级别配置   , THINGX.Alarm.getLevelConfig():Map.<level:number, THINGX.Alarm.LevelItemConfig>
 
 * 类型: Map.<level:number, THINGX.Alarm.LevelItemConfig>
@@ -281,7 +281,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.Alarm.getRequestConfig
+### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.getRequestConfig
 > 获取告警查询配置   , THINGX.Alarm.getRequestConfig():THINGX.Alarm.RequestConfig
 
 * 类型: THINGX.Alarm.RequestConfig
@@ -297,7 +297,7 @@
 
     ```
     ***
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.Alarm.setRequestConfig
+### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.setRequestConfig
 > 设置告警查询配置   , THINGX.Alarm.setRequestConfig(config:THINGX.Alarm.RequestConfig [, isRemoteData:boolean]):void
 * 参数
   ||||||
@@ -329,7 +329,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.Alarm.setRequestInterface
+### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.setRequestInterface
 > 替换系统默认告警接口 , THINGX.Alarm.setRequestInterface(func):void
 * 参数
   ||||||

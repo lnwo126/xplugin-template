@@ -3,15 +3,15 @@
 <!-- code_chunk_output -->
 
 - [ThingJS-X API 事件列表(48+1个)](#thingjs-x-api-事件列表481个)
-    - [*<a href="#"><font color="grey">#</font></a>* 告警事件 THING.EventType.XAlarm](#font-colorgreyfont-告警事件-thingeventtypexalarm)
-    - [*<a href="#"><font color="grey">#</font></a>* 监控事件 THING.EventType.XMonitor](#font-colorgreyfont-监控事件-thingeventtypexmonitor)
-    - [*<a href="#"><font color="grey">#</font></a>* 标记事件 THING.EventType.XMarker](#font-colorgreyfont-标记事件-thingeventtypexmarker)
-    - [*<a href="#"><font color="grey">#</font></a>* 孪生体事件 THING.EventType.XDigitalTwin](#font-colorgreyfont-孪生体事件-thingeventtypexdigitaltwin)
-    - [*<a href="#"><font color="grey">#</font></a>* 系统加载完成事件 THING.EventType.XLoad](#font-colorgreyfont-系统加载完成事件-thingeventtypexload)
-    - [*<a href="#"><font color="grey">#</font></a>* 系统层级事件 THING.EventType.XLevel](#font-colorgreyfont-系统层级事件-thingeventtypexlevel)
-    - [*<a href="#"><font color="grey">#</font></a>* 业务事件 THING.EventType.XBusiness](#font-colorgreyfont-业务事件-thingeventtypexbusiness)
-    - [*<a href="#"><font color="grey">#</font></a>* 图层事件 THING.EventType.XLayer](#font-colorgreyfont-图层事件-thingeventtypexlayer)
-    - [*<a href="#"><font color="grey">#</font></a>* 场景控制事件 THING.EventType.XSceneControl](#font-colorgreyfont-场景控制事件-thingeventtypexscenecontrol)
+    - [*<a><font color="grey">Event</font></a>* 告警事件 THING.EventType.XAlarm](#font-colorgreyeventfont-告警事件-thingeventtypexalarm)
+    - [*<a><font color="grey">Event</font></a>* 监控事件 THING.EventType.XMonitor](#font-colorgreyeventfont-监控事件-thingeventtypexmonitor)
+    - [*<a><font color="grey">Event</font></a>* 标记事件 THING.EventType.XMarker](#font-colorgreyeventfont-标记事件-thingeventtypexmarker)
+    - [*<a><font color="grey">Event</font></a>* 孪生体事件 THING.EventType.XDigitalTwin](#font-colorgreyeventfont-孪生体事件-thingeventtypexdigitaltwin)
+    - [*<a><font color="grey">Event</font></a>* 系统加载完成事件 THING.EventType.XLoad](#font-colorgreyeventfont-系统加载完成事件-thingeventtypexload)
+    - [*<a><font color="grey">Event</font></a>* 系统层级事件 THING.EventType.XLevel](#font-colorgreyeventfont-系统层级事件-thingeventtypexlevel)
+    - [*<a><font color="grey">Event</font></a>* 业务事件 THING.EventType.XBusiness](#font-colorgreyeventfont-业务事件-thingeventtypexbusiness)
+    - [*<a><font color="grey">Event</font></a>* 图层事件 THING.EventType.XLayer](#font-colorgreyeventfont-图层事件-thingeventtypexlayer)
+    - [*<a><font color="grey">Event</font></a>* 场景控制事件 THING.EventType.XSceneControl](#font-colorgreyeventfont-场景控制事件-thingeventtypexscenecontrol)
 
 <!-- /code_chunk_output -->
 # ThingJS-X API 事件列表(48+1个)
@@ -21,7 +21,7 @@
     //ThingJS-X API 命名空间为 THINGX
 ```
 
-### *<a href="#"><font color="grey">#</font></a>* 告警事件 THING.EventType.XAlarm 
+### *<a><font color="grey">Event</font></a>* 告警事件 THING.EventType.XAlarm 
 
 ```javascript
 
@@ -129,7 +129,7 @@
 
 
 
-### *<a href="#"><font color="grey">#</font></a>* 监控事件 THING.EventType.XMonitor 
+### *<a><font color="grey">Event</font></a>* 监控事件 THING.EventType.XMonitor 
 
 ```javascript
 
@@ -195,7 +195,7 @@
 ```
 
 
-### *<a href="#"><font color="grey">#</font></a>* 标记事件 THING.EventType.XMarker 
+### *<a><font color="grey">Event</font></a>* 标记事件 THING.EventType.XMarker 
 
 ```javascript
 
@@ -238,7 +238,7 @@
 
 
 
-### *<a href="#"><font color="grey">#</font></a>* 孪生体事件 THING.EventType.XDigitalTwin 
+### *<a><font color="grey">Event</font></a>* 孪生体事件 THING.EventType.XDigitalTwin 
 
 ```javascript
 
@@ -303,7 +303,7 @@
 
 
 
-### *<a href="#"><font color="grey">#</font></a>* 系统加载完成事件 THING.EventType.XLoad 
+### *<a><font color="grey">Event</font></a>* 系统加载完成事件 THING.EventType.XLoad 
 
 ```javascript
 
@@ -323,7 +323,7 @@
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>* 系统层级事件 THING.EventType.XLevel 
+### *<a><font color="grey">Event</font></a>* 系统层级事件 THING.EventType.XLevel 
 
 ```javascript
 
@@ -363,7 +363,7 @@
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>* 业务事件 THING.EventType.XBusiness 
+### *<a><font color="grey">Event</font></a>* 业务事件 THING.EventType.XBusiness 
 
 ```javascript
 
@@ -471,7 +471,7 @@
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>* 图层事件 THING.EventType.XLayer 
+### *<a><font color="grey">Event</font></a>* 图层事件 THING.EventType.XLayer 
 
 ```javascript
 
@@ -571,7 +571,7 @@
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>* 场景控制事件 THING.EventType.XSceneControl 
+### *<a><font color="grey">Event</font></a>* 场景控制事件 THING.EventType.XSceneControl 
 
 ```javascript
 

@@ -2,27 +2,27 @@
 
 <!-- code_chunk_output -->
 
-- [*<a href="#"><font color="grey">#</font></a>* 解构(THINGX.System)](#font-colorgreyfont-解构thingxsystem)
-- [系统版本库(THINGX.System.Version)](#系统版本库thingxsystemversion)
-  - [*<a href="#"><font color="red">#</font></a>* THINGX.System.Version.成员属性](#font-colorredfont-thingxsystemversion成员属性)
-- [系统资源库(THINGX.System.Resource)](#系统资源库thingxsystemresource)
-  - [*<a href="#"><font color="red">#</font></a>* THINGX.System.Resource.成员属性](#font-colorredfont-thingxsystemresource成员属性)
-- [系统加载控制库(THINGX.System.Loading)](#系统加载控制库thingxsystemloading)
-  - [*<a href="#" ><font color="grey">#</font></a>* THINGX.System.Loading.show](#font-colorgreyfont-thingxsystemloadingshow)
-  - [*<a href="#" ><font color="grey">#</font></a>* THINGX.System.Loading.hide](#font-colorgreyfont-thingxsystemloadinghide)
-- [系统提示信息库(THINGX.System.Message)](#系统提示信息库thingxsystemmessage)
-  - [*<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.setConfig](#font-colorgreyfont-thingxsystemmessagesetconfig)
-  - [*<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.info](#font-colorgreyfont-thingxsystemmessageinfo)
-  - [*<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.success](#font-colorgreyfont-thingxsystemmessagesuccess)
-  - [*<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.warning](#font-colorgreyfont-thingxsystemmessagewarning)
-  - [*<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.error](#font-colorgreyfont-thingxsystemmessageerror)
-  - [*<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.loading](#font-colorgreyfont-thingxsystemmessageloading)
-  - [*<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.destory](#font-colorgreyfont-thingxsystemmessagedestory)
+- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.System)](#font-colorgreynamespacefont-解构thingxsystem)
+- [*<a><font color="grey">Namespace</font></a>* 系统版本库(THINGX.System.Version)](#font-colorgreynamespacefont-系统版本库thingxsystemversion)
+  - [*<a><font color="red">Members</font></a>* THINGX.System.Version.成员属性](#font-colorredmembersfont-thingxsystemversion成员属性)
+- [*<a><font color="grey">Namespace</font></a>* 系统资源库(THINGX.System.Resource)](#font-colorgreynamespacefont-系统资源库thingxsystemresource)
+  - [*<a><font color="red">Members</font></a>* THINGX.System.Resource.成员属性](#font-colorredmembersfont-thingxsystemresource成员属性)
+- [*<a><font color="grey">Namespace</font></a>* 系统加载控制库(THINGX.System.Loading)](#font-colorgreynamespacefont-系统加载控制库thingxsystemloading)
+  - [*<a><font color="grey">Method</font></a>* THINGX.System.Loading.show](#font-colorgreymethodfont-thingxsystemloadingshow)
+  - [*<a><font color="grey">Method</font></a>* THINGX.System.Loading.hide](#font-colorgreymethodfont-thingxsystemloadinghide)
+- [*<a><font color="grey">Namespace</font></a>* 系统提示信息库(THINGX.System.Message)](#font-colorgreynamespacefont-系统提示信息库thingxsystemmessage)
+  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.setConfig](#font-colorgreymethodfont-thingxsystemmessagesetconfig)
+  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.info](#font-colorgreymethodfont-thingxsystemmessageinfo)
+  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.success](#font-colorgreymethodfont-thingxsystemmessagesuccess)
+  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.warning](#font-colorgreymethodfont-thingxsystemmessagewarning)
+  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.error](#font-colorgreymethodfont-thingxsystemmessageerror)
+  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.loading](#font-colorgreymethodfont-thingxsystemmessageloading)
+  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.destory](#font-colorgreymethodfont-thingxsystemmessagedestory)
 
 <!-- /code_chunk_output -->
 
 
-### *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.System)
+### *<a><font color="grey">Namespace</font></a>* 解构(THINGX.System)
 > THINGX.System:namespace
 ```javascript
     //系统环境命名空间下暂无具体实现
@@ -41,7 +41,7 @@
             - THINGX.System.Message
 
 ```
-###  系统版本库(THINGX.System.Version)
+### *<a><font color="grey">Namespace</font></a>* 系统版本库(THINGX.System.Version)
 > THINGX.System.Version:namespace
 ```javascript
 
@@ -57,7 +57,7 @@
             - geo:string        版本号(地图) ???? thingjs geo
     
 ```
-#### *<a href="#"><font color="red">#</font></a>* THINGX.System.Version.成员属性
+#### *<a><font color="red">Members</font></a>* THINGX.System.Version.成员属性
 > 获取应用系统版本属性
 * 类型: string
 * 示例
@@ -90,7 +90,7 @@
     ```
     ***
 
-###  系统资源库(THINGX.System.Resource)
+### *<a><font color="grey">Namespace</font></a>* 系统资源库(THINGX.System.Resource)
 > THINGX.System.Resource:namespace
 ```javascript
 
@@ -108,7 +108,7 @@
             - relativeRootWithDomain:string         //根资源相对地址（用户域）
 ```
 
-#### *<a href="#"><font color="red">#</font></a>* THINGX.System.Resource.成员属性
+#### *<a><font color="red">Members</font></a>* THINGX.System.Resource.成员属性
 > 获取应用系统资源属性成员
 * 类型: string
 * 示例
@@ -144,7 +144,7 @@
 
 
 
-### 系统加载控制库(THINGX.System.Loading)
+### *<a><font color="grey">Namespace</font></a>* 系统加载控制库(THINGX.System.Loading)
 > THINGX.System.Loading:namespace
 ```javascript
 
@@ -158,7 +158,7 @@
             - hide():void                       //隐藏并销毁系统loading ui
 
 ```
-#### *<a href="#" ><font color="grey">#</font></a>* THINGX.System.Loading.show
+#### *<a><font color="grey">Method</font></a>* THINGX.System.Loading.show
 > 创建并显示系统加载进度UI THINGX.System.Loading.show([url] [,type]):void
 * 参数
   ||||||
@@ -177,7 +177,7 @@
 
     ***
 
-#### *<a href="#" ><font color="grey">#</font></a>* THINGX.System.Loading.hide
+#### *<a><font color="grey">Method</font></a>* THINGX.System.Loading.hide
 > 隐藏并销毁系统加载进度的UI效果 THINGX.System.Loading.hide():void
 * 类型: void
 * 示例
@@ -189,7 +189,7 @@
     ```
     ***
 
-### 系统提示信息库(THINGX.System.Message)
+### *<a><font color="grey">Namespace</font></a>* 系统提示信息库(THINGX.System.Message)
 > THINGX.System.Message:namespace
 ```javascript
 
@@ -223,7 +223,7 @@
 
 ```
 
-#### *<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.setConfig
+#### *<a><font color="grey">Method</font></a>* THINGX.System.Message.setConfig
 > 配置全局信息提示 THINGX.System.Message.setConfig(config:Config):void
 * 参数 (Type Definitions Config || string)
   ||||||
@@ -253,7 +253,7 @@
     ```
     ***
 
-#### *<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.info
+#### *<a><font color="grey">Method</font></a>* THINGX.System.Message.info
 > 显示提示信息 THINGX.System.Message.info(config:Config||string):void
 * 参数 (Type Definitions Config||string)
   ||||||
@@ -285,7 +285,7 @@
     ```
     ***
 
-#### *<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.success
+#### *<a><font color="grey">Method</font></a>* THINGX.System.Message.success
 > 显示提示成功信息 THINGX.System.Message.success(config:Config||string):void
 * 参数 (Type Definitions Config||string)
   ||||||
@@ -317,7 +317,7 @@
     ```
     ***
 
-#### *<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.warning
+#### *<a><font color="grey">Method</font></a>* THINGX.System.Message.warning
 > 显示提示警告信息 THINGX.System.Message.warning(config:Config||string):void
 * 参数 (Type Definitions Config||string)
   ||||||
@@ -349,7 +349,7 @@
     ```
     ***
 
-#### *<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.error
+#### *<a><font color="grey">Method</font></a>* THINGX.System.Message.error
 > 显示提示错误信息 THINGX.System.Message.error(config:Config||string):void
 * 参数 (Type Definitions Config||string)
   ||||||
@@ -383,7 +383,7 @@
 
 
 
-#### *<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.loading
+#### *<a><font color="grey">Method</font></a>* THINGX.System.Message.loading
 > 显示提示加载信息 THINGX.System.Message.loading(config:Config||string):void
 * 参数 (Type Definitions Config||string)
   ||||||
@@ -415,7 +415,7 @@
     ```
     ***
 
-#### *<a href="#" ><font color="grey">#</font></a>* THINGX.System.Message.destory
+#### *<a><font color="grey">Method</font></a>* THINGX.System.Message.destory
 > 销毁当前生效中的提示框 THINGX.System.Message.destory():void 
 * 类型: void
 * 示例

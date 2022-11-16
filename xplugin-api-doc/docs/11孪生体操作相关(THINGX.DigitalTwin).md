@@ -2,27 +2,27 @@
 
 <!-- code_chunk_output -->
 
-- [*<a href="#"><font color="grey">#</font></a>* 解构(THINGX.DigitalTwin)](#font-colorgreyfont-解构thingxdigitaltwin)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.load](#font-colorgreyfont--thingxdigitaltwinload)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.show](#font-colorgreyfont--thingxdigitaltwinshow)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hide](#font-colorgreyfont--thingxdigitaltwinhide)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hasShowPurpose](#font-colorgreyfont--thingxdigitaltwinhasshowpurpose)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.showWithSmoothAnimation](#font-colorgreyfont--thingxdigitaltwinshowwithsmoothanimation)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hideWithSmoothAnimation](#font-colorgreyfont--thingxdigitaltwinhidewithsmoothanimation)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.addColor](#font-colorgreyfont--thingxdigitaltwinaddcolor)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.removeColor](#font-colorgreyfont--thingxdigitaltwinremovecolor)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.addOpacity](#font-colorgreyfont--thingxdigitaltwinaddopacity)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.removeOpacity](#font-colorgreyfont--thingxdigitaltwinremoveopacity)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.showPanel](#font-colorgreyfont--thingxdigitaltwinshowpanel)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hidePanel](#font-colorgreyfont--thingxdigitaltwinhidepanel)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.activateTabOnPanel](#font-colorgreyfont--thingxdigitaltwinactivatetabonpanel)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getActivatedTabOnPanel](#font-colorgreyfont--thingxdigitaltwingetactivatedtabonpanel)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getActivatedTabIndexOnPanel](#font-colorgreyfont--thingxdigitaltwingetactivatedtabindexonpanel)
-- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getDistanceToCamera](#font-colorgreyfont--thingxdigitaltwingetdistancetocamera)
+- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.DigitalTwin)](#font-colorgreynamespacefont-解构thingxdigitaltwin)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.load](#font-colorgreymethodfont--thingxdigitaltwinload)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.show](#font-colorgreymethodfont--thingxdigitaltwinshow)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.hide](#font-colorgreymethodfont--thingxdigitaltwinhide)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.hasShowPurpose](#font-colorgreymethodfont--thingxdigitaltwinhasshowpurpose)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.showWithSmoothAnimation](#font-colorgreymethodfont--thingxdigitaltwinshowwithsmoothanimation)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.hideWithSmoothAnimation](#font-colorgreymethodfont--thingxdigitaltwinhidewithsmoothanimation)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.addColor](#font-colorgreymethodfont--thingxdigitaltwinaddcolor)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.removeColor](#font-colorgreymethodfont--thingxdigitaltwinremovecolor)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.addOpacity](#font-colorgreymethodfont--thingxdigitaltwinaddopacity)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.removeOpacity](#font-colorgreymethodfont--thingxdigitaltwinremoveopacity)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.showPanel](#font-colorgreymethodfont--thingxdigitaltwinshowpanel)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.hidePanel](#font-colorgreymethodfont--thingxdigitaltwinhidepanel)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.activateTabOnPanel](#font-colorgreymethodfont--thingxdigitaltwinactivatetabonpanel)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.getActivatedTabOnPanel](#font-colorgreymethodfont--thingxdigitaltwingetactivatedtabonpanel)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.getActivatedTabIndexOnPanel](#font-colorgreymethodfont--thingxdigitaltwingetactivatedtabindexonpanel)
+- [*<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.getDistanceToCamera](#font-colorgreymethodfont--thingxdigitaltwingetdistancetocamera)
 
 <!-- /code_chunk_output -->
 
-### *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.DigitalTwin)
+### *<a><font color="grey">Namespace</font></a>* 解构(THINGX.DigitalTwin)
 > THINGX.DigitalTwin:namespace
 ```javascript
     //应用系统针对孪生体操作提供的相关能力
@@ -63,7 +63,7 @@
 ```
 
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.load
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.load
 > 加载孪生体资源, THINGX.DigitalTwin.load(DigitalTwin [, isShow]):Promise.<Array.<THING.BaseObject>>
 
 * 参数
@@ -84,7 +84,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.show
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.show
 > 显示孪生体, THINGX.DigitalTwin.show(DigitalTwin [, purpose]):Array.<THING.BaseObject> 
 
 * 参数
@@ -105,7 +105,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hide
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.hide
 > 隐藏孪生体, THINGX.DigitalTwin.hide(DigitalTwin [, purpose]):Array.<THING.BaseObject> 
 
 * 参数
@@ -126,7 +126,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hasShowPurpose
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.hasShowPurpose
 > 判断孪生体是否带有某个显示目的, THINGX.DigitalTwin.hasShowPurpose(DigitalTwin [, purpose]):boolean
 
 * 参数
@@ -148,7 +148,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.showWithSmoothAnimation
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.showWithSmoothAnimation
 > 显示孪生体(带动画效果), THINGX.DigitalTwin.showWithSmoothAnimation(DigitalTwin,[,Config] [, purpose]):Promise.<Array.<THING.BaseObject>> 
 
 * 参数
@@ -170,7 +170,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hideWithSmoothAnimation
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.hideWithSmoothAnimation
 > 隐藏孪生体(带动画效果), THINGX.DigitalTwin.hideWithSmoothAnimation(DigitalTwin,[,Config] [, purpose]):Promise.<Array.<THING.BaseObject>>
 
 * 参数
@@ -194,7 +194,7 @@
 
 
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.addColor
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.addColor
 > 添加颜色到孪生体色栈中, THINGX.DigitalTwin.addColor(DigitalTwin, purpose, color [, priority] [, traverse] [, intensity]):Array.<THING.BaseObject>
 
 * 参数
@@ -219,7 +219,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.removeColor
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.removeColor
 > 从孪生体色栈中移除指定颜色, THINGX.DigitalTwin.removeColor(DigitalTwin, purpose, traverse)Array.<THING.BaseObject> 
 
 * 参数
@@ -241,7 +241,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.addOpacity
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.addOpacity
 > 添加透明度到孪生体透明栈中, THINGX.DigitalTwin.addOpacity(DigitalTwin, purpose, opacity [, priority] [, traverse] [, ignoreTag]):Array.<THING.BaseObject>
 
 * 参数
@@ -267,7 +267,7 @@
     ***
 
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.removeOpacity
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.removeOpacity
 > 从孪生体透明栈中移除指定目的的透明度, THINGX.DigitalTwin.removeOpacity(DigitalTwin, purpose [, traverse] [, ignoreTag]):Array.<THING.BaseObject>
 
 * 参数
@@ -290,7 +290,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.showPanel
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.showPanel
 > 显示孪生体面板, THINGX.DigitalTwin.showPanel(DigitalTwin):void 
 
 * 参数
@@ -312,7 +312,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hidePanel
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.hidePanel
 > 隐藏孪生体面板, THINGX.DigitalTwin.hidePanel(DigitalTwin):void
 
 * 参数
@@ -334,7 +334,7 @@
     ```
     ***   
 
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.activateTabOnPanel
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.activateTabOnPanel
 > 激活当前孪生体面板上(指定)的tab页签, THINGX.DigitalTwin.activateTabOnPanel(name):void
 
 * 参数
@@ -353,7 +353,7 @@
         //TODO 
     ```
     ***   
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getActivatedTabOnPanel
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.getActivatedTabOnPanel
 > 获取当前在孪生体面板上激活的tab页签名称 , THINGX.DigitalTwin.getActivatedTabOnPanel():string
 * 类型:string
 * 示例
@@ -366,7 +366,7 @@
         //TODO 
     ```
     ***   
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getActivatedTabIndexOnPanel
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.getActivatedTabIndexOnPanel
 > 获取当前在孪生体面板上激活的tab页签索引 , THINGX.DigitalTwin.getActivatedTabIndexOnPanel():number
 * 类型:number
 * 示例
@@ -379,7 +379,7 @@
         //TODO 
     ```
     ***   
-### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getDistanceToCamera
+### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.getDistanceToCamera
 > 计算孪生体到摄像机的距离, getDistanceToCamera(digitalTwin, isRecursive):number
 
 * 参数

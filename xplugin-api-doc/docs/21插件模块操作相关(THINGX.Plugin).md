@@ -2,22 +2,22 @@
 
 <!-- code_chunk_output -->
 
-- [插件模块操作相关(THINGX.Plugin)](#插件模块操作相关thingxplugin)
-    - [*#* THINGX.Plugin.getPluginSetWithType](#-thingxplugingetpluginsetwithtype)
-    - [*#* THINGX.Plugin.getPluginsWithType](#-thingxplugingetpluginswithtype)
-    - [*#* THINGX.Plugin.getPluginWithTypeAndName](#-thingxplugingetpluginwithtypeandname)
-    - [*#* THINGX.Plugin.getPluginWithInstanceId](#-thingxplugingetpluginwithinstanceid)
-    - [*#* THINGX.Plugin.showViewWithInstanceId](#-thingxpluginshowviewwithinstanceid)
-    - [*#* THINGX.Plugin.hideViewWithInstanceId](#-thingxpluginhideviewwithinstanceid)
-    - [*#* THINGX.Plugin.activateWithInstanceId](#-thingxpluginactivatewithinstanceid)
-    - [*#* THINGX.Plugin.deactivateWithInstanceId](#-thingxplugindeactivatewithinstanceid)
-    - [*#* THINGX.Plugin.getDigitalTwinsWithConfigData](#-thingxplugingetdigitaltwinswithconfigdata)
-    - [*#* THINGX.Plugin.BasePlugin](#-thingxpluginbaseplugin)
-    - [*#* THINGX.Plugin.BasePluginSet](#-thingxpluginbasepluginset)
+- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.Plugin)](#font-colorgreynamespacefont-解构thingxplugin)
+- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginSetWithType](#font-colorgreymethodfont-thingxplugingetpluginsetwithtype)
+- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginsWithType](#font-colorgreymethodfont-thingxplugingetpluginswithtype)
+- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginWithTypeAndName](#font-colorgreymethodfont-thingxplugingetpluginwithtypeandname)
+- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginWithInstanceId](#font-colorgreymethodfont-thingxplugingetpluginwithinstanceid)
+- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.showViewWithInstanceId](#font-colorgreymethodfont-thingxpluginshowviewwithinstanceid)
+- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.hideViewWithInstanceId](#font-colorgreymethodfont-thingxpluginhideviewwithinstanceid)
+- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.activateWithInstanceId](#font-colorgreymethodfont-thingxpluginactivatewithinstanceid)
+- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.deactivateWithInstanceId](#font-colorgreymethodfont-thingxplugindeactivatewithinstanceid)
+- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.getDigitalTwinsWithConfigData](#font-colorgreymethodfont-thingxplugingetdigitaltwinswithconfigdata)
+- [*<a><font color="grey">Class</font></a>* THINGX.Plugin.BasePlugin](#font-colorgreyclassfont-thingxpluginbaseplugin)
+- [*<a><font color="grey">Class</font></a>* THINGX.Plugin.BasePluginSet](#font-colorgreyclassfont-thingxpluginbasepluginset)
 
 <!-- /code_chunk_output -->
 
-### 插件模块操作相关(THINGX.Plugin)
+### *<a><font color="grey">Namespace</font></a>* 解构(THINGX.Plugin)
 > THINGX.Plugin:namespace
 ```javascript
     //应用系统针对系统插件模块的相关操作能力
@@ -68,7 +68,7 @@
 ```
 
 
-##### *<a href="#">#</a>* THINGX.Plugin.getPluginSetWithType
+### *<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginSetWithType
 > 通过插件类型获取插件集合, THINGX.Plugin.getPluginSetWithType(type:string):BasePluginSet
 
 * 参数
@@ -91,7 +91,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Plugin.getPluginsWithType
+### *<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginsWithType
 > 通过插件类型获取插件列表, THINGX.Plugin.getPluginsWithType(type:string):Array.<BasePlugin>
 
 * 参数
@@ -112,7 +112,7 @@
 
     ```
     ***
-##### *<a href="#">#</a>* THINGX.Plugin.getPluginWithTypeAndName
+### *<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginWithTypeAndName
 > 通过插件类型和名称获取插件, THINGX.Plugin.getPluginWithTypeAndName(type:string, name:string):BasePlugin
 
 * 参数
@@ -135,7 +135,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Plugin.getPluginWithInstanceId
+### *<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginWithInstanceId
 > 通过插件实例ID获取插件, THINGX.Plugin.getPluginWithInstanceId(uuid:string):BasePlugin
 
 * 参数
@@ -156,7 +156,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Plugin.showViewWithInstanceId
+### *<a><font color="grey">Method</font></a>* THINGX.Plugin.showViewWithInstanceId
 > 通过插件实例ID显示插件界面, THINGX.Plugin.showViewWithInstanceId(uuid):void
 
 * 参数
@@ -176,7 +176,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Plugin.hideViewWithInstanceId
+### *<a><font color="grey">Method</font></a>* THINGX.Plugin.hideViewWithInstanceId
 > 通过插件实例ID隐藏插件界面, THINGX.Plugin.hideViewWithInstanceId(uuid):void
 
 * 参数
@@ -196,7 +196,7 @@
     ```
     ***
   
-##### *<a href="#">#</a>* THINGX.Plugin.activateWithInstanceId
+### *<a><font color="grey">Method</font></a>* THINGX.Plugin.activateWithInstanceId
 > 通过插件实例ID取消激活插件, THINGX.Plugin.activateWithInstanceId(uuid):void
 
 * 参数
@@ -216,7 +216,7 @@
     ```
     ***  
   
-##### *<a href="#">#</a>* THINGX.Plugin.deactivateWithInstanceId
+### *<a><font color="grey">Method</font></a>* THINGX.Plugin.deactivateWithInstanceId
 > 通过插件实例ID取消激活插件, THINGX.Plugin.deactivateWithInstanceId(uuid):void
 
 * 参数
@@ -236,7 +236,7 @@
     ```
     ***  
 
-##### *<a href="#">#</a>* THINGX.Plugin.getDigitalTwinsWithConfigData
+### *<a><font color="grey">Method</font></a>* THINGX.Plugin.getDigitalTwinsWithConfigData
 > 通过元组件数据获取孪生体, THINGX.Plugin.getDigitalTwinsWithConfigData(values [, level] [, includeSelf] [, distinct]):Array.<THING.BaseObject> 
 
 * 参数
@@ -272,7 +272,7 @@
     ```
     ***  
 
-##### *<a href="#">#</a>* THINGX.Plugin.BasePlugin
+### *<a><font color="grey">Class</font></a>* THINGX.Plugin.BasePlugin
 > 插件基类, Class: THINGX.Plugin.BasePlugin   
 * 类型: Class
 * 示例
@@ -292,7 +292,7 @@
 
     ```
     ***  
-##### *<a href="#">#</a>* THINGX.Plugin.BasePluginSet
+### *<a><font color="grey">Class</font></a>* THINGX.Plugin.BasePluginSet
 > 插件集合, Class: THINGX.Plugin.BasePluginSet   
 * 类型: Class
 * 示例
@@ -305,8 +305,6 @@
             - getPluginWithName(name:string):THINGX.Plugin.BasePlugin  //通过插件实例名称获取插件
             - getPluginWithID(id:string):THINGX.Plugin.BasePlugin      //通过插件唯一标识获取插件
             - getPluginWithUuid(uuid:string):THINGX.Plugin.BasePlugin  //通过插件uuid获取插件
-
-
         // 获取插件实例后进行相关能力操作  result: THINGX.Plugin.BasePlugin
 
     ```

@@ -2,24 +2,24 @@
 
 <!-- code_chunk_output -->
 
-- [*<a href="#"><font color="grey">#</font></a>* 解构(THINGX.EventTag)](#font-colorgreyfont-解构thingxeventtag)
-- [*<a href="#"><font color="grey">#</font></a>*  孪生体选中事件 THING.EventType.Select](#font-colorgreyfont--孪生体选中事件-thingeventtypeselect)
-- [*<a href="#"><font color="grey">#</font></a>*  取消选中事件 THING.EventType.Deselect](#font-colorgreyfont--取消选中事件-thingeventtypedeselect)
-- [*<a href="#"><font color="grey">#</font></a>*  鼠标移入事件 THING.EventType.MouseEnter](#font-colorgreyfont--鼠标移入事件-thingeventtypemouseenter)
-- [*<a href="#"><font color="grey">#</font></a>*  鼠标移除事件 THING.EventType.MouseLeave](#font-colorgreyfont--鼠标移除事件-thingeventtypemouseleave)
-- [*<a href="#"><font color="grey">#</font></a>*  进入层级事件 THING.EventType.EnterLevel](#font-colorgreyfont--进入层级事件-thingeventtypeenterlevel)
-- [*<a href="#"><font color="grey">#</font></a>*  鼠标滚动事件 THING.EventType.MouseWheel](#font-colorgreyfont--鼠标滚动事件-thingeventtypemousewheel)
-- [*<a href="#"><font color="grey">#</font></a>*  鼠标按下事件 THING.EventType.MouseDown](#font-colorgreyfont--鼠标按下事件-thingeventtypemousedown)
-- [*<a href="#"><font color="grey">#</font></a>*  层级切换事件 THING.EventType.LevelChange](#font-colorgreyfont--层级切换事件-thingeventtypelevelchange)
-- [*<a href="#"><font color="grey">#</font></a>*  正向进入层级 THINGX.EventType.XEnterLevelForward](#font-colorgreyfont--正向进入层级-thingxeventtypexenterlevelforward)
-- [*<a href="#"><font color="grey">#</font></a>*  反向退出层级 THINGX.EventType.XLeaveLevelBackward](#font-colorgreyfont--反向退出层级-thingxeventtypexleavelevelbackward)
+- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.EventTag)](#font-colorgreynamespacefont-解构thingxeventtag)
+- [*<a><font color="grey">Tag</font></a>*  孪生体选中事件 THING.EventType.Select](#font-colorgreytagfont--孪生体选中事件-thingeventtypeselect)
+- [*<a><font color="grey">Tag</font></a>*   取消选中事件 THING.EventType.Deselect](#font-colorgreytagfont---取消选中事件-thingeventtypedeselect)
+- [*<a><font color="grey">Tag</font></a>*   鼠标移入事件 THING.EventType.MouseEnter](#font-colorgreytagfont---鼠标移入事件-thingeventtypemouseenter)
+- [*<a><font color="grey">Tag</font></a>*   鼠标移除事件 THING.EventType.MouseLeave](#font-colorgreytagfont---鼠标移除事件-thingeventtypemouseleave)
+- [*<a><font color="grey">Tag</font></a>*   进入层级事件 THING.EventType.EnterLevel](#font-colorgreytagfont---进入层级事件-thingeventtypeenterlevel)
+- [*<a><font color="grey">Tag</font></a>*   鼠标滚动事件 THING.EventType.MouseWheel](#font-colorgreytagfont---鼠标滚动事件-thingeventtypemousewheel)
+- [*<a><font color="grey">Tag</font></a>*   鼠标按下事件 THING.EventType.MouseDown](#font-colorgreytagfont---鼠标按下事件-thingeventtypemousedown)
+- [*<a><font color="grey">Tag</font></a>*   层级切换事件 THING.EventType.LevelChange](#font-colorgreytagfont---层级切换事件-thingeventtypelevelchange)
+- [*<a><font color="grey">Tag</font></a>*   正向进入层级 THINGX.EventType.XEnterLevelForward](#font-colorgreytagfont---正向进入层级-thingxeventtypexenterlevelforward)
+- [*<a><font color="grey">Tag</font></a>*   反向退出层级 THINGX.EventType.XLeaveLevelBackward](#font-colorgreytagfont---反向退出层级-thingxeventtypexleavelevelbackward)
 
 <!-- /code_chunk_output -->
 
 
 
 
-### *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.EventTag)
+### *<a><font color="grey">Namespace</font></a>* 解构(THINGX.EventTag)
 > THINGX.EventTag:namespace
 ```javascript
 
@@ -65,7 +65,7 @@
 ```
 
 
-### *<a href="#"><font color="grey">#</font></a>*  孪生体选中事件 THING.EventType.Select 
+### *<a><font color="grey">Tag</font></a>*  孪生体选中事件 THING.EventType.Select 
 
 ```javascript
          - XShowDigitalTwinPanel (显示孪生体面板标签) 
@@ -99,7 +99,7 @@
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>*  取消选中事件 THING.EventType.Deselect
+### *<a><font color="grey">Tag</font></a>*   取消选中事件 THING.EventType.Deselect
 
 ```javascript
     
@@ -127,7 +127,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 
 
-### *<a href="#"><font color="grey">#</font></a>*  鼠标移入事件 THING.EventType.MouseEnter
+### *<a><font color="grey">Tag</font></a>*   鼠标移入事件 THING.EventType.MouseEnter
 
 ```javascript
     
@@ -151,7 +151,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>*  鼠标移除事件 THING.EventType.MouseLeave
+### *<a><font color="grey">Tag</font></a>*   鼠标移除事件 THING.EventType.MouseLeave
 
 ```javascript
     
@@ -177,7 +177,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 ```
 
 
-### *<a href="#"><font color="grey">#</font></a>*  进入层级事件 THING.EventType.EnterLevel
+### *<a><font color="grey">Tag</font></a>*   进入层级事件 THING.EventType.EnterLevel
 
 ```javascript
     
@@ -201,7 +201,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>*  鼠标滚动事件 THING.EventType.MouseWheel
+### *<a><font color="grey">Tag</font></a>*   鼠标滚动事件 THING.EventType.MouseWheel
 
 ```javascript
         - XStopFly(停止飞行)
@@ -216,7 +216,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>*  鼠标按下事件 THING.EventType.MouseDown
+### *<a><font color="grey">Tag</font></a>*   鼠标按下事件 THING.EventType.MouseDown
 
 ```javascript
         - XStopFly(停止飞行)
@@ -231,7 +231,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>*  层级切换事件 THING.EventType.LevelChange
+### *<a><font color="grey">Tag</font></a>*   层级切换事件 THING.EventType.LevelChange
 
 ```javascript
         - XShowAlarmForBuilding(显示建筑告警)  
@@ -246,7 +246,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>*  正向进入层级 THINGX.EventType.XEnterLevelForward 
+### *<a><font color="grey">Tag</font></a>*   正向进入层级 THINGX.EventType.XEnterLevelForward 
 
 ```javascript
         - XSetBrotherRoomsTransparency(设置兄弟房间透明) 
@@ -300,7 +300,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 ```
 
 
-### *<a href="#"><font color="grey">#</font></a>*  反向退出层级 THINGX.EventType.XLeaveLevelBackward 
+### *<a><font color="grey">Tag</font></a>*   反向退出层级 THINGX.EventType.XLeaveLevelBackward 
 
 ```javascript
 

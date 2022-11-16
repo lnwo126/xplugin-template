@@ -2,21 +2,21 @@
 
 <!-- code_chunk_output -->
 
-- [*<a href="#"><font color="grey">#</font></a>* 解构(THINGX.Layer)](#font-colorgreyfont-解构thingxlayer)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.Layer.hide](#font-colorgreyfont-thingxlayerhide)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.Layer.show](#font-colorgreyfont-thingxlayershow)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.Layer.activate](#font-colorgreyfont-thingxlayeractivate)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.Layer.deactivate](#font-colorgreyfont-thingxlayerdeactivate)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.Layer.deactivateAll](#font-colorgreyfont-thingxlayerdeactivateall)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.Layer.refresh](#font-colorgreyfont-thingxlayerrefresh)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.Layer.getActivatedNames](#font-colorgreyfont-thingxlayergetactivatednames)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.Layer.getMutexsConfig](#font-colorgreyfont-thingxlayergetmutexsconfig)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.Layer.getPanelConfig](#font-colorgreyfont-thingxlayergetpanelconfig)
+- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.Layer)](#font-colorgreynamespacefont-解构thingxlayer)
+- [*<a><font color="grey">Method</font></a>* THINGX.Layer.hide](#font-colorgreymethodfont-thingxlayerhide)
+- [*<a><font color="grey">Method</font></a>* THINGX.Layer.show](#font-colorgreymethodfont-thingxlayershow)
+- [*<a><font color="grey">Method</font></a>* THINGX.Layer.activate](#font-colorgreymethodfont-thingxlayeractivate)
+- [*<a><font color="grey">Method</font></a>* THINGX.Layer.deactivate](#font-colorgreymethodfont-thingxlayerdeactivate)
+- [*<a><font color="grey">Method</font></a>* THINGX.Layer.deactivateAll](#font-colorgreymethodfont-thingxlayerdeactivateall)
+- [*<a><font color="grey">Method</font></a>* THINGX.Layer.refresh](#font-colorgreymethodfont-thingxlayerrefresh)
+- [*<a><font color="grey">Method</font></a>* THINGX.Layer.getActivatedNames](#font-colorgreymethodfont-thingxlayergetactivatednames)
+- [*<a><font color="grey">Method</font></a>* THINGX.Layer.getMutexsConfig](#font-colorgreymethodfont-thingxlayergetmutexsconfig)
+- [*<a><font color="grey">Method</font></a>* THINGX.Layer.getPanelConfig](#font-colorgreymethodfont-thingxlayergetpanelconfig)
 
 <!-- /code_chunk_output -->
 
 
-### *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.Layer)
+### *<a><font color="grey">Namespace</font></a>* 解构(THINGX.Layer)
 > THINGX.Layer:namespace
 ```javascript
     //应用系统针对系统图层模块的相关操作能力
@@ -50,7 +50,7 @@
 
 ```
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.Layer.hide
+### *<a><font color="grey">Method</font></a>* THINGX.Layer.hide
 > 隐藏图层模块,主要指的是图层栏UI隐藏, THINGX.Layer.hide():void
    
 * 类型: void
@@ -67,7 +67,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.Layer.show
+### *<a><font color="grey">Method</font></a>* THINGX.Layer.show
 > 显示图层模块,主要指的是图层栏UI显示, THINGX.Layer.show():void
    
 * 类型: void
@@ -85,7 +85,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.Layer.activate
+### *<a><font color="grey">Method</font></a>* THINGX.Layer.activate
 > 激活图层项,主要指的是激活具体图层项, THINGX.Layer.activate(name [, purpose]):void
 * 参数
   ||||||
@@ -112,7 +112,7 @@
     ```
     ***
                              
-### *<a href="#"><font color="grey">#</font></a>* THINGX.Layer.deactivate
+### *<a><font color="grey">Method</font></a>* THINGX.Layer.deactivate
 > 取消图层,主要指的是具体图层项, THINGX.Layer.deactivate(name [, purpose]):void
 * 参数
   ||||||
@@ -139,7 +139,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.Layer.deactivateAll
+### *<a><font color="grey">Method</font></a>* THINGX.Layer.deactivateAll
 > 取消所有激活的图层,主要指的是具体图层项, THINGX.Layer.deactivateAll():void
   
 * 类型: void
@@ -155,7 +155,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.Layer.refresh
+### *<a><font color="grey">Method</font></a>* THINGX.Layer.refresh
 > 刷新图层模块,刷新整个图层模块,会进行最新图层配置的请求获取, THINGX.Layer.refresh():void
    
 * 类型: void
@@ -172,7 +172,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.Layer.getActivatedNames
+### *<a><font color="grey">Method</font></a>* THINGX.Layer.getActivatedNames
 > 获取当前层级已激活的图层名称, THINGX.Layer.getActivatedNames():Array 
 
 * 类型: void
@@ -189,7 +189,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.Layer.getMutexsConfig
+### *<a><font color="grey">Method</font></a>* THINGX.Layer.getMutexsConfig
 > 获取图层互斥配置, THINGX.Layer.getMutexsConfig():Array 
 
 * 类型: void
@@ -207,7 +207,7 @@
     ***
 
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.Layer.getPanelConfig
+### *<a><font color="grey">Method</font></a>* THINGX.Layer.getPanelConfig
 > 获取图层面板配置,用于相关逻辑等判断, THINGX.Layer.getPanelConfig():PanelConfig
 
 * 类型: void

@@ -2,18 +2,18 @@
 
 <!-- code_chunk_output -->
 
-- [*<a href="#"><font color="grey">#</font></a>* 解构(THINGX.SceneControl)](#font-colorgreyfont-解构thingxscenecontrol)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.hide](#font-colorgreyfont-thingxscenecontrolhide)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.show](#font-colorgreyfont-thingxscenecontrolshow)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.activate](#font-colorgreyfont-thingxscenecontrolactivate)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.deactivate](#font-colorgreyfont-thingxscenecontroldeactivate)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.deactivateAll](#font-colorgreyfont-thingxscenecontroldeactivateall)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.refresh](#font-colorgreyfont-thingxscenecontrolrefresh)
-- [*<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.getActivatedNames](#font-colorgreyfont-thingxscenecontrolgetactivatednames)
+- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.SceneControl)](#font-colorgreynamespacefont-解构thingxscenecontrol)
+- [*<a><font color="grey">Method</font></a>* THINGX.SceneControl.hide](#font-colorgreymethodfont-thingxscenecontrolhide)
+- [*<a><font color="grey">Method</font></a>* THINGX.SceneControl.show](#font-colorgreymethodfont-thingxscenecontrolshow)
+- [*<a><font color="grey">Method</font></a>* THINGX.SceneControl.activate](#font-colorgreymethodfont-thingxscenecontrolactivate)
+- [*<a><font color="grey">Method</font></a>* THINGX.SceneControl.deactivate](#font-colorgreymethodfont-thingxscenecontroldeactivate)
+- [*<a><font color="grey">Method</font></a>* THINGX.SceneControl.deactivateAll](#font-colorgreymethodfont-thingxscenecontroldeactivateall)
+- [*<a><font color="grey">Method</font></a>* THINGX.SceneControl.refresh](#font-colorgreymethodfont-thingxscenecontrolrefresh)
+- [*<a><font color="grey">Method</font></a>* THINGX.SceneControl.getActivatedNames](#font-colorgreymethodfont-thingxscenecontrolgetactivatednames)
 
 <!-- /code_chunk_output -->
 
-### *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.SceneControl)
+### *<a><font color="grey">Namespace</font></a>* 解构(THINGX.SceneControl)
 > THINGX.SceneControl:namespace
 ```javascript
     //应用系统针对系统场景控制模块的相关操作能力
@@ -34,7 +34,7 @@
 ```
 
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.hide
+### *<a><font color="grey">Method</font></a>* THINGX.SceneControl.hide
 > 隐藏场景控制模块,主要指的是场景控制栏UI隐藏, THINGX.SceneControl.hide():void
    
 * 类型: void
@@ -50,7 +50,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.show
+### *<a><font color="grey">Method</font></a>* THINGX.SceneControl.show
 > 显示场景控制模块,主要指的是场景控制栏UI显示, THINGX.SceneControl.show():void
    
 * 类型: void
@@ -67,7 +67,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.activate
+### *<a><font color="grey">Method</font></a>* THINGX.SceneControl.activate
 > 激活场景控制项,主要指的是激活具体场景控制项, THINGX.SceneControl.activate(name):void
 * 参数
   ||||||
@@ -89,7 +89,7 @@
     ```
     ***
                              
-### *<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.deactivate
+### *<a><font color="grey">Method</font></a>* THINGX.SceneControl.deactivate
 > 取消图层,主要指的是具体图层项, THINGX.SceneControl.deactivate(name):void
 * 参数
   ||||||
@@ -111,7 +111,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.deactivateAll
+### *<a><font color="grey">Method</font></a>* THINGX.SceneControl.deactivateAll
 > 取消所有激活的场景控制,主要指的是具体场景控制项, THINGX.SceneControl.deactivateAll():void
   
 * 类型: void
@@ -126,7 +126,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.refresh
+### *<a><font color="grey">Method</font></a>* THINGX.SceneControl.refresh
 > 刷新整个场景控制模块,会进行最新场景控制配置的请求获取, THINGX.SceneControl.refresh():Promise.Boolean
    
 * 类型: void
@@ -146,7 +146,7 @@
     ```
     ***
 
-### *<a href="#"><font color="grey">#</font></a>* THINGX.SceneControl.getActivatedNames
+### *<a><font color="grey">Method</font></a>* THINGX.SceneControl.getActivatedNames
 > 获取当前层级已激活的场景控制名称, THINGX.SceneControl.getActivatedNames():Array 
 
 * 类型: void

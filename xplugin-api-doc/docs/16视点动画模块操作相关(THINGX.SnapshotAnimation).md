@@ -2,18 +2,18 @@
 
 <!-- code_chunk_output -->
 
-- [视点动画模块操作相关(THINGX.SnapshotAnimation)](#视点动画模块操作相关thingxsnapshotanimation)
-    - [*#* THINGX.SnapshotAnimation.hide](#-thingxsnapshotanimationhide)
-    - [*#* THINGX.SnapshotAnimation.show](#-thingxsnapshotanimationshow)
-    - [*#* THINGX.SnapshotAnimation.play](#-thingxsnapshotanimationplay)
-    - [*#* THINGX.SnapshotAnimation.pause](#-thingxsnapshotanimationpause)
-    - [*#* THINGX.SnapshotAnimation.resume](#-thingxsnapshotanimationresume)
-    - [*#* THINGX.SnapshotAnimation.stop](#-thingxsnapshotanimationstop)
-    - [*#* THINGX.SnapshotAnimation.setPlayMode](#-thingxsnapshotanimationsetplaymode)
+- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.SnapshotAnimation)](#font-colorgreynamespacefont-解构thingxsnapshotanimation)
+- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.hide](#font-colorgreymethodfont-thingxsnapshotanimationhide)
+- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.show](#font-colorgreymethodfont-thingxsnapshotanimationshow)
+- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.play](#font-colorgreymethodfont-thingxsnapshotanimationplay)
+- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.pause](#font-colorgreymethodfont-thingxsnapshotanimationpause)
+- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.resume](#font-colorgreymethodfont-thingxsnapshotanimationresume)
+- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.stop](#font-colorgreymethodfont-thingxsnapshotanimationstop)
+- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.setPlayMode](#font-colorgreymethodfont-thingxsnapshotanimationsetplaymode)
 
 <!-- /code_chunk_output -->
 
-### 视点动画模块操作相关(THINGX.SnapshotAnimation)
+### *<a><font color="grey">Namespace</font></a>* 解构(THINGX.SnapshotAnimation)
 > THINGX.SnapshotAnimation:namespace
 ```javascript
     //应用系统针对系统视点动画模块的相关操作能力
@@ -34,7 +34,7 @@
 ```
 
 
-##### *<a href="#">#</a>* THINGX.SnapshotAnimation.hide
+### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.hide
 > 隐藏视点动画模块,主要指的是视点动画栏UI隐藏, THINGX.SnapshotAnimation.hide():void
    
 * 类型: void
@@ -50,7 +50,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.SnapshotAnimation.show
+### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.show
 > 显示视点动画模块,主要指的是视点动画栏UI显示, THINGX.SnapshotAnimation.show():void
    
 * 类型: void
@@ -67,7 +67,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.SnapshotAnimation.play
+### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.play
 > 播放视点动画模块,主要指的是视点动画栏UI显示, THINGX.SnapshotAnimation.play(name:string):Promise.Boolean
 * 参数
   ||||||
@@ -88,7 +88,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.SnapshotAnimation.pause
+### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.pause
 > 暂停播放视点动画, THINGX.SnapshotAnimation.pause():void
    
 * 类型: void
@@ -105,7 +105,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.SnapshotAnimation.resume
+### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.resume
 > 恢复播放视点动画, THINGX.SnapshotAnimation.resume():void
    
 * 类型: void
@@ -122,7 +122,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.SnapshotAnimation.stop
+### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.stop
 > 停止播放视点动画, THINGX.SnapshotAnimation.stop():boolean
    
 * 类型: void
@@ -137,7 +137,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.SnapshotAnimation.setPlayMode
+### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.setPlayMode
 > 设置视点动画播放模式, THINGX.SnapshotAnimation.setPlayMode(mode:string):void
 * 参数
   ||||||

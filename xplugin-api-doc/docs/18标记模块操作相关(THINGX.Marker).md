@@ -2,20 +2,20 @@
 
 <!-- code_chunk_output -->
 
-- [标记模块操作相关(THINGX.Marker)](#标记模块操作相关thingxmarker)
-    - [*#* THINGX.Marker.add](#-thingxmarkeradd)
-    - [*#* THINGX.Marker.remove](#-thingxmarkerremove)
-    - [*#* THINGX.Marker.show](#-thingxmarkershow)
-    - [*#* THINGX.Marker.hide](#-thingxmarkerhide)
-    - [*#* THINGX.Marker.get](#-thingxmarkerget)
-    - [*#* THINGX.Marker.getPreloadName](#-thingxmarkergetpreloadname)
-    - [*#* THINGX.Marker.getAll](#-thingxmarkergetall)
-    - [*#* THINGX.Marker.getConfig](#-thingxmarkergetconfig)
+- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.Marker)](#font-colorgreynamespacefont-解构thingxmarker)
+- [*<a><font color="grey">Method</font></a>* THINGX.Marker.add](#font-colorgreymethodfont-thingxmarkeradd)
+- [*<a><font color="grey">Method</font></a>* THINGX.Marker.remove](#font-colorgreymethodfont-thingxmarkerremove)
+- [*<a><font color="grey">Method</font></a>* THINGX.Marker.show](#font-colorgreymethodfont-thingxmarkershow)
+- [*<a><font color="grey">Method</font></a>* THINGX.Marker.hide](#font-colorgreymethodfont-thingxmarkerhide)
+- [*<a><font color="grey">Method</font></a>* THINGX.Marker.get](#font-colorgreymethodfont-thingxmarkerget)
+- [*<a><font color="grey">Method</font></a>* THINGX.Marker.getPreloadName](#font-colorgreymethodfont-thingxmarkergetpreloadname)
+- [*<a><font color="grey">Method</font></a>* THINGX.Marker.getAll](#font-colorgreymethodfont-thingxmarkergetall)
+- [*<a><font color="grey">Method</font></a>* THINGX.Marker.getConfig](#font-colorgreymethodfont-thingxmarkergetconfig)
 
 <!-- /code_chunk_output -->
 
 
-### 标记模块操作相关(THINGX.Marker)
+### *<a><font color="grey">Namespace</font></a>* 解构(THINGX.Marker)
 > THINGX.Marker:namespace
 ```javascript
     //应用系统针对系统标记模块的相关操作能力
@@ -35,7 +35,7 @@
 
 ```
 
-##### *<a href="#">#</a>* THINGX.Marker.add
+### *<a><font color="grey">Method</font></a>* THINGX.Marker.add
 > 给孪生体添加标记, THINGX.Marker.add(digitalTwin:THING.BaseObject[, name:string] [, isIncludeModel:boolean]):Array.<THING.BaseObject>
 
 * 参数
@@ -64,7 +64,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.Marker.remove
+### *<a><font color="grey">Method</font></a>* THINGX.Marker.remove
 > 移除孪生体标记, THINGX.Marker.remove(digitalTwin:THING.BaseObject, name:string ):boolean 
 
 * 参数
@@ -96,7 +96,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Marker.show
+### *<a><font color="grey">Method</font></a>* THINGX.Marker.show
 > 孪生体显示标记, THINGX.Marker.show(digitalTwin:THING.BaseObject, name:string  [, purpose]):Array.<THING.BaseObject>
 
 * 参数
@@ -128,7 +128,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Marker.hide
+### *<a><font color="grey">Method</font></a>* THINGX.Marker.hide
 > 孪生体隐藏标记, THINGX.Marker.hide(digitalTwin:THING.BaseObject, name:string  [, purpose]):Array.<THING.BaseObject>
 
 * 参数
@@ -160,7 +160,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Marker.get
+### *<a><font color="grey">Method</font></a>* THINGX.Marker.get
 > 获取孪生体指定名称的标记, THINGX.Marker.get(digitalTwin:THING.BaseObject, name:string ):THING.BaseObject
 
 * 参数
@@ -187,7 +187,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.Marker.getPreloadName
+### *<a><font color="grey">Method</font></a>* THINGX.Marker.getPreloadName
 > 获取孪生体预加载标记的名称, THINGX.Marker.getPreloadName(digitalTwin:THING.BaseObjec):THING.BaseObject
 
 * 参数
@@ -212,7 +212,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Marker.getAll
+### *<a><font color="grey">Method</font></a>* THINGX.Marker.getAll
 > 获取孪生体上所有的标记, THINGX.Marker.getAll(digitalTwin:THING.BaseObject):Map.<string, THING.BaseObject>
 
 * 参数
@@ -238,7 +238,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.Marker.getConfig
+### *<a><font color="grey">Method</font></a>* THINGX.Marker.getConfig
 > 获取孪生体标记配置数据, THINGX.Marker.getConfig(digitalTwin:THING.BaseObject):Map.<string, Object>
 
 * 参数

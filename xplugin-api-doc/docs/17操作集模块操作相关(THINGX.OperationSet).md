@@ -1,6 +1,6 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
-### 操作集模块操作相关(THINGX.OperationSet)
+### *<a><font color="grey">Namespace</font></a>* 解构(THINGX.OperationSet)
 > THINGX.OperationSet:namespace
 ```javascript
     //应用系统针对系统操作集模块的相关操作能力
@@ -22,7 +22,7 @@
 
 
 
-##### *<a href="#">#</a>* THINGX.OperationSet.run
+### *<a><font color="grey">Method</font></a>* THINGX.OperationSet.run
 > 运行一个操作集, THINGX.OperationSet.run(name:string [, target:THING.BaseObject|string ][, params:Map.<string, any>]):Instance
 * 参数
   ||||||
@@ -69,7 +69,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.OperationSet.stop
+### *<a><font color="grey">Method</font></a>* THINGX.OperationSet.stop
 > 停止一个操作集的运行, THINGX.OperationSet.stop(name:string):void 
 * 参数
   ||||||
@@ -88,7 +88,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.OperationSet.pause
+### *<a><font color="grey">Method</font></a>* THINGX.OperationSet.pause
 > 暂停一个操作集的运行, THINGX.OperationSet.pause(name:string):void 
 * 参数
   ||||||
@@ -104,7 +104,7 @@
         THINGX.OperationSet.pause("开门")
     ```
     ***
-##### *<a href="#">#</a>* THINGX.OperationSet.resume
+### *<a><font color="grey">Method</font></a>* THINGX.OperationSet.resume
 > 恢复一个操作集的运行, THINGX.OperationSet.resume(name:string):void 
 * 参数
   ||||||
@@ -122,7 +122,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.OperationSet.refresh
+### *<a><font color="grey">Method</font></a>* THINGX.OperationSet.refresh
 > 重新读取操作集可视化配置, THINGX.OperationSet.refresh():Promise.void
  
 * 类型: Promise.void
