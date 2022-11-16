@@ -2,24 +2,24 @@
 
 <!-- code_chunk_output -->
 
-- [事件标签相关(THINGX.EventTag)](#事件标签相关thingxeventtag)
-  - [孪生体选中事件 THING.EventType.Select](#孪生体选中事件-thingeventtypeselect)
-  - [取消选中事件 THING.EventType.Deselect](#取消选中事件-thingeventtypedeselect)
-  - [鼠标移入事件 THING.EventType.MouseEnter](#鼠标移入事件-thingeventtypemouseenter)
-  - [鼠标移除事件 THING.EventType.MouseLeave](#鼠标移除事件-thingeventtypemouseleave)
-  - [进入层级事件 THING.EventType.EnterLevel](#进入层级事件-thingeventtypeenterlevel)
-  - [鼠标滚动事件 THING.EventType.MouseWheel](#鼠标滚动事件-thingeventtypemousewheel)
-  - [鼠标按下事件 THING.EventType.MouseDown](#鼠标按下事件-thingeventtypemousedown)
-  - [层级切换事件 THING.EventType.LevelChange](#层级切换事件-thingeventtypelevelchange)
-  - [正向进入层级 THINGX.EventType.XEnterLevelForward](#正向进入层级-thingxeventtypexenterlevelforward)
-  - [反向退出层级 THINGX.EventType.XLeaveLevelBackward](#反向退出层级-thingxeventtypexleavelevelbackward)
+- [*<a href="#"><font color="grey">#</font></a>* 解构(THINGX.EventTag)](#font-colorgreyfont-解构thingxeventtag)
+- [*<a href="#"><font color="grey">#</font></a>*  孪生体选中事件 THING.EventType.Select](#font-colorgreyfont--孪生体选中事件-thingeventtypeselect)
+- [*<a href="#"><font color="grey">#</font></a>*  取消选中事件 THING.EventType.Deselect](#font-colorgreyfont--取消选中事件-thingeventtypedeselect)
+- [*<a href="#"><font color="grey">#</font></a>*  鼠标移入事件 THING.EventType.MouseEnter](#font-colorgreyfont--鼠标移入事件-thingeventtypemouseenter)
+- [*<a href="#"><font color="grey">#</font></a>*  鼠标移除事件 THING.EventType.MouseLeave](#font-colorgreyfont--鼠标移除事件-thingeventtypemouseleave)
+- [*<a href="#"><font color="grey">#</font></a>*  进入层级事件 THING.EventType.EnterLevel](#font-colorgreyfont--进入层级事件-thingeventtypeenterlevel)
+- [*<a href="#"><font color="grey">#</font></a>*  鼠标滚动事件 THING.EventType.MouseWheel](#font-colorgreyfont--鼠标滚动事件-thingeventtypemousewheel)
+- [*<a href="#"><font color="grey">#</font></a>*  鼠标按下事件 THING.EventType.MouseDown](#font-colorgreyfont--鼠标按下事件-thingeventtypemousedown)
+- [*<a href="#"><font color="grey">#</font></a>*  层级切换事件 THING.EventType.LevelChange](#font-colorgreyfont--层级切换事件-thingeventtypelevelchange)
+- [*<a href="#"><font color="grey">#</font></a>*  正向进入层级 THINGX.EventType.XEnterLevelForward](#font-colorgreyfont--正向进入层级-thingxeventtypexenterlevelforward)
+- [*<a href="#"><font color="grey">#</font></a>*  反向退出层级 THINGX.EventType.XLeaveLevelBackward](#font-colorgreyfont--反向退出层级-thingxeventtypexleavelevelbackward)
 
 <!-- /code_chunk_output -->
 
 
 
 
-### 事件标签相关(THINGX.EventTag)
+### *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.EventTag)
 > THINGX.EventTag:namespace
 ```javascript
 
@@ -65,7 +65,7 @@
 ```
 
 
-#### 孪生体选中事件 THING.EventType.Select 
+### *<a href="#"><font color="grey">#</font></a>*  孪生体选中事件 THING.EventType.Select 
 
 ```javascript
          - XShowDigitalTwinPanel (显示孪生体面板标签) 
@@ -73,7 +73,7 @@
          - XUpdateMonitorEffect(更新监控效果)
 ```
 
-> *<a href="#">#</a>* XShowDigitalTwinPanel (显示孪生体面板标签) 
+?> XShowDigitalTwinPanel (显示孪生体面板标签) 
 ```javascript
     
     //App 操作
@@ -82,7 +82,7 @@
 
 ```
  
-> *<a href="#">#</a>* XShowDigitalTwinDefaultEffect(显示孪生体默认效果) 
+?> XShowDigitalTwinDefaultEffect(显示孪生体默认效果) 
 ```javascript
     
     //App 操作
@@ -90,7 +90,7 @@
     THING.App.current.pauseEvent(THING.EventType.Select, '.BaseObject', THINGX.EventTag.XShowDigitalTwinDefaultEffect);
 
 ```
-> ~~*<a href="#">#</a>* XUpdateMonitorEffect(更新监控效果)~~ 弃用
+?>  ~~XUpdateMonitorEffect(更新监控效果)~~ 弃用
 ```javascript
     
     //App 操作
@@ -99,7 +99,7 @@
 
 ```
 
-#### 取消选中事件 THING.EventType.Deselect
+### *<a href="#"><font color="grey">#</font></a>*  取消选中事件 THING.EventType.Deselect
 
 ```javascript
     
@@ -108,7 +108,7 @@
 ```
 
 
-> *<a href="#">#</a>* XHideDigitalTwinPanel (隐藏孪生体面板) 
+?>  XHideDigitalTwinPanel (隐藏孪生体面板) 
 ```javascript
     
     //App 操作
@@ -116,7 +116,7 @@
     THING.App.current.pauseEvent(THING.EventType.Deselect, null, THINGX.EventTag.XHideDigitalTwinPanel);
 
 ```
-> *<a href="#">#</a>* XHideDigitalTwinDefaultEffect(隐藏孪生体默认效果)
+?>  XHideDigitalTwinDefaultEffect(隐藏孪生体默认效果)
 ```javascript
     
     //App 操作
@@ -127,14 +127,14 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 
 
-#### 鼠标移入事件 THING.EventType.MouseEnter
+### *<a href="#"><font color="grey">#</font></a>*  鼠标移入事件 THING.EventType.MouseEnter
 
 ```javascript
     
         - XShowDigitalTwinTip(显示孪生体提示)
         - XShowDigitalTwinDefaultEffect(显示孪生体默认效果)
 ```
-> *<a href="#">#</a>* XShowDigitalTwinTip(显示孪生体提示)
+?>  XShowDigitalTwinTip(显示孪生体提示)
 ```javascript
     
     //App 操作
@@ -142,7 +142,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
     THING.App.current.pauseEvent(THING.EventType.MouseEnter, '.BaseObject', THINGX.EventTag.XShowDigitalTwinTip);
 
 ```
-> *<a href="#">#</a>* XShowDigitalTwinDefaultEffect(显示孪生体默认效果)
+?>  XShowDigitalTwinDefaultEffect(显示孪生体默认效果)
 ```javascript
     
     //App 操作
@@ -151,7 +151,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-#### 鼠标移除事件 THING.EventType.MouseLeave
+### *<a href="#"><font color="grey">#</font></a>*  鼠标移除事件 THING.EventType.MouseLeave
 
 ```javascript
     
@@ -159,7 +159,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
         - XHideDigitalTwinDefaultEffect(隐藏孪生体默认效果)
 ```
 
-> *<a href="#">#</a>* XHideDigitalTwinTip(隐藏孪生体提示)
+?>  XHideDigitalTwinTip(隐藏孪生体提示)
 ```javascript
     
     //App 操作
@@ -167,7 +167,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
     THING.App.current.pauseEvent(THING.EventType.MouseLeave, '.BaseObject', THINGX.EventTag.XHideDigitalTwinTip);
 
 ```
-> *<a href="#">#</a>* XHideDigitalTwinDefaultEffect(隐藏孪生体默认效果)
+?>  XHideDigitalTwinDefaultEffect(隐藏孪生体默认效果)
 ```javascript
     
     //App 操作
@@ -177,14 +177,14 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 ```
 
 
-#### 进入层级事件 THING.EventType.EnterLevel
+### *<a href="#"><font color="grey">#</font></a>*  进入层级事件 THING.EventType.EnterLevel
 
 ```javascript
     
         - XHideDigitalTwinDefaultEffect(隐藏孪生体默认效果)
         - XRefreshLayer(刷新图层)
 ```
-> *<a href="#">#</a>* XHideDigitalTwinDefaultEffect(隐藏孪生体默认效果)
+?>  XHideDigitalTwinDefaultEffect(隐藏孪生体默认效果)
 ```javascript
     
     //App 操作
@@ -192,7 +192,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
     THING.App.current.pauseEvent(THING.EventType.EnterLevel, '.BaseObject', THINGX.EventTag.XHideDigitalTwinDefaultEffect);
 
 ```
-> *<a href="#">#</a>* XRefreshLayer(刷新图层)
+?>  XRefreshLayer(刷新图层)
 ```javascript
     
     //App 操作
@@ -201,13 +201,13 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-#### 鼠标滚动事件 THING.EventType.MouseWheel
+### *<a href="#"><font color="grey">#</font></a>*  鼠标滚动事件 THING.EventType.MouseWheel
 
 ```javascript
         - XStopFly(停止飞行)
 ```
 
-> *<a href="#">#</a>* XStopFly(停止飞行)
+?>  XStopFly(停止飞行)
 ```javascript
     
     //App 操作
@@ -216,13 +216,13 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-#### 鼠标按下事件 THING.EventType.MouseDown
+### *<a href="#"><font color="grey">#</font></a>*  鼠标按下事件 THING.EventType.MouseDown
 
 ```javascript
         - XStopFly(停止飞行)
 ```
 
-> *<a href="#">#</a>* XStopFly(停止飞行)
+?>  XStopFly(停止飞行)
 ```javascript
     
     //App 操作
@@ -231,13 +231,13 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-#### 层级切换事件 THING.EventType.LevelChange
+### *<a href="#"><font color="grey">#</font></a>*  层级切换事件 THING.EventType.LevelChange
 
 ```javascript
         - XShowAlarmForBuilding(显示建筑告警)  
 ```
 
-> *<a href="#">#</a>* XShowAlarmForBuilding(显示建筑告警)  
+?>  XShowAlarmForBuilding(显示建筑告警)  
 ```javascript
     
     //App 操作
@@ -246,7 +246,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-#### 正向进入层级 THINGX.EventType.XEnterLevelForward 
+### *<a href="#"><font color="grey">#</font></a>*  正向进入层级 THINGX.EventType.XEnterLevelForward 
 
 ```javascript
         - XSetBrotherRoomsTransparency(设置兄弟房间透明) 
@@ -255,7 +255,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
         - XEnterFloorDirectAfterEnterBuildingIfOneFloorInBuilding(进入建筑后，只有一层楼则直接进入楼层)  
         - XEnterRoomDirectAfterEnterFloorIfOneRoomInFloor(进入楼层后，只有一间房则直接进入房间) 
 ```
-> *<a href="#">#</a>* XSetBrotherRoomsTransparency(设置兄弟房间透明) 
+?>  XSetBrotherRoomsTransparency(设置兄弟房间透明) 
 ```javascript
     
     //App 操作
@@ -264,7 +264,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-> *<a href="#">#</a>* XSetFloorTransparency(设置楼层透明)
+?>  XSetFloorTransparency(设置楼层透明)
 ```javascript
     
     //App 操作
@@ -273,7 +273,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-> *<a href="#">#</a>* XSetBrotherTwinsTransparency(设置兄弟孪生体透明) 
+?>  XSetBrotherTwinsTransparency(设置兄弟孪生体透明) 
 ```javascript
     
     //App 操作
@@ -281,7 +281,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
     THING.App.current.pauseEvent(THINGX.EventType.XEnterLevelForward, null, THINGX.EventTag.XSetBrotherTwinsTransparency);
 
 ```
-> *<a href="#">#</a>* XEnterFloorDirectAfterEnterBuildingIfOneFloorInBuilding(进入建筑后，只有一层楼则直接进入楼层)
+?>  XEnterFloorDirectAfterEnterBuildingIfOneFloorInBuilding(进入建筑后，只有一层楼则直接进入楼层)
 ```javascript
     
     //App 操作
@@ -290,7 +290,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 
 ```
 
-> *<a href="#">#</a>* XEnterRoomDirectAfterEnterFloorIfOneRoomInFloor(进入楼层后，只有一间房则直接进入房间) 
+?>  XEnterRoomDirectAfterEnterFloorIfOneRoomInFloor(进入楼层后，只有一间房则直接进入房间) 
 ```javascript
     
     //App 操作
@@ -300,7 +300,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
 ```
 
 
-#### 反向退出层级 THINGX.EventType.XLeaveLevelBackward 
+### *<a href="#"><font color="grey">#</font></a>*  反向退出层级 THINGX.EventType.XLeaveLevelBackward 
 
 ```javascript
 
@@ -311,7 +311,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
         - XEnterBuildingDirectAfterLeaveRoomIfOneRoomInFloor(退出房间后，只有一层楼则直接进入建筑)  
 
 ```
-> *<a href="#">#</a>* XSetBrotherRoomsNotTransparency(设置兄弟房间不透明) 
+?>  XSetBrotherRoomsNotTransparency(设置兄弟房间不透明) 
 ```javascript
     
     //App 操作
@@ -319,7 +319,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
     THING.App.current.pauseEvent(THINGX.EventType.XLeaveLevelBackward, '.Room', THINGX.EventTag.XSetBrotherRoomsNotTransparency);
 
 ```
-> *<a href="#">#</a>* XSetFloorNotTransparency(设置楼层不透明 ) 
+?>  XSetFloorNotTransparency(设置楼层不透明 ) 
 ```javascript
     
     //App 操作
@@ -327,7 +327,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
     THING.App.current.pauseEvent(THINGX.EventType.XLeaveLevelBackward, '.Room', THINGX.EventTag.XSetFloorNotTransparency);
 
 ```
-> *<a href="#">#</a>* XSetBrotherTwinsNotTransparency(设置兄弟孪生体不透明) 
+?>  XSetBrotherTwinsNotTransparency(设置兄弟孪生体不透明) 
 ```javascript
     
     //App 操作
@@ -335,7 +335,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
     THING.App.current.pauseEvent(THINGX.EventType.XLeaveLevelBackward, null, THINGX.EventTag.XSetBrotherTwinsNotTransparency);
 ```
 
-> *<a href="#">#</a>* XEnterCampusDirectAfterLeaveFloorIfOneFloorInBuilding(退出楼层后，只有一层楼则直接进入园区)
+?>  XEnterCampusDirectAfterLeaveFloorIfOneFloorInBuilding(退出楼层后，只有一层楼则直接进入园区)
 ```javascript
     
     //App 操作
@@ -343,7 +343,7 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
     THING.App.current.pauseEvent(THINGX.EventType.XLeaveLevelBackward, '.Floor', THINGX.EventTag.XEnterCampusDirectAfterLeaveFloorIfOneFloorInBuilding);
 ```
 
-> *<a href="#">#</a>* XEnterBuildingDirectAfterLeaveRoomIfOneRoomInFloor(退出房间后，只有一层楼则直接进入建筑) 
+?>  XEnterBuildingDirectAfterLeaveRoomIfOneRoomInFloor(退出房间后，只有一层楼则直接进入建筑) 
 ```javascript
     
     //App 操作

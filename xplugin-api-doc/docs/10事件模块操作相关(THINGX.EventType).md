@@ -3,15 +3,15 @@
 <!-- code_chunk_output -->
 
 - [ThingJS-X API 事件列表(48+1个)](#thingjs-x-api-事件列表481个)
-      - [告警事件 THING.EventType.XAlarm](#告警事件-thingeventtypexalarm)
-      - [监控事件 THING.EventType.XMonitor](#监控事件-thingeventtypexmonitor)
-      - [标记事件 THING.EventType.XMarker](#标记事件-thingeventtypexmarker)
-      - [孪生体事件 THING.EventType.XDigitalTwin](#孪生体事件-thingeventtypexdigitaltwin)
-      - [系统加载完成事件 THING.EventType.XLoad](#系统加载完成事件-thingeventtypexload)
-      - [系统层级事件 THING.EventType.XLevel](#系统层级事件-thingeventtypexlevel)
-      - [业务事件 THING.EventType.XBusiness](#业务事件-thingeventtypexbusiness)
-      - [图层事件 THING.EventType.XLayer](#图层事件-thingeventtypexlayer)
-      - [场景控制事件 THING.EventType.XSceneControl](#场景控制事件-thingeventtypexscenecontrol)
+    - [*<a href="#"><font color="grey">#</font></a>* 告警事件 THING.EventType.XAlarm](#font-colorgreyfont-告警事件-thingeventtypexalarm)
+    - [*<a href="#"><font color="grey">#</font></a>* 监控事件 THING.EventType.XMonitor](#font-colorgreyfont-监控事件-thingeventtypexmonitor)
+    - [*<a href="#"><font color="grey">#</font></a>* 标记事件 THING.EventType.XMarker](#font-colorgreyfont-标记事件-thingeventtypexmarker)
+    - [*<a href="#"><font color="grey">#</font></a>* 孪生体事件 THING.EventType.XDigitalTwin](#font-colorgreyfont-孪生体事件-thingeventtypexdigitaltwin)
+    - [*<a href="#"><font color="grey">#</font></a>* 系统加载完成事件 THING.EventType.XLoad](#font-colorgreyfont-系统加载完成事件-thingeventtypexload)
+    - [*<a href="#"><font color="grey">#</font></a>* 系统层级事件 THING.EventType.XLevel](#font-colorgreyfont-系统层级事件-thingeventtypexlevel)
+    - [*<a href="#"><font color="grey">#</font></a>* 业务事件 THING.EventType.XBusiness](#font-colorgreyfont-业务事件-thingeventtypexbusiness)
+    - [*<a href="#"><font color="grey">#</font></a>* 图层事件 THING.EventType.XLayer](#font-colorgreyfont-图层事件-thingeventtypexlayer)
+    - [*<a href="#"><font color="grey">#</font></a>* 场景控制事件 THING.EventType.XSceneControl](#font-colorgreyfont-场景控制事件-thingeventtypexscenecontrol)
 
 <!-- /code_chunk_output -->
 # ThingJS-X API 事件列表(48+1个)
@@ -21,7 +21,7 @@
     //ThingJS-X API 命名空间为 THINGX
 ```
 
-#### 告警事件 THING.EventType.XAlarm 
+### *<a href="#"><font color="grey">#</font></a>* 告警事件 THING.EventType.XAlarm 
 
 ```javascript
 
@@ -39,7 +39,7 @@
         - XAlarmSoundDeactivate                 (- app监听)()    //提案:取消告警声音
 ```
 
-> *<a href="#">#</a>* XAlarm (孪生体告警数据变化) 
+?> XAlarm (孪生体告警数据变化) 
 ```javascript
 
     //监听  BaseObject
@@ -54,7 +54,7 @@
     // 示例2. TODO
 
 ```
-> *<a href="#">#</a>* XAlarmRemove (移除告警) 
+?>  XAlarmRemove (移除告警) 
 ```javascript
 
     //监听  BaseObject
@@ -69,7 +69,7 @@
 
 ```
 
-> *<a href="#">#</a>* XAlarmDataRequest (告警数据更新，每次请求完成后触发) 
+?>  XAlarmDataRequest (告警数据更新，每次请求完成后触发) 
 ```javascript
 
     //监听  app
@@ -85,7 +85,7 @@
 ```
 
          
-> *<a href="#">#</a>* XAlarmChangeUnderCurrentSceneLevel (告警在当前场景层级下变化，层级切换，告警数据变化触发) 
+?>  XAlarmChangeUnderCurrentSceneLevel (告警在当前场景层级下变化，层级切换，告警数据变化触发) 
 ```javascript
 
     //监听  app
@@ -99,7 +99,7 @@
 
 
       
-> *<a href="#">#</a>* XAlarmActivate (激活告警) 
+?>  XAlarmActivate (激活告警) 
 ```javascript
 
     //监听  app
@@ -113,7 +113,7 @@
 ```
 
       
-> *<a href="#">#</a>* XAlarmDeactivate (取消告警) 
+?>  XAlarmDeactivate (取消告警) 
 ```javascript
 
     //监听  app
@@ -129,7 +129,7 @@
 
 
 
-#### 监控事件 THING.EventType.XMonitor 
+### *<a href="#"><font color="grey">#</font></a>* 监控事件 THING.EventType.XMonitor 
 
 ```javascript
 
@@ -142,7 +142,7 @@
 ```
 
 
-> *<a href="#">#</a>* XMonitor (孪生体监控数据改变事件) 
+?>  XMonitor (孪生体监控数据改变事件) 
 ```javascript
 
     //监听 BaseObject
@@ -156,7 +156,7 @@
 
 ```
 
-> *<a href="#">#</a>* XMonitorActivate (监控激活事件,当存在需要监控的孪生体后会自动开启监控并触发该事件) 
+?>  XMonitorActivate (监控激活事件,当存在需要监控的孪生体后会自动开启监控并触发该事件) 
 ```javascript
 
     //监听  app
@@ -169,7 +169,7 @@
 ```
 
 
-> *<a href="#">#</a>* XMonitorDeactivate (取消监控事件,当没有需要监控的孪生体后会自动关闭监控并触发该事件) 
+?>  XMonitorDeactivate (取消监控事件,当没有需要监控的孪生体后会自动关闭监控并触发该事件) 
 ```javascript
 
     //监听  app
@@ -181,7 +181,7 @@
 
 ```
 
-> *<a href="#">#</a>* XMonitorDataRequest (监控数据更新,请求完成事件) 
+?>  XMonitorDataRequest (监控数据更新,请求完成事件) 
 ```javascript
 
     //监听  app
@@ -195,7 +195,7 @@
 ```
 
 
-#### 标记事件 THING.EventType.XMarker 
+### *<a href="#"><font color="grey">#</font></a>* 标记事件 THING.EventType.XMarker 
 
 ```javascript
 
@@ -205,7 +205,7 @@
 
 ```
 
-> *<a href="#">#</a>* XMonitorDataRequest (标记加载完成事件) 
+?>  XMonitorDataRequest (标记加载完成事件) 
 ```javascript
 
     //监听  app&BaseObject
@@ -221,7 +221,7 @@
 
 
 
-> *<a href="#">#</a>* XMarkerDestroy (标记销毁完成事件) 
+?>  XMarkerDestroy (标记销毁完成事件) 
 ```javascript
 
     //监听  app&BaseObject
@@ -238,7 +238,7 @@
 
 
 
-#### 孪生体事件 THING.EventType.XDigitalTwin 
+### *<a href="#"><font color="grey">#</font></a>* 孪生体事件 THING.EventType.XDigitalTwin 
 
 ```javascript
 
@@ -250,7 +250,7 @@
 
 ```
 
-> *<a href="#">#</a>* XDigitalTwinPanelActivate (激活孪生体面板) 
+?>  XDigitalTwinPanelActivate (激活孪生体面板) 
 ```javascript
 
     //监听  app&BaseObject
@@ -263,7 +263,7 @@
     });
 
 ```
-> *<a href="#">#</a>* XDigitalTwinPanelDeactivate (取消激活孪生体面板) 
+?>  XDigitalTwinPanelDeactivate (取消激活孪生体面板) 
 ```javascript
 
     //监听  app&BaseObject
@@ -274,7 +274,7 @@
     });
 
 ```
-> *<a href="#">#</a>* XDigitalTwinPanelTabActivate (孪生体面板标签页(在配置为弹窗模式下生效)) 
+?>  XDigitalTwinPanelTabActivate (孪生体面板标签页(在配置为弹窗模式下生效)) 
 ```javascript
 
     //监听  app&BaseObject
@@ -287,7 +287,7 @@
     });
 
 ```
-> *<a href="#">#</a>* XDigitalTwinPanelTabDeactivate (取消激活孪生体面板标签页(在配置为弹窗模式下生效)) 
+?>  XDigitalTwinPanelTabDeactivate (取消激活孪生体面板标签页(在配置为弹窗模式下生效)) 
 ```javascript
 
     //监听  app&BaseObject
@@ -303,7 +303,7 @@
 
 
 
-#### 系统加载完成事件 THING.EventType.XLoad 
+### *<a href="#"><font color="grey">#</font></a>* 系统加载完成事件 THING.EventType.XLoad 
 
 ```javascript
 
@@ -311,7 +311,7 @@
         - XLoad             (- app监听) //系统加载完成
 
 ```
-> *<a href="#">#</a>* XLoad (系统加载完成) 
+?>  XLoad (系统加载完成) 
 ```javascript
 
     //监听  app
@@ -323,7 +323,7 @@
 
 ```
 
-#### 系统层级事件 THING.EventType.XLevel 
+### *<a href="#"><font color="grey">#</font></a>* 系统层级事件 THING.EventType.XLevel 
 
 ```javascript
 
@@ -333,7 +333,7 @@
 
 ```
 
-> *<a href="#">#</a>* XLeaveLevelBackward (反向离开层级结束) 
+?>  XLeaveLevelBackward (反向离开层级结束) 
 ```javascript
 
     //监听  app&BaseObject
@@ -348,7 +348,7 @@
 
 
 ```
-> *<a href="#">#</a>* XEnterLevelForward (正向进入层级) 
+?>  XEnterLevelForward (正向进入层级) 
 ```javascript
 
     //监听  app&BaseObject
@@ -363,7 +363,7 @@
 
 ```
 
-#### 业务事件 THING.EventType.XBusiness 
+### *<a href="#"><font color="grey">#</font></a>* 业务事件 THING.EventType.XBusiness 
 
 ```javascript
 
@@ -381,7 +381,7 @@
         - XBusinessPanelHide                    (- app监听)(*)
 ```
 
-> *<a href="#">#</a>* XBeforeRefreshBusiness (刷新业务之前) 
+?>  XBeforeRefreshBusiness (刷新业务之前) 
 ```javascript
 
     //监听  app&BaseObject
@@ -396,7 +396,7 @@
 
 ```
 
-> *<a href="#">#</a>* XBusinessRefreshed (刷新业务完成) 
+?>  XBusinessRefreshed (刷新业务完成) 
 ```javascript
 
     //监听  app&BaseObject
@@ -413,7 +413,7 @@
 ```
 
 
-> *<a href="#">#</a>* XBeforeActivateBusinessItem (激活业务之前) 
+?>  XBeforeActivateBusinessItem (激活业务之前) 
 ```javascript
 
     //监听  app&BaseObject
@@ -430,7 +430,7 @@
 ```
 
 
-> *<a href="#">#</a>* XBusinessItemActivated (激活业务) 
+?>  XBusinessItemActivated (激活业务) 
 ```javascript
 
     //监听  app&BaseObject
@@ -443,7 +443,7 @@
 
 ```
 
-> *<a href="#">#</a>* XBeforeDeactivateBusinessItem (取消业务之前) 
+?>  XBeforeDeactivateBusinessItem (取消业务之前) 
 ```javascript
 
     //监听  app&BaseObject
@@ -457,7 +457,7 @@
 
 ```
 
-> *<a href="#">#</a>* XBusinessItemDeactivated (取消业务) 
+?>  XBusinessItemDeactivated (取消业务) 
 ```javascript
 
     //监听  app&BaseObject
@@ -471,7 +471,7 @@
 
 ```
 
-#### 图层事件 THING.EventType.XLayer 
+### *<a href="#"><font color="grey">#</font></a>* 图层事件 THING.EventType.XLayer 
 
 ```javascript
 
@@ -489,7 +489,7 @@
         - XLayerPanelHide                       (app)(*)
 ```
 
-> *<a href="#">#</a>* XBeforeRefreshLayer (刷新图层之前) 
+?>  XBeforeRefreshLayer (刷新图层之前) 
 ```javascript
 
     //监听  app&BaseObject
@@ -503,7 +503,7 @@
 
 ```
 
-> *<a href="#">#</a>* XLayerRefreshed (刷新图层) 
+?>  XLayerRefreshed (刷新图层) 
 ```javascript
 
     //监听  app&BaseObject
@@ -518,7 +518,7 @@
 
 ```
 
-> *<a href="#">#</a>* XBeforeActivateLayerItem (激活图层之前) 
+?>  XBeforeActivateLayerItem (激活图层之前) 
 ```javascript
 
     //监听  app&BaseObject
@@ -531,7 +531,7 @@
     });
 
 ```
-> *<a href="#">#</a>* XLayerItemActivated (激活图层) 
+?>  XLayerItemActivated (激活图层) 
 ```javascript
 
     //监听  app&BaseObject
@@ -544,7 +544,7 @@
     });
 
 ```
-> *<a href="#">#</a>* XBeforeDeactivateLayerItem (取消激活图层之前) 
+?>  XBeforeDeactivateLayerItem (取消激活图层之前) 
 ```javascript
 
     //监听  app&BaseObject
@@ -557,7 +557,7 @@
     });
 
 ```
-> *<a href="#">#</a>* XLayerItemDeactivated (取消激活图层) 
+?>  XLayerItemDeactivated (取消激活图层) 
 ```javascript
 
     //监听  app&BaseObject
@@ -571,7 +571,7 @@
 
 ```
 
-#### 场景控制事件 THING.EventType.XSceneControl 
+### *<a href="#"><font color="grey">#</font></a>* 场景控制事件 THING.EventType.XSceneControl 
 
 ```javascript
 
@@ -589,7 +589,7 @@
 
 
 
-> *<a href="#">#</a>* XBeforeRefreshSceneControl (刷新场景控制之前) 
+?>  XBeforeRefreshSceneControl (刷新场景控制之前) 
 ```javascript
 
     //监听  app&BaseObject
@@ -601,7 +601,7 @@
     });
 
 ```
-> *<a href="#">#</a>* XSceneControlRefreshed (场景控制刷新完成) 
+?>  XSceneControlRefreshed (场景控制刷新完成) 
 ```javascript
 
     //监听  app&BaseObject
@@ -614,7 +614,7 @@
     });
 
 ```
-> *<a href="#">#</a>* XBeforeActivateSceneControlItem (激活场景控制之前) 
+?>  XBeforeActivateSceneControlItem (激活场景控制之前) 
 ```javascript
 
     //监听  app&BaseObject
@@ -627,7 +627,7 @@
     });
 
 ```
-> *<a href="#">#</a>* XSceneControlItemActivated (激活场景控制) 
+?>  XSceneControlItemActivated (激活场景控制) 
 ```javascript
 
     //监听  app&BaseObject
@@ -640,7 +640,7 @@
     });
 
 ```
-> *<a href="#">#</a>* XBeforeDeactivateSceneControlItem (取消激活场景控制之前) 
+?>  XBeforeDeactivateSceneControlItem (取消激活场景控制之前) 
 ```javascript
 
     //监听  app&BaseObject
@@ -654,7 +654,7 @@
 
 ```
 
-> *<a href="#">#</a>* XSceneControlItemDeactivated (取消激活场景控制) 
+?>  XSceneControlItemDeactivated (取消激活场景控制) 
 ```javascript
 
     //监听  app&BaseObject

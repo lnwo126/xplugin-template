@@ -27,10 +27,10 @@
 [√ 事件标签相关(THINGX.EventTag)](08事件标签相关(THINGX.EventTag).md)
 
 ## 监控模块操作相关(THINGX.Monitor)
-[√ 事件监控模块操作相关(THINGX.Monitor)](09.监控模块与应用系统各模块关系逻辑图-1.png)
+[√ 事件监控模块操作相关(THINGX.Monitor)](09监控模块操作相关(THINGX.Monitor).md)
 
 ## 事件模块操作相关(THINGX.EventType)
-[√ 事件监控模块操作相关(THINGX.EventType)](/10事件模块相关(THINGX.EventType).md)
+[√ 事件模块操作相关(THINGX.EventType)](10事件模块操作相关(THINGX.EventType).md)
 
 
 ## 孪生体操作相关(THINGX.DigitalTwin)

@@ -2,24 +2,24 @@
 
 <!-- code_chunk_output -->
 
-- [监控模块操作相关(THINGX.Monitor)](#监控模块操作相关thingxmonitor)
-    - [*<a href="#">#</a>* THINGX.Monitor.isActivated](#-thingxmonitorisactivated)
-    - [*<a href="#">#</a>* THINGX.Monitor.add](#-thingxmonitoradd)
-    - [*<a href="#">#</a>* THINGX.Monitor.remove](#-thingxmonitorremove)
-    - [*<a href="#">#</a>* THINGX.Monitor.isInMonitorSet](#-thingxmonitorisinmonitorset)
-    - [*<a href="#">#</a>* THINGX.Monitor.setRequestInterval](#-thingxmonitorsetrequestinterval)
-    - [*<a href="#">#</a>* THINGX.Monitor.setRequestTimeout](#-thingxmonitorsetrequesttimeout)
-    - [*<a href="#">#</a>* THINGX.Monitor.refresh](#-thingxmonitorrefresh)
-    - [*<a href="#">#</a>* THINGX.Monitor.setRequestInterface](#-thingxmonitorsetrequestinterface)
+- [*<a href="#"><font color="grey">#</font></a>* 解构(THINGX.Monitor)](#font-colorgreyfont-解构thingxmonitor)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.isActivated](#font-colorgreyfont-thingxmonitorisactivated)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.add](#font-colorgreyfont-thingxmonitoradd)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.remove](#font-colorgreyfont-thingxmonitorremove)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.isInMonitorSet](#font-colorgreyfont-thingxmonitorisinmonitorset)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.setRequestInterval](#font-colorgreyfont-thingxmonitorsetrequestinterval)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.setRequestTimeout](#font-colorgreyfont-thingxmonitorsetrequesttimeout)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.refresh](#font-colorgreyfont-thingxmonitorrefresh)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.setRequestInterface](#font-colorgreyfont-thingxmonitorsetrequestinterface)
 
 <!-- /code_chunk_output -->
 
-> 监控模块与应用系统各模块关系逻辑图
+?> 监控模块与应用系统各模块关系逻辑图
 
 ![监控模块与应用系统各模块关系逻辑图-1](09.监控模块与应用系统各模块关系逻辑图-1.png "监控模块与应用系统各模块关系逻辑图")
 
 
-> 一般性解释
+?> 一般性解释
 ```javascript
 
 
@@ -43,7 +43,7 @@
 
 
 
-### 监控模块操作相关(THINGX.Monitor)
+### *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.Monitor)
 > THINGX.Monitor:namespace
 ```javascript
 
@@ -104,7 +104,7 @@
 
 ```
 
-##### *<a href="#">#</a>* THINGX.Monitor.isActivated
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.isActivated
 > 监控是否激活（开启）, THINGX.Monitor.isActivated():boolean
  
 * 类型: boolean
@@ -122,7 +122,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.Monitor.add
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.add
 > 将孪生体添加到监控中，当监控中有孪生体，自动开启并请求后台接口, THINGX.Monitor.add(digitalTwin [, purpose]):Array.<THING.BaseObject>
 
 * 参数
@@ -151,7 +151,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.Monitor.remove
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.remove
 > 将孪生体从监控中移除，当监控中没有孪生体，自动关闭监控,remove(digitalTwin [, purpose]):Array.<THING.BaseObject> 
 
 * 参数
@@ -179,7 +179,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Monitor.isInMonitorSet
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.isInMonitorSet
 > 孪生体是否在监控集合中, THINGX.Monitor.isInMonitorSet(digitalTwin):boolean
 
 * 参数
@@ -204,7 +204,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.Monitor.setRequestInterval
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.setRequestInterval
 > 设置监控接口请求间隔时间 （间隔时间，单位秒）, THINGX.Monitor.setRequestInterval(time:number):void
 
 * 参数
@@ -226,7 +226,7 @@
 
 
 
-##### *<a href="#">#</a>* THINGX.Monitor.setRequestTimeout
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.setRequestTimeout
 > 设置监控接口请求超时时间 （间隔时间，单位秒）, THINGX.Monitor.setRequestTimeout(time:number):void
 
 * 参数
@@ -246,7 +246,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Monitor.refresh
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.refresh
 > 立即通过接口向后端请求监控数据, THINGX.Monitor.refresh( [ids]:Array.<string> | string):void
 
 * 参数
@@ -269,7 +269,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.Monitor.setRequestInterface
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Monitor.setRequestInterface
 > 替换系统默认告警接口 , THINGX.Monitor.setRequestInterface(func):void
 * 参数
   ||||||
