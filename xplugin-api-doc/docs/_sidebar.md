@@ -8,6 +8,7 @@
 - [Tutorial](tutorial.md)
   - [消息监听](tutorial-消息监听.md)
   - [显示孪生体](tutorial-显示孪生体.md)
+- [Proposal](next-stage-release.md)
 - [Changelog](changelog)
 - **api list** 
   - [系统调试器(THINGX.Debugger)](01系统调试器(THINGX.Debugger).md)

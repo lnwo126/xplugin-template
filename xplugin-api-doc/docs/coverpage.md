@@ -7,6 +7,6 @@
 - author ThingJS-X 团队
 - copyrights © 2022 北京优锘科技有限公司
 
-[快速开始](README.md)
-[GitHub](https://github.com/jhildenbiddle/docsify-themeable)
-[NPM](https://www.npmjs.com/package/docsify-themeable)
+[快速开始](tutorial.md)
+[GitHub](https://github.com/GuangGuangZhang/xplugin-template)
+[NPM](https://www.npmjs.com/package/@thingjs-x/xplugin-cli)
