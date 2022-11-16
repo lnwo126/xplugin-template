@@ -4,34 +4,16 @@
 <!-- code_chunk_output -->
 
 - [THINGX framework of pre release stage](#thingx-framework-of-pre-release-stage)
-    - [命名空间(namespace)一栏表](#命名空间namespace一栏表)
-    - [事件类型(type)一栏表](#事件类型type一栏表)
-    - [事件标签(tag)一栏表](#事件标签tag一栏表)
-- [THINGX content of pre release stage](#thingx-content-of-pre-release-stage)
-    - [系统调试器(THINGX.Debugger)](#系统调试器thingxdebugger)
-    - [系统全局调度器(THINGX.Timer)](#系统全局调度器thingxtimer)
-    - [系统环境(THINGX.System)](#系统环境thingxsystem)
-    - [系统工具(THINGX.Utils)](#系统工具thingxutils)
-    - [告警模块操作相关(THINGX.Alarm)](#告警模块操作相关thingxalarm)
-    - [事件标签相关(THINGX.EventTag)](#事件标签相关thingxeventtag)
-    - [监控模块操作相关(THINGX.Monitor)](#监控模块操作相关thingxmonitor)
-    - [事件模块操作相关(THINGX.EventType)](#事件模块操作相关thingxeventtype)
-    - [孪生体操作相关(THINGX.DigitalTwin)](#孪生体操作相关thingxdigitaltwin)
-    - [业务模块操作相关(THINGX.Business)](#业务模块操作相关thingxbusiness)
-    - [图层模块操作相关(THINGX.Layer)](#图层模块操作相关thingxlayer)
-    - [场景控制模块操作相关(THINGX.SceneControl)](#场景控制模块操作相关thingxscenecontrol)
-    - [视点动画模块操作相关(THINGX.SnapshotAnimation)](#视点动画模块操作相关thingxsnapshotanimation)
-    - [操作集模块操作相关(THINGX.OperationSet)](#操作集模块操作相关thingxoperationset)
-    - [标记模块操作相关(THINGX.Marker)](#标记模块操作相关thingxmarker)
-    - [插件模块操作相关(THINGX.Plugin)](#插件模块操作相关thingxplugin)
-- [THINGX next stage release plan](#thingx-next-stage-release-plan)
-    - [增补列表](#增补列表)
-    - [支持](#支持)
+  - [命名空间(Namespace)](#命名空间namespace)
+  - [事件类型(EventType)](#事件类型eventtype)
+  - [事件标签(EventTag)](#事件标签eventtag)
+- [pre release stage](#pre-release-stage)
+- [next stage release](#next-stage-release)
 <!-- /code_chunk_output -->
 # THINGX framework of pre release stage
 
-### 命名空间(namespace)一栏表
-> pre release stage 命名空间一栏表
+## 命名空间(Namespace)
+?> pre release stage 命名空间一栏表
 ```java
     /*** zhangguang@uino.com */
     //总计 20个命名空间 、113个Methods、8个Members
@@ -63,8 +45,8 @@
 |-|THINGX.Marker|标记模块操作相关| 系统功能模块 |8|-|
 |-|THINGX.Plugin|插件模块操作相关| 系统功能模块 |9|-|
 
-### 事件类型(type)一栏表
-> pre release stage 事件类型一栏表
+## 事件类型(EventType)
+?> pre release stage 事件类型一栏表
 ```javascript
     
     //共计53个事件，其中正式发版事件 36个、提案事件 17个、预发版事件 0个
@@ -145,13 +127,12 @@
 ||THINGX.EventType.XSceneControlUIShow|场景控制模块显示事件|proposal|<input type="checkbox" checked disabled>|-|
 ||THINGX.EventType.XSceneControlUIHide|场景控制模块隐藏事件|proposal|<input type="checkbox" checked disabled>|-|
 
-### 事件标签(tag)一栏表
-> pre release stage 事件标签一栏表
+## 事件标签(EventTag)
+?> pre release stage 事件标签一栏表
 ```javascript
    
 
 ```
-
 
 |||||||
 |-|-|-|-|-|-|
@@ -193,78 +174,23 @@
 
 
 
-# THINGX content of pre release stage
+# pre release stage
 
-> pre release stage 命名空间详情列表
+?> pre release stage <a href="#/pre-release-stage-content">命名空间详情列表</a>
 
 ```javascript
-
+    // 参考 THINGX content of pre release stage 目录索引
 ```
 
-### 系统调试器(THINGX.Debugger)
-[√ 系统调试器(THINGX.Debugger)](01系统调试器(THINGX.Debugger).md)
 
-### 系统全局调度器(THINGX.Timer)
-[√ 系统全局调度器(THINGX.Timer)](02系统全局调度器(THINGX.Timer).md)
+# next stage release
 
-### 系统环境(THINGX.System)
-[√ 系统环境(THINGX.System)](03系统环境(THINGX.System).md)
+!> next stage release plan    
+**the function of the new API in the pre release stage is not perfect, and it is not recommended**
 
-### 系统工具(THINGX.Utils)
-[√ 系统工具(THINGX.Utils)](04系统工具(THINGX.Utils).md)
-
-
-### 告警模块操作相关(THINGX.Alarm)
-[√ 告警模块操作相关(THINGX.Alarm)](07告警模块操作相关(THINGX.Alarm).md)
-
-### 事件标签相关(THINGX.EventTag)
-[√ 事件标签相关(THINGX.EventTag)](08事件标签相关(THINGX.EventTag).md)
-
-### 监控模块操作相关(THINGX.Monitor)
-[√ 事件监控模块操作相关(THINGX.Monitor)](09.监控模块与应用系统各模块关系逻辑图-1.png)
-
-### 事件模块操作相关(THINGX.EventType)
-[√ 事件监控模块操作相关(THINGX.EventType)](/10事件模块相关(THINGX.EventType).md)
-
-
-### 孪生体操作相关(THINGX.DigitalTwin)
-[√ 孪生体操作相关(THINGX.DigitalTwin)](11孪生体操作相关(THINGX.DigitalTwin).md)
-
-### 业务模块操作相关(THINGX.Business)
-[√ 业务模块操作相关(THINGX.Business)](12业务模块操作相关(THINGX.Business).md)
-
-### 图层模块操作相关(THINGX.Layer)
-[√ 图层模块操作相关(THINGX.Layer)](13图层模块操作相关(THINGX.Layer).md)
-
-### 场景控制模块操作相关(THINGX.SceneControl)
-[√ 场景控制模块操作相关(THINGX.SceneControl)](14场景控制模块操作相关(THINGX.SceneControl).md)
-
-### 视点动画模块操作相关(THINGX.SnapshotAnimation)
-[√ 视点动画模块操作相关(THINGX.SnapshotAnimation)](16视点动画模块操作相关(THINGX.SnapshotAnimation).md)
-
-
-### 操作集模块操作相关(THINGX.OperationSet)
-[√ 操作集模块操作相关(THINGX.OperationSet)](17操作集模块操作相关(THINGX.OperationSet).md)
-
-
-### 标记模块操作相关(THINGX.Marker)
-[√ 标记模块操作相关(THINGX.Marker)](18标记模块操作相关(THINGX.Marker).md)
-
-
-### 插件模块操作相关(THINGX.Plugin)
-[√ 插件模块操作相关(THINGX.Plugin)](21插件模块操作相关(THINGX.Plugin).md)
-
-
-
-# THINGX next stage release plan
-
-### 增补列表
-> next stage release plan 增补列表
 ```java
-    /*** zhangguang@uino.com */
-    // the function of the new API in the pre release stage is not perfect, and it is not recommended
-
-    # 下一阶段计划增补API列表详情
+    //zhangguang@uino.com
+    # 下一阶段提案列表计划增补API详情
     # API接口增补
 
     //系统错误
@@ -377,14 +303,4 @@
         - XSceneControlUIHide                   (- app监听)(*)场景控制模块隐藏事件
 
 
-```
-### 支持
-> next stage release plan 支持
-
-```javascript
-    //ThingJS-X support version
-    - 暂未明确
-
-    //内容范围及时间
-    - 暂未明确
 ```

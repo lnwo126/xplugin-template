@@ -1,4 +1,5 @@
 
+- [概览](README)
 - [THINGX content of pre release stage](pre-release-stage-content)
 - **api list** 
   - [系统调试器(THINGX.Debugger)](01系统调试器(THINGX.Debugger).md)
@@ -17,20 +18,8 @@
   - [操作集模块操作相关(THINGX.OperationSet)](17操作集模块操作相关(THINGX.OperationSet).md)
   - [标记模块操作相关(THINGX.Marker)](18标记模块操作相关(THINGX.Marker).md)
   - [插件模块操作相关(THINGX.Plugin)](21插件模块操作相关(THINGX.Plugin).md)
+- **Links** 
 
 
 
 
-
-
-
-<!-- - [THINGX framework of pre release stage](README.md#thingx-framework-of-pre-release-stage)
-    - [命名空间(namespace)一栏表](README.md#命名空间namespace一栏表)
-    - [事件类型(type)一栏表](README.md#事件类型type一栏表)
-    - [事件标签(tag)一栏表](README.md#事件标签tag一栏表) -->
-
-<!-- - [THINGX next stage release plan](README.md#thingx-next-stage-release-plan)
-    - [增补列表](README.md#增补列表)
-    - [支持](README.md#支持)
-
-- **Links** -->
