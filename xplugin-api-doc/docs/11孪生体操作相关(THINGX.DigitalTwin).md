@@ -2,27 +2,27 @@
 
 <!-- code_chunk_output -->
 
-- [孪生体操作相关(THINGX.DigitalTwin)](#孪生体操作相关thingxdigitaltwin)
-    - [*#* THINGX.DigitalTwin.load](#-thingxdigitaltwinload)
-    - [*#* THINGX.DigitalTwin.show](#-thingxdigitaltwinshow)
-    - [*#* THINGX.DigitalTwin.hide](#-thingxdigitaltwinhide)
-    - [*#* THINGX.DigitalTwin.hasShowPurpose](#-thingxdigitaltwinhasshowpurpose)
-    - [*#* THINGX.DigitalTwin.showWithSmoothAnimation](#-thingxdigitaltwinshowwithsmoothanimation)
-    - [*#* THINGX.DigitalTwin.hideWithSmoothAnimation](#-thingxdigitaltwinhidewithsmoothanimation)
-    - [*#* THINGX.DigitalTwin.addColor](#-thingxdigitaltwinaddcolor)
-    - [*#* THINGX.DigitalTwin.removeColor](#-thingxdigitaltwinremovecolor)
-    - [*#* THINGX.DigitalTwin.addOpacity](#-thingxdigitaltwinaddopacity)
-    - [*#* THINGX.DigitalTwin.removeOpacity](#-thingxdigitaltwinremoveopacity)
-    - [*#* THINGX.DigitalTwin.showPanel](#-thingxdigitaltwinshowpanel)
-    - [*#* THINGX.DigitalTwin.hidePanel](#-thingxdigitaltwinhidepanel)
-    - [*#* THINGX.DigitalTwin.activateTabOnPanel](#-thingxdigitaltwinactivatetabonpanel)
-    - [*#* THINGX.DigitalTwin.getActivatedTabOnPanel](#-thingxdigitaltwingetactivatedtabonpanel)
-    - [*#* THINGX.DigitalTwin.getActivatedTabIndexOnPanel](#-thingxdigitaltwingetactivatedtabindexonpanel)
-    - [*#* THINGX.DigitalTwin.getDistanceToCamera](#-thingxdigitaltwingetdistancetocamera)
+- [*<a href="#"><font color="grey">#</font></a>* 解构(THINGX.DigitalTwin)](#font-colorgreyfont-解构thingxdigitaltwin)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.load](#font-colorgreyfont--thingxdigitaltwinload)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.show](#font-colorgreyfont--thingxdigitaltwinshow)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hide](#font-colorgreyfont--thingxdigitaltwinhide)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hasShowPurpose](#font-colorgreyfont--thingxdigitaltwinhasshowpurpose)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.showWithSmoothAnimation](#font-colorgreyfont--thingxdigitaltwinshowwithsmoothanimation)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hideWithSmoothAnimation](#font-colorgreyfont--thingxdigitaltwinhidewithsmoothanimation)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.addColor](#font-colorgreyfont--thingxdigitaltwinaddcolor)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.removeColor](#font-colorgreyfont--thingxdigitaltwinremovecolor)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.addOpacity](#font-colorgreyfont--thingxdigitaltwinaddopacity)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.removeOpacity](#font-colorgreyfont--thingxdigitaltwinremoveopacity)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.showPanel](#font-colorgreyfont--thingxdigitaltwinshowpanel)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hidePanel](#font-colorgreyfont--thingxdigitaltwinhidepanel)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.activateTabOnPanel](#font-colorgreyfont--thingxdigitaltwinactivatetabonpanel)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getActivatedTabOnPanel](#font-colorgreyfont--thingxdigitaltwingetactivatedtabonpanel)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getActivatedTabIndexOnPanel](#font-colorgreyfont--thingxdigitaltwingetactivatedtabindexonpanel)
+- [*<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getDistanceToCamera](#font-colorgreyfont--thingxdigitaltwingetdistancetocamera)
 
 <!-- /code_chunk_output -->
 
-### 孪生体操作相关(THINGX.DigitalTwin)
+### *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.DigitalTwin)
 > THINGX.DigitalTwin:namespace
 ```javascript
     //应用系统针对孪生体操作提供的相关能力
@@ -63,14 +63,14 @@
 ```
 
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.load
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.load
 > 加载孪生体资源, THINGX.DigitalTwin.load(DigitalTwin [, isShow]):Promise.<Array.<THING.BaseObject>>
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |isShow|boolean|否| true | 加载后是否立即显示 |    
 * 类型: Promise.<Array.<THING.BaseObject>>
 * 示例
@@ -84,14 +84,14 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.show
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.show
 > 显示孪生体, THINGX.DigitalTwin.show(DigitalTwin [, purpose]):Array.<THING.BaseObject> 
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|否| default | 显示目的 |    
 * 类型: Array.<THING.BaseObject>
 * 示例
@@ -105,14 +105,14 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.hide
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hide
 > 隐藏孪生体, THINGX.DigitalTwin.hide(DigitalTwin [, purpose]):Array.<THING.BaseObject> 
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|否| default | 显示目的 |    
 * 类型: Array.<THING.BaseObject>
 * 示例
@@ -126,14 +126,14 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.hasShowPurpose
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hasShowPurpose
 > 判断孪生体是否带有某个显示目的, THINGX.DigitalTwin.hasShowPurpose(DigitalTwin [, purpose]):boolean
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked>support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked>support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|否| default | 显示目的 |    
 * 类型: Array.<THING.BaseObject>
 * 示例
@@ -148,14 +148,14 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.showWithSmoothAnimation
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.showWithSmoothAnimation
 > 显示孪生体(带动画效果), THINGX.DigitalTwin.showWithSmoothAnimation(DigitalTwin,[,Config] [, purpose]):Promise.<Array.<THING.BaseObject>> 
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |config|THINGX.DigitalTwin.Config|否| { lerpType: 'Quartic.In', time: 500 } | 孪生体显示隐藏动画效果配置(效果配置) : Type Definitions|    
   |purpose|string|否| default | 显示目的 |    
 * 类型:Promise.<Array.<THING.BaseObject>>
@@ -170,14 +170,14 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.hideWithSmoothAnimation
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hideWithSmoothAnimation
 > 隐藏孪生体(带动画效果), THINGX.DigitalTwin.hideWithSmoothAnimation(DigitalTwin,[,Config] [, purpose]):Promise.<Array.<THING.BaseObject>>
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |config|THINGX.DigitalTwin.Config|否|{ lerpType: 'Quartic.Out', time: 500 } | 孪生体显示隐藏动画效果配置(效果配置) : Type Definitions|    
   |purpose|string|否| default | 显示目的 |    
 * 类型:Promise.<Array.<THING.BaseObject>>
@@ -194,14 +194,14 @@
 
 
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.addColor
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.addColor
 > 添加颜色到孪生体色栈中, THINGX.DigitalTwin.addColor(DigitalTwin, purpose, color [, priority] [, traverse] [, intensity]):Array.<THING.BaseObject>
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|是| default | 变色的目的（用于取消该次变色） |    
   |color|string|是| default | 十六进制颜色字符串 如'#ff0000' |
   |priority|number|否| 0 | 颜色设置的优先级,[0,1] 数值越小,权重越大 |
@@ -219,14 +219,14 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.removeColor
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.removeColor
 > 从孪生体色栈中移除指定颜色, THINGX.DigitalTwin.removeColor(DigitalTwin, purpose, traverse)Array.<THING.BaseObject> 
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|是| default | 变色的目的 |    
   |traverse|boolean|否| false | 是否遍历子元素 |  
 * 类型:Promise.<Array.<THING.BaseObject>>
@@ -241,14 +241,14 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.addOpacity
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.addOpacity
 > 添加透明度到孪生体透明栈中, THINGX.DigitalTwin.addOpacity(DigitalTwin, purpose, opacity [, priority] [, traverse] [, ignoreTag]):Array.<THING.BaseObject>
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|是| - | 透明的目的（用于取消该次透明） |    
   |opacity|number|是| - | 透明度 [0,1]数值越大,透明度越低 |
   |priority|number|否| 0 | 透明设置的优先级,[0,1] 数值越小,权重越大 |
@@ -267,14 +267,14 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.removeOpacity
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.removeOpacity
 > 从孪生体透明栈中移除指定目的的透明度, THINGX.DigitalTwin.removeOpacity(DigitalTwin, purpose [, traverse] [, ignoreTag]):Array.<THING.BaseObject>
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|是| - | 透明的目的 |    
   |traverse|boolean|否| false | 是否遍历子元素 |  
   |ignoreTag|string|否| [inheritOpacity] | 忽略的标签   |  
@@ -290,14 +290,14 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.showPanel
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.showPanel
 > 显示孪生体面板, THINGX.DigitalTwin.showPanel(DigitalTwin):void 
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" > support thingjs query syntax expression for DigitalTwin |      
+  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |      
 * 类型:void
 * 示例
     ```javascript
@@ -312,14 +312,14 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.hidePanel
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.hidePanel
 > 隐藏孪生体面板, THINGX.DigitalTwin.hidePanel(DigitalTwin):void
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" > support thingjs query syntax expression for DigitalTwin |  
+  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |  
 * 类型:void
 * 示例
     ```javascript
@@ -334,7 +334,7 @@
     ```
     ***   
 
-##### *<a href="#">#</a>* THINGX.DigitalTwin.activateTabOnPanel
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.activateTabOnPanel
 > 激活当前孪生体面板上(指定)的tab页签, THINGX.DigitalTwin.activateTabOnPanel(name):void
 
 * 参数
@@ -353,7 +353,7 @@
         //TODO 
     ```
     ***   
-##### *<a href="#">#</a>* THINGX.DigitalTwin.getActivatedTabOnPanel
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getActivatedTabOnPanel
 > 获取当前在孪生体面板上激活的tab页签名称 , THINGX.DigitalTwin.getActivatedTabOnPanel():string
 * 类型:string
 * 示例
@@ -366,7 +366,7 @@
         //TODO 
     ```
     ***   
-##### *<a href="#">#</a>* THINGX.DigitalTwin.getActivatedTabIndexOnPanel
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getActivatedTabIndexOnPanel
 > 获取当前在孪生体面板上激活的tab页签索引 , THINGX.DigitalTwin.getActivatedTabIndexOnPanel():number
 * 类型:number
 * 示例
@@ -379,14 +379,14 @@
         //TODO 
     ```
     ***   
-##### *<a href="#">#</a>* THINGX.DigitalTwin.getDistanceToCamera
+### *<a href="#"><font color="grey">#</font></a>*  THINGX.DigitalTwin.getDistanceToCamera
 > 计算孪生体到摄像机的距离, getDistanceToCamera(digitalTwin, isRecursive):number
 
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" > support thingjs query syntax expression for DigitalTwin |    
+  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |    
   |isRecursive|boolean|否| false | 是否遍历子集 |  
 * 类型:number
 * 示例

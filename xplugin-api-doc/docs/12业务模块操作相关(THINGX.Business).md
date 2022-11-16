@@ -2,21 +2,21 @@
 
 <!-- code_chunk_output -->
 
-- [业务模块操作相关(THINGX.Business)](#业务模块操作相关thingxbusiness)
-    - [*#* THINGX.Business.hide](#-thingxbusinesshide)
-    - [*#* THINGX.Business.show](#-thingxbusinessshow)
-    - [*#* THINGX.Business.activate](#-thingxbusinessactivate)
-    - [*#* THINGX.Business.deactivate](#-thingxbusinessdeactivate)
-    - [*#* THINGX.Business.refresh](#-thingxbusinessrefresh)
-    - [*#* THINGX.Business.showPanel](#-thingxbusinessshowpanel)
-    - [*#* THINGX.Business.hidePanel](#-thingxbusinesshidepanel)
-    - [*#* THINGX.Business.getActivatedName](#-thingxbusinessgetactivatedname)
-    - [*#* THINGX.Business.getPanelConfig](#-thingxbusinessgetpanelconfig)
+- [*<a href="#"><font color="grey">#</font></a>* 解构(THINGX.Business)](#font-colorgreyfont-解构thingxbusiness)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Business.hide](#font-colorgreyfont-thingxbusinesshide)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Business.show](#font-colorgreyfont-thingxbusinessshow)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Business.activate](#font-colorgreyfont-thingxbusinessactivate)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Business.deactivate](#font-colorgreyfont-thingxbusinessdeactivate)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Business.refresh](#font-colorgreyfont-thingxbusinessrefresh)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Business.showPanel](#font-colorgreyfont-thingxbusinessshowpanel)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Business.hidePanel](#font-colorgreyfont-thingxbusinesshidepanel)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Business.getActivatedName](#font-colorgreyfont-thingxbusinessgetactivatedname)
+- [*<a href="#"><font color="grey">#</font></a>* THINGX.Business.getPanelConfig](#font-colorgreyfont-thingxbusinessgetpanelconfig)
 
 <!-- /code_chunk_output -->
 
 
-### 业务模块操作相关(THINGX.Business)
+### *<a href="#"><font color="grey">#</font></a>* 解构(THINGX.Business)
 > THINGX.Business:namespace
 ```javascript
     //应用系统针对系统业务模块的相关操作能力
@@ -49,7 +49,7 @@
                     - value:string                  //背景
 
 ```
-##### *<a href="#">#</a>* THINGX.Business.hide
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Business.hide
 > 隐藏业务模块,主要指的是业务栏UI隐藏, THINGX.Business.hide():void
    
 * 类型: void
@@ -67,7 +67,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Business.show
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Business.show
 > 显示业务模块,主要指的是业务栏UI显示, THINGX.Business.show():void
    
 * 类型: void
@@ -85,7 +85,7 @@
     ```
     ***
                        
-##### *<a href="#">#</a>* THINGX.Business.activate
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Business.activate
 > 激活业务,主要指的是激活具体业务项, THINGX.Business.activate(name):void
 * 参数
   ||||||
@@ -113,7 +113,7 @@
     ```
     ***
                              
-##### *<a href="#">#</a>* THINGX.Business.deactivate
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Business.deactivate
 > 取消业务,主要指的是具体业务项, THINGX.Business.deactivate():void
    
 * 类型: void
@@ -133,7 +133,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Business.refresh
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Business.refresh
 > 刷新业务模块,刷新整个业务模块,会进行最新业务配置的请求获取, THINGX.Business.refresh():Promise.Boolean
    
 * 类型: void
@@ -154,7 +154,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.Business.showPanel
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Business.showPanel
 > 显示业务面板, THINGX.Business.showPanel(name):void
 * 参数
   ||||||
@@ -181,7 +181,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Business.hidePanel
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Business.hidePanel
 > 隐藏业务面板, THINGX.Business.hidePanel(name):void
 * 参数
   ||||||
@@ -206,7 +206,7 @@
     ***
 
 
-##### *<a href="#">#</a>* THINGX.Business.getActivatedName
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Business.getActivatedName
 > 获取当前激活的业务名称, THINGX.Business.getActivatedName():void 
 
 * 类型: void
@@ -228,7 +228,7 @@
     ```
     ***
 
-##### *<a href="#">#</a>* THINGX.Business.getPanelConfig
+### *<a href="#"><font color="grey">#</font></a>* THINGX.Business.getPanelConfig
 > 获取业务面板配置,用于相关逻辑等判断, THINGX.Business.getPanelConfig():PanelConfig
 
 * 类型: void
