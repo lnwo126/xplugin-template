@@ -213,4 +213,3 @@
 - Follow 👨🏻‍💻 @zhangguang on [![U知](./lib/uzhi.png)U知](https://wiki.uino.com/personal/1791) and [![Github](./lib/github.svg)Github](https://github.com/GuangGuangZhang/xplugin-template) for announcements
 - Create a 💬 GitHub issue for bug reports, feature requests, or questions
 - Add a ⭐️ star on GitHub and promote the project
-- Email zhangguang@uino.com
