@@ -350,3 +350,9 @@ THING.App.current.pauseEvent(THING.EventType.Deselect, '.BaseObject', THINGX.Eve
     //条件  .Room
     THING.App.current.pauseEvent(THINGX.EventType.XLeaveLevelBackward, '.Room', THINGX.EventTag.XEnterBuildingDirectAfterLeaveRoomIfOneRoomInFloor);
 ```
+
+
+!> 事件标签相关 支持   
+**质量保证:** `赵海建`    
+**审核校正:** `唐鑫` 、`张光光`  
+**问题反馈:** `张明雷(zhangminglei@uino.com)`  

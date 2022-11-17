@@ -230,19 +230,11 @@
 
 ### *<a><font color="grey">Method</font></a>* THINGX.Business.getPanelConfig
 > 获取业务面板配置,用于相关逻辑等判断, THINGX.Business.getPanelConfig():PanelConfig
-
-* 类型: void
-* 示例
-    ```javascript
-
-        //获取业务面板配置,用于相关逻辑等判断
-
-        //示例1. 获取业务面板配置
-        const config = THINGX.Business.getPanelConfig();
-        console.warn("当前业务面板的配置属性有: ", config);
-        //print result: 当前业务面板的配置属性有: config 对象,TODO 确认好了再进行添加
-
-    ```
+支持
     ***
 
+!> 业务模块操作相关 支持   
+**质量保证:** `张迪`    
+**审核校正:** `唐鑫` 、`张光光`  
+**问题反馈:** `张明雷(zhangminglei@uino.com)`  
        

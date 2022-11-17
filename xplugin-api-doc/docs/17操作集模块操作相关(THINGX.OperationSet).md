@@ -134,3 +134,8 @@
         THINGX.OperationSet.refresh();
     ```
     ***
+
+!> 操作集模块操作相关 支持   
+**质量保证:** `武帅龙`    
+**审核校正:** `唐鑫` 、`张光光`  
+**问题反馈:** `张明雷(zhangminglei@uino.com)`  
