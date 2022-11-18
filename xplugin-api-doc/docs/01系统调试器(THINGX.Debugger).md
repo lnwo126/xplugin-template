@@ -28,6 +28,8 @@
         - setLevel(level:string [, storage:boolean]):void  //设置调试等级
     
 ```
+!> **注意**     
+`禁止`在`插件代码`开发中使用该api`命名空间`内接口
 
 ### *<a><font color="grey">Method</font></a>*  THINGX.Debugger.getLevel
 > 获取调试等级  THINGX.Debugger.getLevel()
