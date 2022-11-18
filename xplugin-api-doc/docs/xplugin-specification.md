@@ -1163,10 +1163,14 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
             //插件资源包资源地址
             #uri;
 
-            #ACTIVATED = Symbol("activated");
-            #DEACTIVATED = Symbol("deactivated");
-            //默认
-            #controlbuttonImages = new Map().set(this.#ACTIVATED, "control-activated.png").set(this.#DEACTIVATED, "control-deactivated.png");
+            get ACTIVATE() {
+                return "activate";
+            }
+            get DEACTIVATE() {
+                return "deactivate";
+            }
+
+            #itemBackgroundImages = new Map().set(this.ACTIVATE, "./resources/control-activate.png").set(this.DEACTIVATE, "./resources/control-deactivate.png");
 
             constructor(name) {
                 this.#name = name;
@@ -1213,15 +1217,11 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
                 return THINGX;
             }
             /**
-             * @property  buttonImages
+             * @property  itemBackgroundImages
             * 获取场景控制按钮背景图片
             */
-            get buttonImages() {
-                //静态资源目录resources
-                let returnArray = new Array();
-                returnArray.push("./resources/".concat(this.#controlbuttonImages.get(this.#ACTIVATED)));
-                returnArray.push("./resources/".concat(this.#controlbuttonImages.get(this.#DEACTIVATED)));
-                return returnArray;
+            get itemBackgroundImages() {
+                return this.#itemBackgroundImages;
             }
 
             /**
@@ -1253,19 +1253,38 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
             /**
              * @description 设置场景控制激活状态按钮图片
             * @method setActivateImage
-            * @param filename 文件名称 e.g. control-activated.png
+            * @param filename 文件名称 e.g. control-activate.png
             */
-            setActivatedImage(filename) {
-                this.#controlbuttonImages.set(this.#ACTIVATED, filename);
+            setActivateImage(filename) {
+
+                if (filename === "" || filename === undefined) {
+                    throw new TypeError("『 ControlPlugin::setActivatedImage 』parameter cannot be empty");
+                }
+
+                if (filename.indexOf("data:image") === 0) {
+                    this.#itemBackgroundImages.set(this.ACTIVATE, filename);
+                    return this;
+                }
+
+                this.#itemBackgroundImages.set(this.ACTIVATE, "./resources/".concat(filename));
+
                 return this;
             }
             /**
              * @description 设置场景控制取消激活状态下按钮图片
-            * @method setDeactivatedImage
-            * @param filename  文件名称 e.g. control-deactivated.png
+            * @method setDeactivateImage
+            * @param filename  文件名称 e.g. control-deactivate.png
             */
-            setDeactivatedImage(filename) {
-                this.#controlbuttonImages.set(this.#DEACTIVATED, filename);
+            setDeactivateImage(filename) {
+                if (filename === "" || filename === undefined) {
+                    throw new TypeError("『 ControlPlugin::setActivatedImage 』parameter cannot be empty");
+                }
+
+                if (filename.indexOf("data:image") === 0) {
+                    this.#itemBackgroundImages.set(this.DEACTIVATE, filename);
+                    return this;
+                }
+                this.#itemBackgroundImages.set(this.DEACTIVATE, "./resources/".concat(filename));
                 return this;
             }
 
