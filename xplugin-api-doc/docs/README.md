@@ -17,8 +17,8 @@
 ## 命名空间(Namespace)
 ?> pre release stage 命名空间一栏表
 ```java
-    //总计 `21`个命名空间 、`113`个Methods、`8`个Members
-    //二级命名空间 `15`个
+    //总计 `22`个命名空间 、`116`个Methods、`8`个Members
+    //二级命名空间 `16`个
     //三级命名空间 `6`个
 ```
 
@@ -46,6 +46,7 @@
 |-|THINGX.Marker|标记模块操作相关| 系统功能模块 |8|-|
 |-|THINGX.Plugin|插件模块操作相关| 系统功能模块 |9|-|
 |-|THINGX.Earth|地球城市操作相关| 系统功能模块 |3|-|
+|-|THINGX.Scene|场景模块操作相关| 系统功能模块 |3|-|
 
 ## 事件类型(EventType)
 ?> pre release stage 事件类型一栏表

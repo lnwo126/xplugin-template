@@ -14,9 +14,9 @@
 ```javascript
     //地球等相关操作api
 
-    // THINGX.Marker 解构
+    // THINGX.Earth 解构
     THINGX.Earth:namespace //support thingjs query syntax expression
         - getRoot():THING.BaseObject            //获取地球根节点对象
         - createGeoBasePoint():boolean          //创建地图点对象
-    
+        - getCampuses():Array<THING.BaseObject> //获取地图内园区信息
 ```
