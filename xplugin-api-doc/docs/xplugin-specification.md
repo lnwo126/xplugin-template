@@ -1107,9 +1107,8 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
 * ThingJS-X 版本支持
     > ThingJS-X `V4.2.0` 开始支持
 * 生命周期逻辑图
-    ```
-  TODO: ThingJS-X V4.2.0 开始支持后进行逻辑图描述
-    ```
+    > 06-`场景控制`(多实例)生命周期逻辑图   
+    ![场景控制(多实例)生命周期逻辑图](./resources/06-场景控制插件(多实例).png)
 * 生命周期回调函数
     >场景控制插件全生命周期回调函数
     ```javascript
@@ -1356,24 +1355,27 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
 
 
 ### 面板插件`规范`
+!> 当前面板插件规范支持  `孪生体面板`、 `图表面板` 
+
 * 面板插件定义
     > 场景中以面板嵌入图表的形式呈现孪生体属性(或自定义)数据    
     > 例如:     
     > 可配置`“基础信息”`孪生体面板插件,呈现孪生体属性相关信息     
     > 可配置`“实时数据”`孪生体面板插件,呈现孪生体指标相关信息   
     > 可配置`“反向控制”`孪生体面板插件,控制孪生体形态变化     
-    > 可配置`“图表”`面板插件,业务激活时显示业务图表区域图表或图表插件   
+    > 可配置面板插件于 `图表面板` 、 `孪生体面板` 等面板内,业务激活时显示业务图表区域图表或图表插件、图层激活时显示图层面板图表   
 
 * 是否受层级变化影响
-    >`否`,主要在场景操作过程中执行
+    >`是`,层级切换改变会触发激活或取消激活回调
 * 是否支持非自定义组件
     > `支持`,回调函数会将自定义组件`实例回传`
 * ThingJS-X 版本支持
     > ThingJS-X `V4.2.0` 开始支持
 * 生命周期逻辑图
-    ```
-    TODO: ThingJS-X V4.2.0 开始支持后进行逻辑图描述
-    ```
+    > 07-`面板插件`(`孪生体面板`)生命周期逻辑图   
+    ![面板插件(孪生体面板)生命周期逻辑图](./resources/07-面板插件(孪生体面板).png)
+    > 08-`面板插件`(`图表面板`)生命周期逻辑图   
+    ![面板插件(图表面板)生命周期逻辑图](./resources/08-面板插件(图表面板).png)
 * 生命周期回调函数
     >`面板插件`全生命周期回调函数
     ```javascript
@@ -1389,7 +1391,6 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
         * @method onInited::面板插件初始化完成后载入
         * @method onActivate::面板插件被激活完成后
         * @method onDeactivate::面板插件切换取消激活完成后载入
-        * @method onLevelChange::层级切换完成后载入
         *
         * /
     ```
@@ -1402,7 +1403,6 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
     |  onInited(widget: Object, xHostObject: Object) | Revision | - | - |
     |  onActivate(widget: Object, xHostObject: Object)  | Revision | - | 是 |
     |  onDeactivate(widget: Object, xHostObject: Object)  | Revision | - | 是 |
-    |  onLevelChange(current: any, previous: any, widget: Object, xHostObject: Object) | Revision | - | - |
     |  setCategory(category:string):void; | Revision | 宿主 `xtwin`、`xchart` | - |    
     |   |  |  |  |
 
@@ -1590,19 +1590,6 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
                 console.info('%c『 面板插件 』onDeactivate', 'color: #6a3427;font-weight: bold;');
                 return true;
             }
-            /**
-             * @description 层级切换完成后载入(如果面板已渲染显示,未失去焦点仍然保持显示)
-            * @param current 当前层级实例
-            * @param previous 上一层级实例
-            * @param xhost 分类对象(宿主对象)，xtwin:孪生体对象实例、xbusiness:面板实例对象
-            * @param widget 面板关联 VUE组件实例
-            *           widget.$xHide(); //x组件扩展内置方法,用于对该组件UI的隐藏
-            *           widget.$xShow(); //x组件扩展内置方法,用于对该组件UI的显示
-            */        
-            onLevelChange(current, previous, widget, xhost) {
-                console.info('%c『 面板插件 』onLevelChange', 'color: #6a3427;font-weight: bold;');
-            }       
-
         }
 
         //第二步: 模板代码,定义插件配置项结构
@@ -1637,5 +1624,5 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
         Index();    
     ```
 !> 复制以上代码片段,可直接在浏览器 `F12` `调试模式`下的`控制台`执行,查看输出结果    
-由于场景图层插件存在`界面UI`模块,需要依赖`vue框架`,在`非vue`环境下执行会得到一条告警输出  
+由于面板插件存在`界面UI`模块,需要依赖`vue框架`,在`非vue`环境下执行会得到一条告警输出  
 `The operation of UI subcomponents depends on the Vue environment, and the Vue instance is not found`
