@@ -27,7 +27,7 @@
         - 对真实场景中设备实时监控，并可视化展示监控结果。通过与其他监控系统的对接，将监控数据在三维场景中以标记、面板、图表等形式进行展示。 
     - 监控分类(孪生体监控指标、孪生体监控事件)
         - 监控指标数据(MetricsData)   : 孪生体指标监控数据,被动激活,当孪生体被添加监控管理器内即开始按照一定的条件进行监控指标数据的请求获取,获取后的监控数据会置入孪生体集合对象中,用于标记、面板、图表等监控数据的获取。
-        - 孪生体监控事件(MetricsEvent)    : 对孪生体事件条件进行进行监控触发，其中条件包括不限于 `<`、`<=`、`=`、`>`、`>=`
+        - 孪生体监控事件(MetricsEvent)    : 对孪生体事件条件进行进行监控触发，其中条件包括 `<`、`<=`、`=`、`>`、`>=`
     
     - 注意点(对于满足条件的孪生体监控事件在未发生条件改变的时候，仅会触发一次，不推荐在触发操作集中进行指标数据计算)
         - 1. 孪生体监控事件 : 
@@ -131,7 +131,7 @@
   |名称|类型|必填|默认值|描述|
   |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked disabled> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|否| default | 监控目的 |     
-* 类型: void
+* 类型: Array.<THING.BaseObject>
 * 示例
     ```javascript
 
@@ -160,7 +160,7 @@
   |名称|类型|必填|默认值|描述|
   |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked disabled> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|否| default | 监控目的 |     
-* 类型: void
+* 类型: Array.<THING.BaseObject>
 * 示例
     ```javascript
 
@@ -170,7 +170,6 @@
         const building = THING.App.current.query('#B23A')[0];//THING.BaseObject
         THINGX.Monitor.remove(building);
         //即普通监控模块移除后，当监控中没有孪生体，自动关闭监控
-
 
         //示例2. 移除所有建筑监控,使用 thingjs query syntax expression  （监控目的：园区巡游）
         THINGX.Monitor.remove('.Building', "园区巡游");
@@ -253,7 +252,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |ids|Array.<string> 或 string|是| - | 孪生体属性中的 _DBID_ 默认对所有孪生体监控进行请求 |   
+  |ids|Array.<string> 或 string|是| - | 孪生体属性中的 _DBID_ 默认对所有孪生体监控进行请求</br>传入的id如果不在监控队列中，则接口的参数不会带有该id;传入的id所有都不在监控队列中，则不会请求接口|   
 * 类型: void
 * 示例
     ```javascript
@@ -270,7 +269,7 @@
 
 
 ### *<a><font color="grey">Method</font></a>* THINGX.Monitor.setRequestInterface
-> 替换系统默认告警接口 , THINGX.Monitor.setRequestInterface(func):void
+> 替换系统默认监控接口 , THINGX.Monitor.setRequestInterface(func):void
 * 参数
   ||||||
   |-|-|-|-|-|
@@ -281,9 +280,9 @@
 * 示例
     ```javascript
 
-        // 替换系统默认告警接口  
+        // 替换系统默认监控接口  
 
-        //示例1. 替换系统默认告警接口
+        //示例1. 替换系统默认监控接口
         // THINGX.Monitor.MonitorInjectCallback
         //          param :  Object
         //          config : Object
@@ -294,6 +293,9 @@
 
             return THINGX.Monitor.InterfaceData;
         })
+
+        //示例2. 取消替换系统默认监控接口
+        THINGX.Monitor.setRequestInterface()
 
     ```
     ***

@@ -24,7 +24,7 @@
 ```javascript
 
     // //THING.EventType.Select
-    //     - XShowDigitalTwinPanel (显示孪生体面板标签) 
+    //     - XShowDigitalTwinPanel (显示孪生体面板) 
     //     - XShowDigitalTwinDefaultEffect(显示孪生体默认效果) 
     //     - XUpdateMonitorEffect(更新监控效果)
     // //THING.EventType.Deselect
@@ -68,12 +68,12 @@
 ### *<a><font color="grey">Tag</font></a>*  孪生体选中事件 THING.EventType.Select 
 
 ```javascript
-         - XShowDigitalTwinPanel (显示孪生体面板标签) 
+         - XShowDigitalTwinPanel (显示孪生体面板) 
          - XShowDigitalTwinDefaultEffect(显示孪生体默认效果) 
          - XUpdateMonitorEffect(更新监控效果)
 ```
 
-?> XShowDigitalTwinPanel (显示孪生体面板标签) 
+?> XShowDigitalTwinPanel (显示孪生体面板) 
 ```javascript
     
     //App 操作
