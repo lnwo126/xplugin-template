@@ -2,21 +2,21 @@
 
 <!-- code_chunk_output -->
 
-- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.Monitor)](#font-colorgreynamespacefont-解构thingxmonitor)
-- [*<a><font color="grey">Method</font></a>* THINGX.Monitor.isActivated](#font-colorgreymethodfont-thingxmonitorisactivated)
-- [*<a><font color="grey">Method</font></a>* THINGX.Monitor.add](#font-colorgreymethodfont-thingxmonitoradd)
-- [*<a><font color="grey">Method</font></a>* THINGX.Monitor.remove](#font-colorgreymethodfont-thingxmonitorremove)
-- [*<a><font color="grey">Method</font></a>* THINGX.Monitor.isInMonitorSet](#font-colorgreymethodfont-thingxmonitorisinmonitorset)
-- [*<a><font color="grey">Method</font></a>* THINGX.Monitor.setRequestInterval](#font-colorgreymethodfont-thingxmonitorsetrequestinterval)
-- [*<a><font color="grey">Method</font></a>* THINGX.Monitor.setRequestTimeout](#font-colorgreymethodfont-thingxmonitorsetrequesttimeout)
-- [*<a><font color="grey">Method</font></a>* THINGX.Monitor.refresh](#font-colorgreymethodfont-thingxmonitorrefresh)
-- [*<a><font color="grey">Method</font></a>* THINGX.Monitor.setRequestInterface](#font-colorgreymethodfont-thingxmonitorsetrequestinterface)
+- [*Namespace* 解构(THINGX.Monitor)](#namespace-解构thingxmonitor)
+- [*Method* THINGX.Monitor.isActivated](#method-thingxmonitorisactivated)
+- [*Method* THINGX.Monitor.add](#method-thingxmonitoradd)
+- [*Method* THINGX.Monitor.remove](#method-thingxmonitorremove)
+- [*Method* THINGX.Monitor.isInMonitorSet](#method-thingxmonitorisinmonitorset)
+- [*Method* THINGX.Monitor.setRequestInterval](#method-thingxmonitorsetrequestinterval)
+- [*Method* THINGX.Monitor.setRequestTimeout](#method-thingxmonitorsetrequesttimeout)
+- [*Method* THINGX.Monitor.refresh](#method-thingxmonitorrefresh)
+- [*Method* THINGX.Monitor.setRequestInterface](#method-thingxmonitorsetrequestinterface)
 
 <!-- /code_chunk_output -->
 
 ?> 监控模块与应用系统各模块关系逻辑图
 
-![监控模块与应用系统各模块关系逻辑图-1](09.监控模块与应用系统各模块关系逻辑图-1.png "监控模块与应用系统各模块关系逻辑图")
+![监控模块与应用系统各模块关系逻辑图-1](./resources/example/示例图09.监控模块与应用系统各模块关系逻辑图-1.png "监控模块与应用系统各模块关系逻辑图")
 
 
 ?> 一般性解释
@@ -82,15 +82,13 @@
                 - data: Object                      //监控数据
                 - success:boolean                   //接口状态
 
-
-    Example(指标数据格式 MONITOR/_/_/指标)    
-        
+    //指标数据格式:example
+    - MONITOR/_/_/指标
         {
-            "code": -1,
-            "data": {
-                "913456225609343": { //孪生体ID
+            "913456225609343": { //孪生体ID
                     "_": {
-                        "_": {//指标
+                        "_": {
+                            //指标
                             "工作电压": {
                                 "value": "12.8",
                                 "unit": ""
@@ -98,8 +96,7 @@
                         }
                     }
                 }
-            },
-            "success": true
+            }
         }
 
 ```
