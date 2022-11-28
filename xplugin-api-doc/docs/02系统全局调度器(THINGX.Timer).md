@@ -3,13 +3,13 @@
 
 <!-- code_chunk_output -->
 
-- [*<a><font color="grey">Namespace</font></a>*  解构(THINGX.Timer)](#font-colorgreynamespacefont--解构thingxtimer)
-- [*<a><font color="grey">Method</font></a>*  THINGX.Timer.addInterval](#font-colorgreymethodfont--thingxtimeraddinterval)
-- [*<a><font color="grey">Method</font></a>*  THINGX.Timer.addTimeout](#font-colorgreymethodfont--thingxtimeraddtimeout)
-- [*<a><font color="grey">Method</font></a>*  THINGX.Timer.remove](#font-colorgreymethodfont--thingxtimerremove)
-- [*<a><font color="grey">Method</font></a>*  THINGX.Timer.removeAll](#font-colorgreymethodfont--thingxtimerremoveall)
-- [*<a><font color="grey">Method</font></a>*  THINGX.Timer.get](#font-colorgreymethodfont--thingxtimerget)
-- [*<a><font color="grey">Method</font></a>*  THINGX.Timer.getAll](#font-colorgreymethodfont--thingxtimergetall)
+- [*Namespace*  解构(THINGX.Timer)](#namespace--解构thingxtimer)
+- [*Method*  THINGX.Timer.addInterval](#method--thingxtimeraddinterval)
+- [*Method*  THINGX.Timer.addTimeout](#method--thingxtimeraddtimeout)
+- [*Method*  THINGX.Timer.remove](#method--thingxtimerremove)
+- [*Method*  THINGX.Timer.removeAll](#method--thingxtimerremoveall)
+- [*Method*  THINGX.Timer.get](#method--thingxtimerget)
+- [*Method*  THINGX.Timer.getAll](#method--thingxtimergetall)
 <!-- /code_chunk_output -->
 
 ###  *<a><font color="grey">Namespace</font></a>*  解构(THINGX.Timer)
@@ -71,16 +71,16 @@
         const timerid = THINGX.Timer.addInterval(()=>{
             console.warn("use the layer plug-in to change the color of the forklift model.");
         },1500,"forklift");
-        console.wran(" unique identifier : %s ", timerid);
+        console.warn(" unique identifier : %s ", timerid);
         
         //示例2. 每隔 15s 执行一次打印输出 (给定唯一标识和模型颜色)
         //return value interval unique identifier （返回指定的定时器唯一标识:forklift-color）
         const timerid = THINGX.Timer.addInterval((params)=>{
-            params?.foreach((element)=>{
+            params?.forEach((element)=>{
                 console.warn("the forklift turned from yellow to %s.",element);
             });      
         },1500,"forklift-color",['red','green']);
-        console.wran(" unique identifier : %s ", timerid);
+        console.warn(" unique identifier : %s ", timerid);
 
     ```
     ***
@@ -146,6 +146,7 @@
 * 类型: 无 -->
 * 示例
     ```javascript
+        //谨慎使用,执行后会将系统定时器等相关调度移除
 
         //示例：移除Timer调度器内所有定时器
         THINGX.Timer.removeAll();
@@ -183,8 +184,8 @@
         //示例：获取Timer调度器内所有定时器
          const instances = THINGX.Timer.getAll();
         //打印输出获取到的 定时器实例
-         instances?.foreach((instance,index)=>{
-            console.warn("第 %s 个定时器实例 %s: ", index, instance);
+         instances?.forEach((instance,index)=>{
+            console.warn("第 %s 个定时器实例: %s ", index, JSON.stringify(instance));
             //实例结构参考 系统调试器(THINGX.Timer) Type Definitions
          });
 
