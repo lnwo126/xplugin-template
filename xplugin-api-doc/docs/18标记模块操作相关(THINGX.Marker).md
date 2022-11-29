@@ -2,15 +2,15 @@
 
 <!-- code_chunk_output -->
 
-- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.Marker)](#font-colorgreynamespacefont-解构thingxmarker)
-- [*<a><font color="grey">Method</font></a>* THINGX.Marker.add](#font-colorgreymethodfont-thingxmarkeradd)
-- [*<a><font color="grey">Method</font></a>* THINGX.Marker.remove](#font-colorgreymethodfont-thingxmarkerremove)
-- [*<a><font color="grey">Method</font></a>* THINGX.Marker.show](#font-colorgreymethodfont-thingxmarkershow)
-- [*<a><font color="grey">Method</font></a>* THINGX.Marker.hide](#font-colorgreymethodfont-thingxmarkerhide)
-- [*<a><font color="grey">Method</font></a>* THINGX.Marker.get](#font-colorgreymethodfont-thingxmarkerget)
-- [*<a><font color="grey">Method</font></a>* THINGX.Marker.getPreloadName](#font-colorgreymethodfont-thingxmarkergetpreloadname)
-- [*<a><font color="grey">Method</font></a>* THINGX.Marker.getAll](#font-colorgreymethodfont-thingxmarkergetall)
-- [*<a><font color="grey">Method</font></a>* THINGX.Marker.getConfig](#font-colorgreymethodfont-thingxmarkergetconfig)
+- [*Namespace* 解构(THINGX.Marker)](#namespace-解构thingxmarker)
+- [*Method* THINGX.Marker.add](#method-thingxmarkeradd)
+- [*Method* THINGX.Marker.remove](#method-thingxmarkerremove)
+- [*Method* THINGX.Marker.show](#method-thingxmarkershow)
+- [*Method* THINGX.Marker.hide](#method-thingxmarkerhide)
+- [*Method* THINGX.Marker.get](#method-thingxmarkerget)
+- [*Method* THINGX.Marker.getPreloadName](#method-thingxmarkergetpreloadname)
+- [*Method* THINGX.Marker.getAll](#method-thingxmarkergetall)
+- [*Method* THINGX.Marker.getConfig](#method-thingxmarkergetconfig)
 
 <!-- /code_chunk_output -->
 
@@ -24,7 +24,7 @@
 
     // THINGX.Marker 解构
     THINGX.Marker:namespace //support thingjs query syntax expression
-        - add(digitalTwin:THING.BaseObject , name:string [, isIncludeModel:boolean]):Array.<THING.BaseObject> //增加标记，增加后立即显示
+        - add(digitalTwin:THING.BaseObject , name:string ):Array.<THING.BaseObject> //增加标记，增加后立即显示
         - remove(digitalTwin:THING.BaseObject, name:string ):boolean                                //移除标记
         - show(digitalTwin:THING.BaseObject, name:string  [, purpose]):Array.<THING.BaseObject>     //显示标记
         - hide(digitalTwin:THING.BaseObject, name:string  [, purpose]):Array.<THING.BaseObject>     //隐藏标记
@@ -36,7 +36,7 @@
 ```
 
 ### *<a><font color="grey">Method</font></a>* THINGX.Marker.add
-> 给孪生体添加标记, THINGX.Marker.add(digitalTwin:THING.BaseObject[, name:string] [, isIncludeModel:boolean]):Array.<THING.BaseObject>
+> 给孪生体添加标记, THINGX.Marker.add(digitalTwin:THING.BaseObject[, name:string] ):Array.<THING.BaseObject>
 
 * 参数
   ||||||
@@ -44,7 +44,6 @@
   |名称|类型|必填|默认值|描述|
   |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|    
-  |isIncludeModel|boolean|-| true | 是否包含模型 |   
 * 类型: Array.<THING.BaseObject>
 * 示例
     ```javascript

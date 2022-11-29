@@ -10,11 +10,11 @@
 
     // THINGX.OperationSet 解构
     THINGX.OperationSet:namespace
-        - run(name:string [, target:THING.BaseObject|string ][, params:Map.<string, any>]):Instance    //运行一个操作集
+        - run(name:string [, target:THING.BaseObject|string ][, params:object]):Instance    //运行一个操作集
         - stop(name:string):void           //停止一个操作集的运行
         - pause(name:string):void          //暂停一个操作集的运行
         - resume(name:string):void         //恢复一个操作集的运行
-        - refresh():void                                //重新读取操作集可视化配置
+        - refresh():void                   //重新读取操作集可视化配置
         Type Definitions
             - Instance  (操作集实例)//Instance 提案 ，未对当前Instance进行具体设计,不推荐直接使用              
 
@@ -23,14 +23,14 @@
 
 
 ### *<a><font color="grey">Method</font></a>* THINGX.OperationSet.run
-> 运行一个操作集, THINGX.OperationSet.run(name:string [, target:THING.BaseObject|string ][, params:Map.<string, any>]):Instance
+> 运行一个操作集, THINGX.OperationSet.run(name:string [, target:THING.BaseObject|string ][, params:object]):Instance
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
   |name|string|是| - | 操作集名称 |     
   |target|THING.BaseObject或string|否| - | 孪生体对象 | 
-  |params|Map.<string, any>|否| - | 操作集存储单元集合 |   
+  |params|object|否| - | 操作集存储单元集合 |   
 * 类型: THINGX.OperationSet.Instance
 * 示例
     ```javascript

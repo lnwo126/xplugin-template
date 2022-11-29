@@ -2,14 +2,14 @@
 
 <!-- code_chunk_output -->
 
-- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.SnapshotAnimation)](#font-colorgreynamespacefont-解构thingxsnapshotanimation)
-- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.hide](#font-colorgreymethodfont-thingxsnapshotanimationhide)
-- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.show](#font-colorgreymethodfont-thingxsnapshotanimationshow)
-- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.play](#font-colorgreymethodfont-thingxsnapshotanimationplay)
-- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.pause](#font-colorgreymethodfont-thingxsnapshotanimationpause)
-- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.resume](#font-colorgreymethodfont-thingxsnapshotanimationresume)
-- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.stop](#font-colorgreymethodfont-thingxsnapshotanimationstop)
-- [*<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.setPlayMode](#font-colorgreymethodfont-thingxsnapshotanimationsetplaymode)
+- [*Namespace* 解构(THINGX.SnapshotAnimation)](#namespace-解构thingxsnapshotanimation)
+- [*Method* THINGX.SnapshotAnimation.hide](#method-thingxsnapshotanimationhide)
+- [*Method* THINGX.SnapshotAnimation.show](#method-thingxsnapshotanimationshow)
+- [*Method* THINGX.SnapshotAnimation.play](#method-thingxsnapshotanimationplay)
+- [*Method* THINGX.SnapshotAnimation.pause](#method-thingxsnapshotanimationpause)
+- [*Method* THINGX.SnapshotAnimation.resume](#method-thingxsnapshotanimationresume)
+- [*Method* THINGX.SnapshotAnimation.stop](#method-thingxsnapshotanimationstop)
+- [*Method* THINGX.SnapshotAnimation.setPlayMode](#method-thingxsnapshotanimationsetplaymode)
 
 <!-- /code_chunk_output -->
 
@@ -99,8 +99,6 @@
 
         //示例. 暂停播放当前视点动画
         THINGX.SnapshotAnimation.pause();
-        //print result: 视点动画暂停播放: true
-        
 
     ```
     ***
@@ -116,8 +114,6 @@
 
         //示例. 暂停播放当前视点动画
         THINGX.SnapshotAnimation.resume();
-         //print result: 视点动画暂停播放: true
-       
 
     ```
     ***
@@ -133,7 +129,7 @@
 
         //示例. 停止播放视点动画
         THINGX.SnapshotAnimation.stop();
-        //print result: 视点动画停止播放: true
+
     ```
     ***
 
@@ -143,16 +139,15 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |mode|string|否|once  | 设置视点动画播放模式 </br>once:不循环,只执行一次、repeat:不断循环 ,listloop:列表循环 |    
-* 类型: void
+  |mode|string|否|once  | 设置视点动画播放模式 </br>once:不循环,只执行一次、loop:单个循环 、listloop:列表循环 |    
+* 类型: void    
 * 示例
     ```javascript
 
-        //设置视点动画播放模式
-        // 视点动画播放模目前支持 once、repeat
+        // 设置视点动画播放模式
 
-        //示例. 循环播放`园区巡游`视点动画
-        THINGX.SnapshotAnimation.setPlayMode("repeat");
+        // 示例. 循环播放`园区巡游`视点动画
+        THINGX.SnapshotAnimation.setPlayMode("listloop");
         THINGX.SnapshotAnimation.play("园区巡游").then((result)=>{
              console.warn("视点动画播放: %s", result);
         });
