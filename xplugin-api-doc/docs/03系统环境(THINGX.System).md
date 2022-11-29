@@ -2,22 +2,22 @@
 
 <!-- code_chunk_output -->
 
-- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.System)](#font-colorgreynamespacefont-解构thingxsystem)
-- [*<a><font color="grey">Namespace</font></a>* 系统版本库(THINGX.System.Version)](#font-colorgreynamespacefont-系统版本库thingxsystemversion)
-  - [*<a><font color="red">Members</font></a>* THINGX.System.Version.成员属性](#font-colorredmembersfont-thingxsystemversion成员属性)
-- [*<a><font color="grey">Namespace</font></a>* 系统资源库(THINGX.System.Resource)](#font-colorgreynamespacefont-系统资源库thingxsystemresource)
-  - [*<a><font color="red">Members</font></a>* THINGX.System.Resource.成员属性](#font-colorredmembersfont-thingxsystemresource成员属性)
-- [*<a><font color="grey">Namespace</font></a>* 系统加载控制库(THINGX.System.Loading)](#font-colorgreynamespacefont-系统加载控制库thingxsystemloading)
-  - [*<a><font color="grey">Method</font></a>* THINGX.System.Loading.show](#font-colorgreymethodfont-thingxsystemloadingshow)
-  - [*<a><font color="grey">Method</font></a>* THINGX.System.Loading.hide](#font-colorgreymethodfont-thingxsystemloadinghide)
-- [*<a><font color="grey">Namespace</font></a>* 系统提示信息库(THINGX.System.Message)](#font-colorgreynamespacefont-系统提示信息库thingxsystemmessage)
-  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.setConfig](#font-colorgreymethodfont-thingxsystemmessagesetconfig)
-  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.info](#font-colorgreymethodfont-thingxsystemmessageinfo)
-  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.success](#font-colorgreymethodfont-thingxsystemmessagesuccess)
-  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.warning](#font-colorgreymethodfont-thingxsystemmessagewarning)
-  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.error](#font-colorgreymethodfont-thingxsystemmessageerror)
-  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.loading](#font-colorgreymethodfont-thingxsystemmessageloading)
-  - [*<a><font color="grey">Method</font></a>* THINGX.System.Message.destory](#font-colorgreymethodfont-thingxsystemmessagedestory)
+- [*Namespace* 解构(THINGX.System)](#namespace-解构thingxsystem)
+- [*Namespace* 系统版本库(THINGX.System.Version)](#namespace-系统版本库thingxsystemversion)
+  - [*Members* THINGX.System.Version.成员属性](#members-thingxsystemversion成员属性)
+- [*Namespace* 系统资源库(THINGX.System.Resource)](#namespace-系统资源库thingxsystemresource)
+  - [*Members* THINGX.System.Resource.成员属性](#members-thingxsystemresource成员属性)
+- [*Namespace* 系统加载控制库(THINGX.System.Loading)](#namespace-系统加载控制库thingxsystemloading)
+  - [*Method* THINGX.System.Loading.show](#method-thingxsystemloadingshow)
+  - [*Method* THINGX.System.Loading.hide](#method-thingxsystemloadinghide)
+- [*Namespace* 系统提示信息库(THINGX.System.Message)](#namespace-系统提示信息库thingxsystemmessage)
+  - [*Method* THINGX.System.Message.setConfig](#method-thingxsystemmessagesetconfig)
+  - [*Method* THINGX.System.Message.info](#method-thingxsystemmessageinfo)
+  - [*Method* THINGX.System.Message.success](#method-thingxsystemmessagesuccess)
+  - [*Method* THINGX.System.Message.warning](#method-thingxsystemmessagewarning)
+  - [*Method* THINGX.System.Message.error](#method-thingxsystemmessageerror)
+  - [*Method* THINGX.System.Message.loading](#method-thingxsystemmessageloading)
+  - [*Method* THINGX.System.Message.destroy](#method-thingxsystemmessagedestroy)
 
 <!-- /code_chunk_output -->
 
@@ -54,7 +54,7 @@
             - version:string    版本号(ThingJS-X)
             - thingjs:string    版本号(ThingJS)
             - marker:string     版本号(标记库)
-            - geo:string        版本号(地图) ???? thingjs geo
+            - geo:string        版本号(地图)
     
 ```
 #### *<a><font color="red">Members</font></a>* THINGX.System.Version.成员属性
@@ -129,13 +129,13 @@
         //absoluteRootWithDomain 用户域
         // 示例3: 获取ThingJS-X 零代码系统（用户域）根资源绝对地址
         const absoluteRootWithDomain = THINGX.System.Resource.absoluteRootWithDomain;  
-        console.warn("ThingJS-X 零代码系统（公共域）根资源绝对地址: %s",absoluteRootWithDomain);
+        console.warn("ThingJS-X 零代码系统（用户域）根资源绝对地址: %s",absoluteRootWithDomain);
         //print result: ThingJS-X 零代码系统（用户域）根资源绝对地址: http://192.168.11.78:1662/thing/rsm/537929337070862
                
         //relativeRootWithDomain 用户域
         // 示例4: 获取ThingJS-X 零代码系统（用户域）根资源相对地址
         const relativeRootWithDomain = THINGX.System.Resource.relativeRootWithDomain;  
-        console.warn("ThingJS-X 零代码系统（公共域）根资源相对地址: %s",relativeRootWithDomain);
+        console.warn("ThingJS-X 零代码系统（用户域）根资源相对地址: %s",relativeRootWithDomain);
         //print result: ThingJS-X 零代码系统（用户域）根资源相对地址: thing/rsm/537929337070862
                
     ```
@@ -212,7 +212,7 @@
                             //显示错误信息
             - loading(config:Config||string):void       
                             //显示加载信息
-            - destory():void                            
+            - destroy():void                            
                             //销毁当前提示框
         Type Definitions
             - Config (信息配置)               
@@ -340,7 +340,7 @@
                 console.warn("warning, the message prompt box is closed.");
             },
             content : "the alarm system is abnormal, please pay attention to the inspection report.",
-            closable : false,       //不显示关闭按钮
+            closable : true,       //显示关闭按钮
             duration : 3            //延时 3秒关闭
         };
 
@@ -372,7 +372,7 @@
                 console.warn("error, the message prompt box is closed.");
             },
             content : "system error, please contact the administrator to check.",
-            closable : false,       //不显示关闭按钮
+            closable : true,       //显示关闭按钮
             duration : 3            //延时 3秒关闭
         };
 
@@ -406,7 +406,7 @@
                 console.warn("loading, the message prompt box is closed.");
             },
             content : "plug-in is loading, please wait.",
-            closable : false,       //不显示关闭按钮
+            closable : tru,         //显示关闭按钮
             duration : 3            //延时 3秒关闭
         };
 
@@ -415,14 +415,14 @@
     ```
     ***
 
-#### *<a><font color="grey">Method</font></a>* THINGX.System.Message.destory
-> 销毁当前生效中的提示框 THINGX.System.Message.destory():void 
+#### *<a><font color="grey">Method</font></a>* THINGX.System.Message.destroy
+> 销毁当前生效中的提示框 THINGX.System.Message.destroy():void 
 * 类型: void
 * 示例
     ```javascript
 
         // 示例1. 销毁当前生效中的提示框  常与 loading() 配合使用
-         THINGX.System.Message.destory();
+         THINGX.System.Message.destroy();
 
         // 示例2. 与 loading() 配合使用创建加载提示框, 5秒后销毁该loading 提示框
         //配置loading 提示框参数，加载显示30秒后默认关闭
@@ -431,15 +431,15 @@
                 console.warn("loading, the message prompt box is closed.");
             },
             content : "plug-in is loading, please wait.",
-            closable : false,        //不显示关闭按钮
-            duration : 30            //延时 20秒关闭
+            closable : true,        //显示关闭按钮
+            duration : 30           //延时 30秒关闭
         };
         //显示加载 loading 提示框
         THINGX.System.Message.loading(config);
         //5秒后（定时器推荐使用全局定时器调度管理器创建维护） 销毁loading 提示框 
         THINGX.Timer.addTimeout(()=>{
                 //销毁loading 提示框
-               THINGX.System.Message.destory(); 
+               THINGX.System.Message.destroy(); 
         },5000);
 
     ```

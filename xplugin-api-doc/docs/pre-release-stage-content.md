@@ -1,9 +1,13 @@
 
 # THINGX content of pre release stage
 
-> pre release stage 命名空间详情列表
+?> pre release stage 命名空间列表清单   
+THINGX 命名空间内容预发一览清单
 
 ```javascript
+    //总计 `22`个命名空间 、`113`个Methods、`8`个Members
+    //二级命名空间 `16`个
+    //三级命名空间 `6`个
 
 ```
 
@@ -59,3 +63,9 @@
 
 ## 插件模块操作相关(THINGX.Plugin)
 [√ 插件模块操作相关(THINGX.Plugin)](21插件模块操作相关(THINGX.Plugin).md)
+
+## 地球城市操作相关(THINGX.Earth)
+[√ 地球城市操作相关(THINGX.Earth)](31地球城市操作相关(THINGX.Earth).md)
+
+## 场景模块操作相关(THINGX.Scene)
+[√ 场景模块操作相关(THINGX.Scene)](41场景模块操作相关(THINGX.Scene).md)

@@ -25,18 +25,18 @@
         // - 无
         Methods
             - isInitialized():boolean               //告警系统是否初始化完成
-            - activate([purpose:string]):boolean    //激活告警系统
-            - deactivate([purpose:string]):boolean  //取消激活告警系统
+            - activate([purpose:string]):void    //激活告警系统
+            - deactivate([purpose:string]):void  //取消激活告警系统
             - isActivated():boolean                 //告警系统是否激活  
             - getPurposes():Array.<string>          //获取已存在的激活告警系统的目的
-            - refresh():void                        //立即进行一次告警请求并刷新告警数据
+            - refresh():void                        //立即进行一次告警请求并刷新告警数据，当告警处于未激活状态时，该方法不会执行 
             - getHighestOnDigitalTwin(digitalTwin, isTraverse:boolean):object  
                                                     //获取孪生体上最高告警级别数据  
-            - getLevelConfig():Map.<number, THINGX.Alarm.LevelItemConfig>
+            - getLevelConfig():Object.<number, THINGX.Alarm.LevelItemConfig>
                                                     //获取告警级别配置
             - getRequestConfig():THINGX.Alarm.RequestConfig
                                                     //获取告警查询配置
-            - setRequestConfig(config:THINGX.Alarm.RequestConfig [, isRemoteData:boolean])
+            - setRequestConfig(config:THINGX.Alarm.RequestConfig [, isRemoteData:boolean]):void
                                                     //设置告警查询配置
             - setRequestInterface(func:AlarmInjectCallback):void       
                                                     //替换系统默认告警接口
@@ -56,6 +56,8 @@
                         //告警级别
                 - classNames:Array.<string>           
                         //孪生体业务分类，默认为空数组代表所有
+                - dcId:string		    
+                        //场景的数据库ID（DBID）
                 - dcIds:Array.<string>			    
                         //场景的数据库ID数组（DBID）
                 - enableGlobal:boolean	            
@@ -144,13 +146,13 @@
     ***
 
 ### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.activate
-> 激活告警系统, THINGX.Alarm.activate([purpose:string]):boolean
+> 激活告警系统, THINGX.Alarm.activate([purpose:string]):void
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
   |purpose|string|-| default | 告警系统激活目的 |    
-* 类型: boolean
+* 类型: void
 * 示例
     ```javascript
 
@@ -165,13 +167,13 @@
     ***
    
 ### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.deactivate
-> 取消激活告警系统, THINGX.Alarm.deactivate([purpose:string]):boolean
+> 取消激活告警系统, THINGX.Alarm.deactivate([purpose:string]):void
 * 参数
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
   |purpose|string|-| default | 告警系统激活目的 |    
-* 类型: boolean
+* 类型: void
 * 示例
     ```javascript
 
@@ -219,13 +221,13 @@
     ***
 
 ### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.refresh
-> 立即进行一次告警请求并刷新告警数据 , THINGX.Alarm.refresh():void 
+> 立即进行一次告警请求并刷新告警数据，当告警处于未激活状态时，该方法不会执行  , THINGX.Alarm.refresh():void 
 
 * 类型: void
 * 示例
     ```javascript
 
-        // 立即进行一次告警请求并刷新告警数据  
+        // 立即进行一次告警请求并刷新告警数据，当告警处于未激活状态时，该方法不会执行  
 
         //示例. 
         THINGX.Alarm.refresh();
@@ -241,7 +243,7 @@
   |名称|类型|必填|默认值|描述|
   |digitalTwin|THING.BaseObject|是| - | 孪生体对象 |    
   |isTraverse|boolean|-| false | 是否遍历该孪生体的孩子 |    
-* 类型: boolean
+* 类型: object
 * 示例
     ```javascript
 
@@ -252,7 +254,6 @@
         const alarm = THINGX.Alarm.getHighestOnDigitalTwin(building);
         console.warn("一号教学楼上最高告警级别数据: ", alarm);
 
-
         //示例2. 获取 `一号教学楼` 包括楼层、房间等设备 上最高告警级别数据
         const building = THING.App.current.query('#一号教学楼')[0];//THING.BaseObject
         const alarm = THINGX.Alarm.getHighestOnDigitalTwin(building,true);
@@ -262,21 +263,20 @@
 
 
 ### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.getLevelConfig
-> 获取告警级别配置   , THINGX.Alarm.getLevelConfig():Map.<level:number, THINGX.Alarm.LevelItemConfig>
+> 获取告警级别配置   , THINGX.Alarm.getLevelConfig():Object.<level:number, THINGX.Alarm.LevelItemConfig>
 
-* 类型: Map.<level:number, THINGX.Alarm.LevelItemConfig>
+* 类型: Object.<level:number, THINGX.Alarm.LevelItemConfig>
 * 示例
     ```javascript
 
         // 获取告警级别配置  
 
         //示例. 
-        const map = THINGX.Alarm.getLevelConfig();
-        map.forEach((item,key)=>{
+        const config = THINGX.Alarm.getLevelConfig();
+        Object.entries(config).forEach(([key,item])=>{
             console.warn(" %s 级高级配置 ", key, item);
             //item 类型详情查看 Type Definitions ：  THINGX.Alarm.LevelItemConfig
         })
-
 
     ```
     ***
@@ -312,17 +312,17 @@
         // 设置告警查询配置  
 
         //示例1. 设置查询告警级别为 1,2,3 级的告警
-        const config = THINGX.Alarm.setRequestConfig({
+        THINGX.Alarm.setRequestConfig({
             alarmLevel: [1,2,3]
         });
 
         //示例2. 设置查询孪生体业务分类为 '温湿度感应器' 的告警数据
-        const config = THINGX.Alarm.setRequestConfig({
+        THINGX.Alarm.setRequestConfig({
             classNames: ['温湿度感应器']
         });
 
         //示例3. 根据孪生体属性筛选告警
-        const config = THINGX.Alarm.setRequestConfig({
+        THINGX.Alarm.setRequestConfig({
            orAttrs:[{ "key": '业务分类', "value":"空调", "optType": 1 }]
         });
 
@@ -354,6 +354,9 @@
 
             return THINGX.Alarm.InterfaceData
         })
+
+        //示例2. 取消替换系统默认告警接口
+        THINGX.Alarm.setRequestInterface()
 
     ```
     ***

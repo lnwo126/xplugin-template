@@ -2,12 +2,12 @@
 
 <!-- code_chunk_output -->
 
-- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.Utils)](#font-colorgreynamespacefont-解构thingxutils)
-- [*<a><font color="grey">Namespace</font></a>* 数据请求库(THINGX.Utils.Http)](#font-colorgreynamespacefont-数据请求库thingxutilshttp)
-  - [*<a><font color="grey">Method</font></a>* THINGX.Utils.Http.get](#font-colorgreymethodfont-thingxutilshttpget)
-  - [*<a><font color="grey">Method</font></a>* THINGX.Utils.Http.post](#font-colorgreymethodfont-thingxutilshttppost)
-- [*<a><font color="grey">Namespace</font></a>* 空间计算库(THINGX.Utils.Space)](#font-colorgreynamespacefont-空间计算库thingxutilsspace)
-  - [*<a><font color="grey">Method</font></a>* THINGX.Utils.Space.queryBySphere](#font-colorgreymethodfont-thingxutilsspacequerybysphere)
+- [*Namespace* 解构(THINGX.Utils)](#namespace-解构thingxutils)
+- [*Namespace* 数据请求库(THINGX.Utils.Http)](#namespace-数据请求库thingxutilshttp)
+  - [*Method* THINGX.Utils.Http.get](#method-thingxutilshttpget)
+  - [*Method* THINGX.Utils.Http.post](#method-thingxutilshttppost)
+- [*Namespace* 空间计算库(THINGX.Utils.Space)](#namespace-空间计算库thingxutilsspace)
+  - [*Method* THINGX.Utils.Space.queryBySphere](#method-thingxutilsspacequerybysphere)
 
 <!-- /code_chunk_output -->
 
@@ -73,7 +73,7 @@
         const config = {
             timeout: 6000,
             withCredentials:false,
-            headers: new Map().set("token","x88sadadis923213msad")
+            headers: new Map().set("token","x88sadadis923213msad"),
             responseType: "json"
         };
 
@@ -82,8 +82,23 @@
                 console.warn('请求响应结果:', object);
         });
 
-        // 示例2. TODO
+        // 示例2. 通过接口获取资源描述文件
+        const url = "http://192.168.21.131:1662/thing/rsm/1310278173863045/configure/action/1225-2249/bundle.json";
+        const data = {
+            // "key1":"value1",
+            // "key2":"value2"   
+        };
+        const config = {
+            timeout: 6000,
+            withCredentials:false,
+            headers: new Map().set("tk","2e3d55a06e05a2ccf570824ccdd4253df02f5319db4050b075093296dc8cdce62168273738b580c987208dd2000daa76f0a670bd23d0346fd62d6e870cb790d1"),
+            responseType: "json"
+        };
 
+        //http post 请求
+        THINGX.Utils.Http.get(url,data,config).then((object)=>{
+                console.warn('请求响应结果:', object);
+        });
 
     ```
     ***
@@ -110,17 +125,34 @@
         const config = {
             timeout: 6000,
             withCredentials:false,
-            headers: new Map().set("token","x88sadadis923213msad")
+            headers: new Map().set("token","x88sadadis923213msad"),
             responseType: "json"
         };
 
-        //http get 请求
+        //http post 请求
         THINGX.Utils.Http.post(url,data,config).then((object)=>{
                 console.warn('HTTP POST 请求响应结果:', object);
         });
 
+        // 示例2. 场景信息查询
+        const url = "http://192.168.21.131:1662/thing/twin/scene/querySingle";
+        const data = {
+            "number": "WRL7JR0KQ",
+            "name": "WRL7JR0KQ",
+            "primaryKey": "WRL7JR0KQ",
+            "onlyResponseTrans": true
+        };
+        const config = {
+            timeout: 6000,
+            withCredentials:false,
+            headers: new Map().set("tk","2e3d55a06e05a2ccf570824ccdd4253df02f5319db4050b075093296dc8cdce62168273738b580c987208dd2000daa76f0a670bd23d0346fd62d6e870cb790d1"),
+            responseType: "json"
+        };
 
-        // 示例2. TODO
+        //http post 请求
+        THINGX.Utils.Http.post(url,data,config).then((object)=>{
+                console.warn('HTTP POST 请求响应结果:', object);
+        });
     ```
     ***
 
@@ -148,7 +180,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |filter|string|是| - | 筛选条件 |   
+  |filter|string|是| - | 筛选条件 ThingJS 语法表达式支持|   
   |center|Array.<number>|是| - | 中心坐标 |   
   |radius|number|是| - | 半径 （单位：米） |   
   |queryLevel|THING.BaseObject|-| THING.App.current.level.current | 查询层级 |   
@@ -156,13 +188,13 @@
 * 示例
     ```javascript
 
-        // 示例1. 请求XXX 接口
-            //TODO
-
-        // 示例2. 
+        // 示例1. 筛选房间中心坐标原点位置6米内设备
+        THINGX.Utils.Space.queryBySphere(".Device", [0,0,0], 6)
     ```
+* 示例演示图
+  ![示例演示图](./resources/example/示例图1queryBySphere.png)
+    
     ***
-
 !> 系统工具 支持   
 **质量保证:** `刘远健`    
 **审核校正:** `唐鑫` 、`张光光`  

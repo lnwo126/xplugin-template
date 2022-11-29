@@ -3,24 +3,23 @@
 
 <!-- code_chunk_output -->
 
-- [API & 插件开发指南说明](#api--插件开发指南说明)
+- [API \& 插件开发指南说明](#api--插件开发指南说明)
   - [命名空间(Namespace)](#命名空间namespace)
   - [事件类型(EventType)](#事件类型eventtype)
   - [事件标签(EventTag)](#事件标签eventtag)
 - [插件开发脚手架(XPlugin-cli)](#插件开发脚手架xplugin-cli)
 - [pre release stage](#pre-release-stage)
 - [next stage release](#next-stage-release)
-- [contact & support](#contact--support)
+- [contact \& support](#contact--support)
 <!-- /code_chunk_output -->
 # API & 插件开发指南说明
 
 ## 命名空间(Namespace)
 ?> pre release stage 命名空间一栏表
 ```java
-    /*** zhangguang@uino.com */
-    //总计 20个命名空间 、113个Methods、8个Members
-    //二级命名空间 14个
-    //三级命名空间 6个
+    //总计 `22`个命名空间 、`116`个Methods、`8`个Members
+    //二级命名空间 `16`个
+    //三级命名空间 `6`个
 ```
 
 |||||||
@@ -46,6 +45,8 @@
 |-|THINGX.OperationSet|操作集模块操作相关| 系统功能模块 |5|-|
 |-|THINGX.Marker|标记模块操作相关| 系统功能模块 |8|-|
 |-|THINGX.Plugin|插件模块操作相关| 系统功能模块 |9|-|
+|-|THINGX.Earth|地球城市操作相关| 系统功能模块 |3|-|
+|-|THINGX.Scene|场景模块操作相关| 系统功能模块 |3|-|
 
 ## 事件类型(EventType)
 ?> pre release stage 事件类型一栏表
