@@ -2,18 +2,18 @@
 
 <!-- code_chunk_output -->
 
-- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.Plugin)](#font-colorgreynamespacefont-解构thingxplugin)
-- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginSetWithType](#font-colorgreymethodfont-thingxplugingetpluginsetwithtype)
-- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginsWithType](#font-colorgreymethodfont-thingxplugingetpluginswithtype)
-- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginWithTypeAndName](#font-colorgreymethodfont-thingxplugingetpluginwithtypeandname)
-- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.getPluginWithInstanceId](#font-colorgreymethodfont-thingxplugingetpluginwithinstanceid)
-- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.showViewWithInstanceId](#font-colorgreymethodfont-thingxpluginshowviewwithinstanceid)
-- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.hideViewWithInstanceId](#font-colorgreymethodfont-thingxpluginhideviewwithinstanceid)
-- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.activateWithInstanceId](#font-colorgreymethodfont-thingxpluginactivatewithinstanceid)
-- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.deactivateWithInstanceId](#font-colorgreymethodfont-thingxplugindeactivatewithinstanceid)
-- [*<a><font color="grey">Method</font></a>* THINGX.Plugin.getDigitalTwinsWithConfigData](#font-colorgreymethodfont-thingxplugingetdigitaltwinswithconfigdata)
-- [*<a><font color="grey">Class</font></a>* THINGX.Plugin.BasePlugin](#font-colorgreyclassfont-thingxpluginbaseplugin)
-- [*<a><font color="grey">Class</font></a>* THINGX.Plugin.BasePluginSet](#font-colorgreyclassfont-thingxpluginbasepluginset)
+- [*Namespace* 解构(THINGX.Plugin)](#namespace-解构thingxplugin)
+- [*Method* THINGX.Plugin.getPluginSetWithType](#method-thingxplugingetpluginsetwithtype)
+- [*Method* THINGX.Plugin.getPluginsWithType](#method-thingxplugingetpluginswithtype)
+- [*Method* THINGX.Plugin.getPluginWithTypeAndName](#method-thingxplugingetpluginwithtypeandname)
+- [*Method* THINGX.Plugin.getPluginWithInstanceId](#method-thingxplugingetpluginwithinstanceid)
+- [*Method* THINGX.Plugin.showViewWithInstanceId](#method-thingxpluginshowviewwithinstanceid)
+- [*Method* THINGX.Plugin.hideViewWithInstanceId](#method-thingxpluginhideviewwithinstanceid)
+- [*Method* THINGX.Plugin.activateWithInstanceId](#method-thingxpluginactivatewithinstanceid)
+- [*Method* THINGX.Plugin.deactivateWithInstanceId](#method-thingxplugindeactivatewithinstanceid)
+- [*Method* THINGX.Plugin.getDigitalTwinsWithConfigData](#method-thingxplugingetdigitaltwinswithconfigdata)
+- [*Class* THINGX.Plugin.BasePlugin](#class-thingxpluginbaseplugin)
+- [*Class* THINGX.Plugin.BasePluginSet](#class-thingxpluginbasepluginset)
 
 <!-- /code_chunk_output -->
 
@@ -64,7 +64,6 @@
                     - getPluginWithID(id:string):THINGX.Plugin.BasePlugin      //通过插件唯一标识获取插件
                     - getPluginWithUuid(uuid:string):THINGX.Plugin.BasePlugin  //通过插件uuid获取插件
     
-
 ```
 
 
@@ -76,7 +75,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|  
   |type|THINGX.Plugin.Type|是| - | 插件类型 (Type Definitions - Type)|   
-* 类型: BasePluginSet
+* 类型: `BasePluginSet`
 * 示例
     ```javascript
 
@@ -86,8 +85,6 @@
         const type = THINGX.Plugin.Type.EXPAND;
         const set = THINGX.Plugin.getPluginSetWithType(type);
         // set: THINGX.Plugin.BasePluginSet  相关能耐参考 Class THINGX.Plugin.BasePluginSet 插件集合类
-
-
     ```
     ***
 
@@ -99,7 +96,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|  
   |type|THINGX.Plugin.Type|是| - | 插件类型 (Type Definitions - Type)|   
-* 类型: Array.<BasePlugin>
+* 类型: `Array.<BasePlugin>`
 * 示例
     ```javascript
 
@@ -121,7 +118,7 @@
   |名称|类型|必填|默认值|描述|  
   |type|THINGX.Plugin.Type|是| - | 插件类型 (Type Definitions - Type)|   
   |name|string|是| - | 插件名称:层级导航| 
-* 类型: BasePlugin
+* 类型: `BasePlugin`
 * 示例
     ```javascript
 
@@ -143,7 +140,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|  
   |uuid|string|是| - | 插件实例ID | 
-* 类型: BasePlugin
+* 类型: `BasePlugin`
 * 示例
     ```javascript
 
@@ -164,7 +161,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|  
   |uuid|string|是| - | 插件实例ID | 
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -184,7 +181,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|  
   |uuid|string|是| - | 插件实例ID | 
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -204,7 +201,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|  
   |uuid|string|是| - | 插件实例ID | 
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -224,7 +221,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|  
   |uuid|string|是| - | 插件实例ID | 
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -247,7 +244,7 @@
   |level|THING.BaseObject|否| THING.App.current | 查询层级 | 
   |includeSelf|string|否| false | 是否包含根自己 | 
   |distinct|string|否| true | 是否去重 |       
-* 类型: Array.<THING.BaseObject>
+* 类型: `Array.<THING.BaseObject>`
 * 示例
     ```javascript
 
@@ -274,7 +271,7 @@
 
 ### *<a><font color="grey">Class</font></a>* THINGX.Plugin.BasePlugin
 > 插件基类, Class: THINGX.Plugin.BasePlugin   
-* 类型: Class
+* 类型: `Class`
 * 示例
     ```javascript
 
@@ -294,7 +291,7 @@
     ***  
 ### *<a><font color="grey">Class</font></a>* THINGX.Plugin.BasePluginSet
 > 插件集合, Class: THINGX.Plugin.BasePluginSet   
-* 类型: Class
+* 类型: `Class`
 * 示例
     ```javascript
 
