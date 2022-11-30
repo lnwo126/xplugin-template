@@ -41,7 +41,6 @@
         console.warn("执行运行的操作集实例信息: ", instance);
         //print result: 执行运行的操作集实例信息: Object
 
-
         //示例2. 运行一个操作集 `建筑告警` 的操作集
         const building = THING.App.current.query('#一号教学楼')[0];//THING.BaseObject
         const instance = THINGX.OperationSet.run("建筑告警",building);

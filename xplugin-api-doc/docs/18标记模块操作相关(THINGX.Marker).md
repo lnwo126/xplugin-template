@@ -42,7 +42,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|    
 * 类型: Array.<THING.BaseObject>
 * 示例
@@ -58,7 +58,6 @@
         //support thingjs query syntax expression for DigitalTwin
         THINGX.Marker.add("[name=建筑]","政府-右侧标题-安德");
 
-
     ```
     ***
 
@@ -70,7 +69,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|
   
 * 类型: boolean
@@ -91,7 +90,6 @@
         console.warn("名称为建筑的孪生体 `政府-右侧标题-安德` 的标记移除完成: %s", result);
         //print result: 名称为建筑的孪生体 `政府-右侧标题-安德` 的标记移除完成: true
 
-
     ```
     ***
 
@@ -102,7 +100,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|
   |purpose|string|-| default | 显示目的 |
     
@@ -134,7 +132,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" checked> support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|
   |purpose|string|-| default | 显示隐藏的目的 |
     
@@ -166,7 +164,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" > support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" disabled> support thingjs query syntax expression for DigitalTwin |   
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|
     
 * 类型: THING.BaseObject
@@ -193,7 +191,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" > support thingjs query syntax expression for DigitalTwin |   
+  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |   
     
 * 类型: THING.BaseObject
 * 示例
@@ -218,7 +216,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" > support thingjs query syntax expression for DigitalTwin |   s
+  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" disabled> support thingjs query syntax expression for DigitalTwin |   s
     
 * 类型: THING.BaseObject
 * 示例
@@ -244,7 +242,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" > support thingjs query syntax expression for DigitalTwin |   s
+  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |   s
     
 * 类型: THING.BaseObject
 * 示例
