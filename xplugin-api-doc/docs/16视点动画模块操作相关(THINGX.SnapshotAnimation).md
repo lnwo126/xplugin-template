@@ -37,7 +37,7 @@
 ### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.hide
 > 隐藏视点动画模块,主要指的是视点动画栏UI隐藏, THINGX.SnapshotAnimation.hide():void
    
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -53,7 +53,7 @@
 ### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.show
 > 显示视点动画模块,主要指的是视点动画栏UI显示, THINGX.SnapshotAnimation.show():void
    
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -74,7 +74,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
   |name|string|是| - | 视点动画名称 |    
-* 类型: Promise.<boolean>
+* 类型: `Promise.<Boolean>`
 * 示例
     ```javascript
 
@@ -91,7 +91,7 @@
 ### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.pause
 > 暂停播放视点动画, THINGX.SnapshotAnimation.pause():void
    
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -106,7 +106,7 @@
 ### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.resume
 > 恢复播放视点动画, THINGX.SnapshotAnimation.resume():void
    
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -121,7 +121,7 @@
 ### *<a><font color="grey">Method</font></a>* THINGX.SnapshotAnimation.stop
 > 停止播放视点动画, THINGX.SnapshotAnimation.stop():boolean
    
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -146,7 +146,8 @@
 
         // 设置视点动画播放模式
 
-        // 示例. 循环播放`园区巡游`视点动画
+        // 示例. 循环播放`园区巡游`视点动画 
+        // 注: 列表循环以 `园区巡游` 视点动画播放开始
         THINGX.SnapshotAnimation.setPlayMode("listloop");
         THINGX.SnapshotAnimation.play("园区巡游").then((result)=>{
              console.warn("视点动画播放: %s", result);
