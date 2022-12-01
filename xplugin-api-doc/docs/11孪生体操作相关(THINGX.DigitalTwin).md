@@ -28,7 +28,7 @@
     //应用系统针对孪生体操作提供的相关能力
     //主要提供针对孪生体及其附属能力的api功能
 
-    //THING.BaseObject 相关属性和方法可 参考thingjs api 物体基类章节: https://docs.thingjs.com/cn/apidocs/THING.BaseObject.html)
+    //THING.BaseObject (相关属性和方法可 参考thingjs api 物体基类章节: https://docs.thingjs.com/cn/apidocs/THING.BaseObject.html)
 
     // THINGX.DigitalTwin 解构
     THINGX.DigitalTwin:namespace
