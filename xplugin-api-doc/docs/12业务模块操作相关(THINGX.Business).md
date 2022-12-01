@@ -22,7 +22,7 @@
     //应用系统针对系统业务模块的相关操作能力
     //主要提供针对应用系统业务模块的显示、隐藏、激活项、显示业务面板等能力
 
-    //THING.BaseObject 相关属性和方法可 参考thingjs api 物体基类章节: https://docs.thingjs.com/cn/apidocs/THING.BaseObject.html)
+    //THING.BaseObject (相关属性和方法可 参考thingjs api 物体基类章节: https://docs.thingjs.com/cn/apidocs/THING.BaseObject.html)
 
     // THINGX.Business 解构
     - THINGX.Business:namespace

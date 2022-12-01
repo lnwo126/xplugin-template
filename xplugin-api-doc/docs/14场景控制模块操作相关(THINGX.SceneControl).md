@@ -19,7 +19,7 @@
     //应用系统针对系统场景控制模块的相关操作能力
     //主要提供针对应用系统场景控制模块的显示、隐藏、激活项等能力
 
-    //THING.BaseObject 相关属性和方法可 参考thingjs api 物体基类章节: https://docs.thingjs.com/cn/apidocs/THING.BaseObject.html)
+    //THING.BaseObject (相关属性和方法可 参考thingjs api 物体基类章节: https://docs.thingjs.com/cn/apidocs/THING.BaseObject.html)
 
     // THINGX.SceneControl 解构
     THINGX.SceneControl:namespace
@@ -90,7 +90,7 @@
     ***
                              
 ### *<a><font color="grey">Method</font></a>* THINGX.SceneControl.deactivate
-> 取消图层,主要指的是具体图层项, THINGX.SceneControl.deactivate(name):void
+> 取消场景控制,主要指的是具体场景控制项, THINGX.SceneControl.deactivate(name):void
 * 参数
   ||||||
   |-|-|-|-|-|
@@ -102,10 +102,10 @@
 
         //取消场景控制,主要指的是具体场景控制项
 
-        //示例1. 取消激活 `楼层展开`图层
+        //示例1. 取消激活 `楼层展开`场景控制
         THINGX.SceneControl.deactivate("楼层展开");
 
-        //示例2. 取消激活 `楼层展开`图层、`3D/2D切换`图层
+        //示例2. 取消激活 `楼层展开`场景控制、`3D/2D切换`场景控制
         THINGX.SceneControl.deactivate(["楼层展开", "3D/2D切换"]);
 
     ```
@@ -120,7 +120,7 @@
 
         //取消所有激活的场景控制,主要指的是具体场景控制项
 
-        //示例. 取消激活 所有激活的图层
+        //示例. 取消激活 所有激活的场景控制
         THINGX.SceneControl.deactivateAll();
 
     ```
@@ -153,10 +153,10 @@
 * 示例
     ```javascript
 
-        //获取当前层级已激活的图层名称
+        //获取当前层级已激活的场景控制名称
 
-        //示例. 获取当前层级已激活的图层名称
-        const names = THINGX.SceneControl.getActivatedName();
+        //示例. 获取当前层级已激活的场景控制名称
+        const names = THINGX.SceneControl.getActivatedNames();
         console.warn("当前激活的场景控制为: %s", ...names);
         //print result: 当前激活的场景控制为: 楼层展开 3D/2D切换 四季变换
 
