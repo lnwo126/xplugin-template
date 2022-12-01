@@ -207,7 +207,7 @@
 ### *<a><font color="grey">Method</font></a>*  THINGX.Alarm.getPurposes
 > 获取已存在的激活告警系统的目的  , THINGX.Alarm.getPurposes():Array.<string>
 
-* 类型: boolean
+* 类型: array
 * 示例
     ```javascript
 

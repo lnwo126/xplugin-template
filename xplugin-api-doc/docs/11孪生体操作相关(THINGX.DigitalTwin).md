@@ -78,9 +78,9 @@
 
         //加载孪生体资源
 
-        //示例.
-
-        //TODO 补充加载孪生体资源示例
+        //示例. 加载园区中的停车位, 并立即显示
+        const twins = THING.App.current.query('[twinType=停车位]')
+        THINGX.DigitalTwin.load(twins, true);
     ```
     ***
 
@@ -99,9 +99,17 @@
 
         //显示孪生体
 
-        //示例.
+        //示例1. 显示所有建筑孪生体
+        const buildings = THINGX.DigitalTwin.show(".Building");
+        console.warn("显示的建筑孪生体为: %s", ...buildings);
+        //print result: 显示的建筑孪生体为: 建筑1孪生体,建筑2孪生体...
 
-        //TODO 补充显示孪生体
+        //示例2. 园区漫游显示所有建筑孪生体
+        const buildings = THINGX.DigitalTwin.show(".Building", "园区漫游");
+        console.warn("显示的建筑孪生体为: %s", ...buildings);
+        //print result: 显示的建筑孪生体为: 建筑1孪生体,建筑2孪生体...
+
+
     ```
     ***
 
@@ -120,9 +128,15 @@
 
         //隐藏孪生体
 
-        //示例.
+        //示例1. 由于在 THINGX.DigitalTwin.show() 示例中我们将建筑以 园区漫游 的目的隐藏, 此时示例1的api是不生效的
+        const buildings = THINGX.DigitalTwin.hide(".Building");
+        console.warn("隐藏的建筑孪生体为: %s", ...buildings);
+        //print result: 隐藏的建筑孪生体为: 建筑1孪生体,建筑2孪生体...
 
-        //TODO 补充隐藏孪生体
+        //示例2. 由于示例2的目的和显示建筑时目的相同, 则此时api生效, 园区漫游隐藏所有建筑孪生体,
+        const buildings = THINGX.DigitalTwin.hide(".Building", "园区漫游");
+        console.warn("隐藏的建筑孪生体为: %s", ...buildings);
+        //print result: 隐藏的建筑孪生体为: 建筑1孪生体,建筑2孪生体...
     ```
     ***
 
@@ -135,16 +149,16 @@
   |名称|类型|必填|默认值|描述|
   |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked>support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|否| default | 显示目的 |    
-* 类型: Array.<THING.BaseObject>
+* 类型: `boolean`
 * 示例
     ```javascript
 
-        //隐藏孪生体
         //如果存在多个孪生体 则所有孪生体都包含显示目的才返回true
 
-        //示例.
-
-        //TODO
+        //示例1. 判断建筑是否有 园区漫游 显示目的
+        const bool = THINGX.DigitalTwin.hasShowPurpose(".Building", "园区漫游")
+        console.warn("建筑是否有园区漫游显示目的: %s", bool);
+        //print result: 建筑是否有园区漫游显示目的: true
     ```
     ***
 
@@ -164,9 +178,8 @@
 
         //显示孪生体(带动画效果)
 
-        //示例.
-
-        //TODO 补充显示孪生体(带动画效果)
+        //示例. 在0.5s内由隐藏匀速过渡到显示孪生体
+        THINGX.DigitalTwin.showWithSmoothAnimation('.Building', { lerpType: 'Linear', time: 500 })
     ```
     ***
 
@@ -186,9 +199,8 @@
 
         //隐藏孪生体(带动画效果)
 
-        //示例.
-
-        //TODO 补充隐藏孪生体(带动画效果)
+        //示例. 在0.5s内由显示匀速过渡到隐藏孪生体
+        THINGX.DigitalTwin.hideWithSmoothAnimation('.Building', { lerpType: 'Linear', time: 500 })
     ```
     ***
 
@@ -204,18 +216,23 @@
   |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|是| default | 变色的目的（用于取消该次变色） |    
   |color|string|是| default | 十六进制颜色字符串 如'#ff0000' |
-  |priority|number|否| 0 | 颜色设置的优先级,[0,1] 数值越小,权重越大 |
+  |priority|number|否| 0 | 颜色设置的优先级,数值越大,权重越大,同权重下后设置的会覆盖前设置的 |
   |traverse|boolean|否| false | 是否遍历子元素 |  
-  |intensity|number|否| 0.7 | 颜色强度，[0,1] 数值越高变色越明显   |    
-* 类型:Promise.<Array.<THING.BaseObject>>
+  |intensity|number|否| 0.7 | 颜色强度, [0,1] 数值越高变色越明显   |    
+* 类型: Array.<THING.BaseObject>
 * 示例
     ```javascript
 
         //添加颜色到孪生体色栈中
 
-        //示例.
+        //示例1. 给楼层添加红色
+        THINGX.DigitalTwin.addColor('.Floor', '红色', '#ff0000');
+        
+        //示例2. 接示例1 给楼层添加黄色 由于数值越大权重越大,此时楼层是黄色
+        THINGX.DigitalTwin.addColor('.Floor', '黄色', '#ffff00', 1);
 
-        //TODO 
+        //示例3. 给楼层及楼层子元素添加绿色
+        THINGX.DigitalTwin.addColor('.Floor', '绿色', '#00ff00', 2, true);
     ```
     ***
 
@@ -229,15 +246,20 @@
   |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|是| default | 变色的目的 |    
   |traverse|boolean|否| false | 是否遍历子元素 |  
-* 类型:Promise.<Array.<THING.BaseObject>>
+* 类型: Array.<THING.BaseObject>
 * 示例
     ```javascript
 
         //从孪生体色栈中移除指定颜色
 
-        //示例.
+        //示例1. 给楼层移除红色 由于上例中楼层黄色优先级高，移除后楼层仍然是黄色
+        THINGX.DigitalTwin.removeColor('.Floor', '红色');
+        
+        //示例2. 接示例1 给楼层及楼层子元素移除绿色 此时楼层颜色为黄色
+        THINGX.DigitalTwin.removeColor('.Floor', '绿色', true);
 
-        //TODO 
+        //示例2. 接示例2 给楼层移除黄色 此时楼层颜色恢复默认
+        THINGX.DigitalTwin.removeColor('.Floor', '黄色');
     ```
     ***
 
@@ -250,8 +272,8 @@
   |名称|类型|必填|默认值|描述|
   |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |purpose|string|是| - | 透明的目的（用于取消该次透明） |    
-  |opacity|number|是| - | 透明度 [0,1]数值越大,透明度越低 |
-  |priority|number|否| 0 | 透明设置的优先级,[0,1] 数值越小,权重越大 |
+  |opacity|number|是| - | 透明度 [0,1]数值越大,透明度越高 |
+  |priority|number|否| 0 | 透明设置的优先级,[0,1] 数值越大,权重越大 |
   |traverse|boolean|否| false | 是否遍历子元素 |  
   |ignoreTag|string|否| [inheritOpacity] | 忽略的标签   |    
 * 类型:Array.<THING.BaseObject>
@@ -260,9 +282,14 @@
 
         //添加透明度到孪生体透明栈中
 
-        //示例.
+        //示例1. 将楼层及楼层子元素透明
+        THINGX.DigitalTwin.addOpacity('.Floor', '透明', 0, 0, true);
 
-        //TODO 
+        //示例2. 将楼层半透明, 楼层子元素仍是透明状态
+        THINGX.DigitalTwin.addOpacity('.Floor', '半透明', 0.5, 1);
+
+        //示例3. 将楼层不透明 接示例2 由于权重没有示例2大, 此时楼层还是半透明
+        THINGX.DigitalTwin.addOpacity('.Floor', '不透明', 1, 0);
     ```
     ***
 
@@ -284,9 +311,14 @@
 
         //从孪生体透明栈中移除指定目的的透明度
 
-        //示例.
+        //示例1. 移除楼层及楼层子元素透明状态, 此时楼层是半透明状态
+        THINGX.DigitalTwin.removeOpacity('.Floor', '透明', 0, 0, true);
 
-        //TODO
+        //示例2. 移除楼层半透明状态
+        THINGX.DigitalTwin.removeOpacity('.Floor', '半透明', 0.5, 1);
+
+        //示例3. 移除楼层不透明, 此时楼层透明度恢复默认
+        THINGX.DigitalTwin.removeOpacity('.Floor', '不透明', 1, 0);
     ```
     ***
 
@@ -297,7 +329,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |      
+  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象</br> <input  type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |      
 * 类型:void
 * 示例
     ```javascript
@@ -306,9 +338,12 @@
         //参数 it's not support for DigitalTwin set
         //参数 it's not support thingjs query syntax expression for DigitalTwin
 
-        //示例.
+        //示例. 显示烟感的孪生体面板
+        const twin = THING.App.current.query('#烟感')[0];
+        if (twin) {
+            THINGX.DigitalTwin.showPanel(twin);
+        }
 
-        //TODO 
     ```
     ***
 
@@ -319,7 +354,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |  
+  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象</br> <input  type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |  
 * 类型:void
 * 示例
     ```javascript
@@ -328,14 +363,16 @@
         //参数 it's not support for DigitalTwin set
         //参数 it's not support thingjs query syntax expression for DigitalTwin
 
-        //示例.
-
-        //TODO 
+        //示例. 隐藏烟感的孪生体面板
+        const twin = THING.App.current.query('#烟感').objects[0];
+        if (twin) {
+            THINGX.DigitalTwin.hidePanel(twin);
+        }
     ```
     ***   
 
 ### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.activateTabOnPanel
-> 激活当前孪生体面板上(指定)的tab页签, THINGX.DigitalTwin.activateTabOnPanel(name):void
+> 激活当前孪生体面板上(指定)的tab页签(只在弹窗模式下生效, 且面板为显示状态), THINGX.DigitalTwin.activateTabOnPanel(name):void
 
 * 参数
   ||||||
@@ -348,22 +385,25 @@
 
         //激活当前孪生体面板上(指定)的tab页签
 
-        //示例.
+        //示例1. 激活 `基础信息` 页签
+        THINGX.DigitalTwin.activateTabOnPanel("基础信息");
 
-        //TODO 
+        //示例2. 激活 `告警信息` 页签, 此时由基础信息切换到告警信息页签
+        THINGX.DigitalTwin.activateTabOnPanel("告警信息");
     ```
     ***   
 ### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.getActivatedTabOnPanel
-> 获取当前在孪生体面板上激活的tab页签名称 , THINGX.DigitalTwin.getActivatedTabOnPanel():string
+> 获取当前在孪生体面板上激活的tab页签名称(只在弹窗模式下生效) , THINGX.DigitalTwin.getActivatedTabOnPanel():string
 * 类型:string
 * 示例
     ```javascript
 
         //获取当前在孪生体面板上激活的tab页签名称
 
-        //示例.
-
-        //TODO 
+        //示例. 获取当前在孪生体面板上激活的tab页签名称
+        const name = THINGX.DigitalTwin.getActivatedTabOnPanel();
+        console.warn("当前在孪生体面板上激活的tab页签名称为: %s", name);
+        //print result:当前在孪生体面板上激活的tab页签名称为: 告警信息
     ```
     ***   
 ### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.getActivatedTabIndexOnPanel
@@ -386,7 +426,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象/ThingJS查询语法</br> <input  type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |    
+  |DigitalTwin|THING.BaseObject~~或string~~|是| - | 孪生体对象</br> <input  type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |    
   |isRecursive|boolean|否| false | 是否遍历子集 |  
 * 类型:number
 * 示例
@@ -394,9 +434,13 @@
 
         //计算孪生体到摄像机的距离 （米）
 
-        //示例.
-
-        //TODO 
+        //示例. 计算选中的孪生体到摄像机的距离
+        const dtwin = THING.App.current.selection.objects[0];
+        if (dtwin) {
+            const distance = THINGX.DigitalTwin.getDistanceToCamera(dtwin);
+            console.warn("选中的孪生体到摄像机的距离为: %s", distance);
+            //print result:选中的孪生体到摄像机的距离为: 3.404914526788503
+        }
     ```
     ***   
 
