@@ -2,16 +2,16 @@
 
 <!-- code_chunk_output -->
 
-- [*<a><font color="grey">Namespace</font></a>* 解构(THINGX.Business)](#font-colorgreynamespacefont-解构thingxbusiness)
-- [*<a><font color="grey">Method</font></a>* THINGX.Business.hide](#font-colorgreymethodfont-thingxbusinesshide)
-- [*<a><font color="grey">Method</font></a>* THINGX.Business.show](#font-colorgreymethodfont-thingxbusinessshow)
-- [*<a><font color="grey">Method</font></a>* THINGX.Business.activate](#font-colorgreymethodfont-thingxbusinessactivate)
-- [*<a><font color="grey">Method</font></a>* THINGX.Business.deactivate](#font-colorgreymethodfont-thingxbusinessdeactivate)
-- [*<a><font color="grey">Method</font></a>* THINGX.Business.refresh](#font-colorgreymethodfont-thingxbusinessrefresh)
-- [*<a><font color="grey">Method</font></a>* THINGX.Business.showPanel](#font-colorgreymethodfont-thingxbusinessshowpanel)
-- [*<a><font color="grey">Method</font></a>* THINGX.Business.hidePanel](#font-colorgreymethodfont-thingxbusinesshidepanel)
-- [*<a><font color="grey">Method</font></a>* THINGX.Business.getActivatedName](#font-colorgreymethodfont-thingxbusinessgetactivatedname)
-- [*<a><font color="grey">Method</font></a>* THINGX.Business.getPanelConfig](#font-colorgreymethodfont-thingxbusinessgetpanelconfig)
+- [*Namespace* 解构(THINGX.Business)](#namespace-解构thingxbusiness)
+- [*Method* THINGX.Business.hide](#method-thingxbusinesshide)
+- [*Method* THINGX.Business.show](#method-thingxbusinessshow)
+- [*Method* THINGX.Business.activate](#method-thingxbusinessactivate)
+- [*Method* THINGX.Business.deactivate](#method-thingxbusinessdeactivate)
+- [*Method* THINGX.Business.refresh](#method-thingxbusinessrefresh)
+- [*Method* THINGX.Business.showPanel](#method-thingxbusinessshowpanel)
+- [*Method* THINGX.Business.hidePanel](#method-thingxbusinesshidepanel)
+- [*Method* THINGX.Business.getActivatedName](#method-thingxbusinessgetactivatedname)
+- [*Method* THINGX.Business.getPanelConfig](#method-thingxbusinessgetpanelconfig)
 
 <!-- /code_chunk_output -->
 
@@ -52,16 +52,14 @@
 ### *<a><font color="grey">Method</font></a>* THINGX.Business.hide
 > 隐藏业务模块,主要指的是业务栏UI隐藏, THINGX.Business.hide():void
    
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
         //隐藏业务模块,主要指的是业务栏UI隐藏
 
         //示例. 场景加载完成后,直接调用api 隐藏业务(栏)UI模块
-
         THINGX.Business.hide();
-
         //即可将业务栏模块隐藏
 
     ```
@@ -92,7 +90,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
   |name|string|是| - | 业务名称 |   
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -104,11 +102,9 @@
         THINGX.Business.activate("智慧消防");
         //即可将业务激活同时业务关联的相关内容被触发，例如：业务面板也会被激活显示
 
-
         //示例2. 接示例1，将`智慧安防`业务激活
         THINGX.Business.activate("智慧安防");
         //即可将业务激活同时业务关联的相关内容被触发，业务面板和激活的业务项会被切换，原业务项`智慧消防`会被取消
-
 
     ```
     ***
@@ -116,7 +112,7 @@
 ### *<a><font color="grey">Method</font></a>* THINGX.Business.deactivate
 > 取消业务,主要指的是具体业务项, THINGX.Business.deactivate():void
    
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -129,14 +125,13 @@
         THINGX.Business.deactivate();
         //即可将激活的业务取消，同时关联的相关内容被触发，例如：已经激活的业务面板也会被取消（隐藏）
 
-
     ```
     ***
 
 ### *<a><font color="grey">Method</font></a>* THINGX.Business.refresh
 > 刷新业务模块,刷新整个业务模块,会进行最新业务配置的请求获取, THINGX.Business.refresh():Promise.Boolean
    
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -161,7 +156,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
   |name|string|是| - | 业务名称 |   
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
@@ -172,7 +167,6 @@
         //示例1. 场景加载完成，无默认激活业务，主动调用api进行业务面板显示（显示`智慧消防`业务面板）
         THINGX.Business.showPanel("智慧消防");
         //即可将业务面板显示并不会激活业务项，仅仅显示面板
-
 
         //示例2. 接示例1，将`智慧安防`业务面板显示
         THINGX.Business.showPanel("智慧安防");
@@ -188,12 +182,11 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
   |name|string|-| - | 业务名称 ,为空隐藏所有已显示面板|   
-* 类型: void
+* 类型: `void`
 * 示例
     ```javascript
 
         //隐藏业务面板
-
 
         //示例1. （隐藏所有已显示的业务面板）
         THINGX.Business.hidePanel();
@@ -207,9 +200,9 @@
 
 
 ### *<a><font color="grey">Method</font></a>* THINGX.Business.getActivatedName
-> 获取当前激活的业务名称, THINGX.Business.getActivatedName():void 
+> 获取当前激活的业务名称, THINGX.Business.getActivatedName():string 
 
-* 类型: void
+* 类型: `string`
 * 示例
     ```javascript
 
@@ -231,6 +224,10 @@
 ### *<a><font color="grey">Method</font></a>* THINGX.Business.getPanelConfig
 > 获取业务面板配置,用于相关逻辑等判断, THINGX.Business.getPanelConfig():PanelConfig
 支持
+* 类型: void
+* 示例
+    ```javascript 
+    ```   
     ***
 
 !> 业务模块操作相关 支持   
