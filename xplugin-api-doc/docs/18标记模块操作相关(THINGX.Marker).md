@@ -44,7 +44,7 @@
   |名称|类型|必填|默认值|描述|
   |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|    
-* 类型: Array.<THING.BaseObject>
+* 类型: `Array.<THING.BaseObject>`
 * 示例
     ```javascript
 
@@ -72,7 +72,7 @@
   |DigitalTwin|THING.BaseObject或string|是| - | 孪生体对象/ThingJS查询语法</br> <input type="checkbox" disabled checked> support thingjs query syntax expression for DigitalTwin |   
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|
   
-* 类型: boolean
+* 类型: `boolean`
 * 示例
     ```javascript
 
@@ -104,7 +104,7 @@
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|
   |purpose|string|-| default | 显示目的 |
     
-* 类型: Array.<THING.BaseObject>
+* 类型: `Array.<THING.BaseObject>`
 * 示例
     ```javascript
 
@@ -136,7 +136,7 @@
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|
   |purpose|string|-| default | 显示隐藏的目的 |
     
-* 类型: Array.<THING.BaseObject>
+* 类型: `Array.<THING.BaseObject>`
 * 示例
     ```javascript
 
@@ -167,7 +167,7 @@
   |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" disabled> support thingjs query syntax expression for DigitalTwin |   
   |name|string|是| - | 标记名称 </br>可通过THINGX.Marker.getConfig获取孪生体上配置了哪些标记|
     
-* 类型: THING.BaseObject
+* 类型: `THING.BaseObject`
 * 示例
     ```javascript
 
@@ -193,7 +193,7 @@
   |名称|类型|必填|默认值|描述|
   |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |   
     
-* 类型: THING.BaseObject
+* 类型: `THING.BaseObject`
 * 示例
     ```javascript
 
@@ -204,7 +204,7 @@
         const building = THING.App.current.query('#一号教学楼')[0];//THING.BaseObject
         const buildingMakerName = THINGX.Marker.getPreloadName(building);
         console.warn("建筑上预加载标记的名称: ", buildingMakerName);
-        // print result: 建筑上预加载的标记实例: THING.BaseObject
+        // print result: 建筑上预加载的标记名称: THING.BaseObject
  
     ```
     ***
@@ -218,7 +218,7 @@
   |名称|类型|必填|默认值|描述|
   |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" disabled> support thingjs query syntax expression for DigitalTwin |   s
     
-* 类型: THING.BaseObject
+* 类型: `Map<string,THING.BaseObject>`
 * 示例
     ```javascript
 
@@ -242,9 +242,9 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |   s
-    
-* 类型: THING.BaseObject
+  |DigitalTwin|THING.BaseObject|是| - | 孪生体对象/不支持ThingJS查询语法/不支持孪生体集合</br> <input type="checkbox" disabled > support thingjs query syntax expression for DigitalTwin |
+
+* 类型: `Map<string,Object>`
 * 示例
     ```javascript
 
