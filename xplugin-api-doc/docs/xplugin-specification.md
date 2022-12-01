@@ -870,9 +870,9 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
     |  setConfig(config:Object):void | Revision | 设置资源(插件)配置项信息，</br>回调后传入插件配置项控件唯一标识</br>及对应该控件的值 | - |
     |  onInstall() | Revision | 插件安装完成载入执行</br>回调后可进行插件的相关功能开发 | 是 |
     |  onUninstall() | Revision | 插件卸载完成载入执行 | 是 |
-    |  onInited( layer: {name:string,plugins: Array<string>},widget: Object) | Revision | - | - |
-    |  onActivate(layer: {name:string,plugins: Array<string>},widget: Object) | Revision | - | 是 |
-    |  onDeactivate(layer: {name:string,plugins: Array<string>},widget: Object) | Revision | - | 是 |
+    |  onInited( widget: Object,layer: {name:string,plugins: Array<string>}) | Revision | - | - |
+    |  onActivate(widget: Object,layer: {name:string,plugins: Array<string>}) | Revision | - | 是 |
+    |  onDeactivate(widget: Object,layer: {name:string,plugins: Array<string>}) | Revision | - | 是 |
     |   |  |  |  |
 
 
@@ -1014,46 +1014,46 @@ ThingJS-X 插件开发规范中插件的`入口文件`支持及定义包含内�
             }
             /**
             * @description 场景图层插件初始化完成后载入
+            * @param widget  图层关联 VUE组件实例
+            *           widget.$xHide(); //x组件扩展内置方法,用于对该组件UI的隐藏
+            *           widget.$xShow(); //x组件扩展内置方法,用于对该组件UI的显示            
             * @param layer 场景图层基础信息
             *            {
             *                name:string, //场景图层插件名称
             *                plugins: Array<string>//当前场景图层插件兄弟场景图层插件的名词
             *            } 
-            * @param widget  图层关联 VUE组件实例
-            *           widget.$xHide(); //x组件扩展内置方法,用于对该组件UI的隐藏
-            *           widget.$xShow(); //x组件扩展内置方法,用于对该组件UI的显示
             */
-            onInited(layer, widget) {
+            onInited(widget,layer) {
 
                 console.info('%c『 场景图层插件 』onInited', 'color: #6a3427;font-weight: bold;');
             }
 
             /**
             * @description 场景图层被激活完成后
+            * @param widget  图层关联 VUE组件实例
+            *           widget.$xHide(); //x组件扩展内置方法,用于对该组件UI的隐藏
+            *           widget.$xShow(); //x组件扩展内置方法,用于对该组件UI的显示
             * @param layer 场景图层基础信息
             *            {
             *                name:string, //场景图层插件名称
             *                plugins: Array<string>//当前场景图层插件兄弟场景图层插件的名词
             *            } 
-            * @param widget  图层关联 VUE组件实例
-            *           widget.$xHide(); //x组件扩展内置方法,用于对该组件UI的隐藏
-            *           widget.$xShow(); //x组件扩展内置方法,用于对该组件UI的显示
             */
-            onActivate(layer, widget) {
+            onActivate(widget, layer) {
                 console.info('%c『 场景图层插件 』onActivate', 'color: #6a3427;font-weight: bold;');
             }
             /**
             * @description 场景图层切换取消激活完成后载入
+            * @param widget  图层关联 VUE组件实例
+            *           widget.$xHide(); //x组件扩展内置方法,用于对该组件UI的隐藏
+            *           widget.$xShow(); //x组件扩展内置方法,用于对该组件UI的显示
             * @param layer 场景图层基础信息
             *            {
             *                name:string, //场景图层插件名称
             *                plugins: Array<string>//当前场景图层插件兄弟场景图层插件的名词
             *            } 
-            * @param widget  图层关联 VUE组件实例
-            *           widget.$xHide(); //x组件扩展内置方法,用于对该组件UI的隐藏
-            *           widget.$xShow(); //x组件扩展内置方法,用于对该组件UI的显示
             */        
-            onDeactivate(layer, widget) {
+            onDeactivate(widget, layer) {
                 console.info('%c『 场景图层插件 』onDeactivate', 'color: #6a3427;font-weight: bold;');
             }
 
