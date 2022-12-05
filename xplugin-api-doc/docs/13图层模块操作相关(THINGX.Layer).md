@@ -22,14 +22,14 @@
     //应用系统针对系统图层模块的相关操作能力
     //主要提供针对应用系统图层模块的显示、隐藏、激活项、显示业务面板等能力
 
-    //THING.BaseObject 相关属性和方法可 参考thingjs api 物体基类章节: https://docs.thingjs.com/cn/apidocs/THING.BaseObject.html)
+    //THING.BaseObject (相关属性和方法 可参考thingjs api 物体基类章节: https://docs.thingjs.com/cn/apidocs/THING.BaseObject.html)
 
     // THINGX.Layer 解构
     THINGX.Layer:namespace
         - hide():void                               //隐藏图层模块
         - show():void                               //显示图层模块
         - activate(name [, purpose]):void           //激活图层项
-        - deactivate(name [, purpose]):void         //取消激活项
+        - deactivate(name [, purpose]):void         //取消激活图层项
         - deactivateAll():void                      //取消所有已激活的图层
         - refresh():void                            //重新读取可视化配置 并根据当前层级重新创建图层
         - getActivatedNames():Array.<string>        //获取当前层级已激活的图层名称   
@@ -91,7 +91,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |name|string 或 Array.<string>|是| - | 图层名称 |   
+  |name|string 或 Array.\<string>|是| - | 图层名称 |   
   |purpose|string|-| default | 激活目的 |     
 * 类型: void
 * 示例
@@ -118,7 +118,7 @@
   ||||||
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
-  |name|string 或 Array.<string>|是| - | 图层名称 |   
+  |name|string 或 Array\<string>|是| - | 图层名称 |   
   |purpose|string|-| default | 激活目的 |    
 * 类型: void
 * 示例
@@ -164,9 +164,8 @@
 
         //刷新图层模块,刷新整个图层模块,会进行最新图层配置的请求获取
         //重新读取可视化配置 并根据当前层级重新创建图层
-        //注：图层项是可同时取消多项（支持配置互斥关系）
 
-        //示例. 刷新业务模块后进行信息打印
+        //示例. 刷新图层模块
         THINGX.Layer.refresh();
 
     ```
@@ -198,10 +197,10 @@
 
         //获取图层互斥配置
 
-        //示例. 
+        //示例. 获取图层互斥配置
         const mutexsNames = THINGX.Layer.getMutexsConfig();
         console.warn("互斥图层: %s", ...mutexsNames);
-        //print result: 互斥图层:: 建筑变色 显示摄像头
+        //print result: 互斥图层: 建筑变色 显示摄像头
 
     ```
     ***

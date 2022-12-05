@@ -181,7 +181,7 @@
   |-|-|-|-|-|
   |名称|类型|必填|默认值|描述|
   |filter|string|是| - | 筛选条件 ThingJS 语法表达式支持|   
-  |center|Array.<number>|是| - | 中心坐标 |   
+  |center|Array.\<number>|是| - | 中心坐标 |   
   |radius|number|是| - | 半径 （单位：米） |   
   |queryLevel|THING.BaseObject|-| THING.App.current.level.current | 查询层级 |   
 * 类型: void
