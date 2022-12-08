@@ -29,3 +29,36 @@
 
 ```
 
+### *<a><font color="grey">Method</font></a>* THINGX.Scene.getCurrent
+> 获取当前场景信息, THINGX.Scene.getCurrent():Scene
+   
+* 类型: `object`
+* 示例
+    ```javascript
+
+        //获取当前场景信息
+        //示例. 场景加载完成后,直接调用api 获取当前场景信息
+
+        const scene = THINGX.Scene.getCurrent();
+        console.warn("当前场景名称为: %s", scene.name);
+        //print result: 当前场景名称为: 优锘产业园
+
+    ```
+    ***
+
+### *<a><font color="grey">Method</font></a>* THINGX.Scene.getEntry
+> 获取入口场景信息, THINGX.Scene.getEntry():Scene
+   
+* 类型: `object`
+* 示例
+    ```javascript
+
+        //获取入口场景信息
+        //示例. 获取入口场景信息
+
+        const scene = THINGX.Scene.getEntry();
+        console.warn("当前场景名称为: %s", scene.name);
+        //print result: 当前场景名称为: 地球
+
+    ```
+    ***
