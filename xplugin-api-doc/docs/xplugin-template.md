@@ -13,13 +13,16 @@
      * /
 
 ```
-## xplugin-template-core 系统插件模板代码
+## 系统插件模板代码
+?>代码  https://github.com/GuangGuangZhang/xplugin-template/tree/main/xplugin-template-core
+
 * 系统插件定义
     > </br>
     > 系统通用功能函数库,通用功能函数给其它插件提供通用能力</br>
     > 系统引擎类函数库,完成部分非界面功能的功能加载,拥有完整的生命周期函数,例如：</br>
     > 可通过“websocket 消息监听“系统插件、“iframe 消息监听“系统插件 接收或发送指令,控制或通知场景变化</br>
     > </br>
+
 * 相关命令
   ```javascript
     - npm install          -- to install dependencies
@@ -57,7 +60,9 @@
   * /src/core/index.json            文件解构
   * thingjsx.config.js              文件解构[配]
 
-## xplugin-template-expand 扩展插件模板代码
+  
+## 扩展插件模板代码
+?>代码  https://github.com/GuangGuangZhang/xplugin-template/tree/main/xplugin-template-expand
 * 扩展插件定义
     > </br>
     > 带有界面功能的系统插件,不受层级控制影响</br>没有过多的生命周期函数,系统加载完成后进行初始化,例如：</br>
@@ -102,7 +107,9 @@
   * /src/expand/index.json          文件解构
   * thingjsx.config.js              文件解构[配]
 
-## xplugin-template-layer 场景图层插件模板代码
+## 场景图层插件模板代码
+?>代码  https://github.com/GuangGuangZhang/xplugin-template/tree/main/xplugin-template-layer
+
 * 场景图层插件定义
     > </br>
     > 场景中通过控制孪生体集合,展示其属性信息、空间分布或变化。</br>场景中根据孪生体属性（如温度、空间位置）使其以特定方式呈现（如变色、显示/隐藏）,便于对孪生体进行分析、监控和管理,例如：</br>
@@ -147,7 +154,9 @@
   * /src/layer/index.json           文件解构
   * thingjsx.config.js              文件解构[配]
 
-## xplugin-template-control 场景控制插件模板代码
+## 场景控制插件模板代码
+?>代码  https://github.com/GuangGuangZhang/xplugin-template/tree/main/xplugin-template-control
+
 * 场景控制插件定义
     > </br>
     > 浏览控制场景的角度和方式及场景内孪生体在场景中的呈现形式</br>
@@ -195,7 +204,9 @@
   * /src/control/index.json         文件解构
   * thingjsx.config.js              文件解构[配]
 
-## xplugin-template-panel 面板插件模板代码
+## 面板插件模板代码
+?>代码  https://github.com/GuangGuangZhang/xplugin-template/tree/main/xplugin-template-panel
+
 * 面板插定义
     > </br>
     > 场景中以面板嵌入图表的形式呈现孪生体属性(或自定义)数据。</br>例如:</br>
