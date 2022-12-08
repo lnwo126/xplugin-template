@@ -413,9 +413,10 @@
 
         //获取当前在孪生体面板上激活的tab页签索引
 
-        //示例.
-
-        //TODO 
+        //示例. 获取当前在孪生体面板上激活的tab页签索引
+        const index = THINGX.DigitalTwin.getActivatedTabIndexOnPanel();
+        console.warn("当前在孪生体面板上激活的tab页签索引为: %s", index);
+        //print result:当前在孪生体面板上激活的tab页签索引为: 0
     ```
     ***   
 ### *<a><font color="grey">Method</font></a>*  THINGX.DigitalTwin.getDistanceToCamera
