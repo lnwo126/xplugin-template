@@ -3,10 +3,6 @@
 
 <!-- code_chunk_output -->
 
-  - [教程示例模板(显示孪生体插件)](#教程示例模板显示孪生体插件)
-  - [效果展示](#效果展示)
-  - [资源介绍](#资源介绍)
-  - [使用场景](#使用场景)
 - [开发帮助(我的第一个场景图层插件::显示孪生体)](#开发帮助我的第一个场景图层插件显示孪生体)
 	- [插件能力](#插件能力)
 	- [文件解构说明](#文件解构说明)
@@ -213,7 +209,7 @@
 	ThingJS API 在插件开发内被暴露于场景全局,THING 命名空间下
 	ThingJS-X API 在插件开发内被暴露于场景全局, THINGX 命名空间下
 	THING 命名空间API 的使用(可参考: https://docs.thingjs.com/cn/apidocs/)
-	THINGX 命名空间API 的使用(可参考: http://192.168.1.96/thingjs-x-api/THINGX.html)
+	THINGX 命名空间API 的使用(可参考: http://123.124.196.193:2023/api/index.html#/01%E7%B3%BB%E7%BB%9F%E8%B0%83%E8%AF%95%E5%99%A8(THINGX.Debugger))
 
 ```
 > 4. 禁用uinv （即将弃用,强烈不推荐使用,推荐使用THINGX）
@@ -265,7 +261,7 @@
 		#DigitalTwin
 		THINGX.DigitalTwin.show(digitalTwin [, purpose]);//显示孪生体
 		THINGX.DigitalTwin.hide(digitalTwin [, purpose]);//隐藏孪生体
-		可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.DigitalTwin.html
+		可参考: http://123.124.196.193:2023/api/index.html#/11%E5%AD%AA%E7%94%9F%E4%BD%93%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.DigitalTwin)
 
 		#Marker
 		THINGX.Marker.add(digitalTwin, name, isExcludeModel);//添加孪生体标记并显示
@@ -273,19 +269,19 @@
 		THINGX.Marker.show(digitalTwin, name [, purpose]);//显示孪生体标记
 		THINGX.Marker.hide(digitalTwin, name [, purpose]);//隐藏孪生体标记
 		THINGX.Marker.getConfig(digitalTwin);//获取孪生体标记配置数据
-		可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Marker.html
+		可参考: http://123.124.196.193:2023/api/index.html#/18%E6%A0%87%E8%AE%B0%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Marker)
 
 		#EventType
 		THING.App.current.on 
 	          -注册事件,可参考: https://docs.thingjs.com/cn/apidocs/THING.App.html#on
 	    THINGX.EventType.LeaveLevelBackward 
-	          -反向离开层级,可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.EventType.html 
+	          -反向离开层级,可参考: http://123.124.196.193:2023/api/index.html#/10%E4%BA%8B%E4%BB%B6%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.EventType)?id=event-%e7%b3%bb%e7%bb%9f%e5%b1%82%e7%ba%a7%e4%ba%8b%e4%bb%b6-thingeventtypexlevel 
 	          -更多事件类型,参考 THINGX.EventType 命名空间
 
 	    #Plugin
 	    THINGX.Plugin.getDigitalTwinsWithConfigData
 	          -通过元控件配置数据获取孪生体     
-	          -推荐使用该方法,可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Plugin.html#.getDigitalTwinsWithConfigData__anchor
+	          -推荐使用该方法,可参考: http://123.124.196.193:2023/api/index.html#/21%E6%8F%92%E4%BB%B6%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Plugin)?id=method-thingxplugingetdigitaltwinswithconfigdata
 
         设计步骤思路拆解(让我思考思考)
         	1. 选择指定孪生体集合			

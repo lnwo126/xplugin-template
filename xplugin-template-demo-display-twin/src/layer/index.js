@@ -34,18 +34,18 @@ export default class extends LayerPlugin {
          * * THING.App.current.on 
          *      -注册事件,可参考: https://docs.thingjs.com/cn/apidocs/THING.App.html#on
          * * THINGX.EventType.LeaveLevelBackward 
-         *      -反向离开层级,可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.EventType.html 
+         *      -反向离开层级,可参考: http://123.124.196.193:2023/api/index.html#/10%E4%BA%8B%E4%BB%B6%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.EventType)?id=event-%e7%b3%bb%e7%bb%9f%e5%b1%82%e7%ba%a7%e4%ba%8b%e4%bb%b6-thingeventtypexlevel 
          *      -更多事件类型,参考 THINGX.EventType 命名空间
          * * THINGX.Plugin.getDigitalTwinsWithConfigData
          *      -通过元控件配置数据获取孪生体     
-         *      -推荐使用该方法,可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Plugin.html#.getDigitalTwinsWithConfigData__anchor
+         *      -推荐使用该方法,可参考: http://123.124.196.193:2023/api/index.html#/21%E6%8F%92%E4%BB%B6%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Plugin)?id=method-thingxplugingetdigitaltwinswithconfigdata
          * * THINGX.Marker.getConfig
          *      -获取孪生体标记配置数据
-         *      -推荐使用该方法,可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Marker.html#.getConfig__anchor
+         *      -推荐使用该方法,可参考: http://123.124.196.193:2023/api/index.html#/18%E6%A0%87%E8%AE%B0%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Marker)?id=method-thingxmarkergetconfig
          * * THINGX.Marker.hide
          *      -隐藏孪生体标记
          *      -注意标记的隐藏和显示无法创建或移除标记,创建移除标记需要参考标记方法add、remove
-         *      -隐藏标记推荐使用该方法,可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Marker.html#.hide__anchor
+         *      -隐藏标记推荐使用该方法,可参考: http://123.124.196.193:2023/api/index.html#/18%E6%A0%87%E8%AE%B0%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Marker)?id=method-thingxmarkerhide
          * Future Attention
          * * onDeactivate 
          *      -中无法处理 THING.App.current.level.current (由于存在场景幕布,也不推荐在图层onDeactivate函数中使用 current)
@@ -126,7 +126,7 @@ export default class extends LayerPlugin {
          * * THINGX.Marker.show
          *      -显示孪生体标记
          *      -注意标记的隐藏和显示无法创建或移除标记,创建移除标记需要参考标记方法add、remove
-         *      -隐藏标记推荐使用该方法,可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Marker.html#.show__anchor
+         *      -隐藏标记推荐使用该方法,可参考: http://123.124.196.193:2023/api/index.html#/18%E6%A0%87%E8%AE%B0%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Marker)?id=method-thingxmarkershow
          */
         const currenttype = this.app.level.current.type;
         const filterDigitalTwins = DigitalTwins.filter(element => { return element.parent.type === currenttype || element.type === currenttype });
@@ -136,7 +136,7 @@ export default class extends LayerPlugin {
 
         /***
          * 通过计算筛选后的孪生体进行标记的显示 
-         * 标记操作API ,可参考API标记模块: http://123.124.196.193:2023/thingjs-x-api/THINGX.Marker.html
+         * 标记操作API ,可参考API标记模块: http://123.124.196.193:2023/api/index.html#/18%E6%A0%87%E8%AE%B0%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Marker)
          * * THINGX.Marker.show
          * * THINGX.Marker.hide
          * * THINGX.Marker.add
