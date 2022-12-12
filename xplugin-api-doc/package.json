@@ -1,0 +1,15 @@
+{
+  "name": "xplugin-api-doc",
+  "version": "1.0.0",
+  "description": "插件开发指南文档",
+  "defineXPlugin": {
+    "id": "#plugin-id",
+    "name": "#plugin-name"
+  },
+  "homepage": "https://x.thingjs.com/",
+  "author": "张光光 <zhangguang@uino.com> (https://www.uino.com/)",
+  "contributors": [
+    "张光光 <zhangguang@uino.com> (https://www.uino.com/)"
+  ],
+  "license": "MIT"
+}
