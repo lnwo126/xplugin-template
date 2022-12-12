@@ -15,7 +15,7 @@ export default class {
      * 图层激活
      * 支持同时激活多个图层
      *      - THINGX.Layer.activate(name [, purpose]); 激活图层
-     *      可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Layer.html#.activate__anchor
+     *      可参考: http://123.124.196.193:2023/api/index.html#/13%E5%9B%BE%E5%B1%82%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Layer)?id=method-thingxlayeractivate
      */
     Activate() {
         const parameters = this.#convertParametersToArrayData();
@@ -30,7 +30,7 @@ export default class {
     /**
      * 取消激活图层
      *      -  THINGX.Layer.deactivate(name[, purpose]); 取消激活图层
-     *      可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Layer.html#.deactivate__anchor
+     *      可参考: http://123.124.196.193:2023/api/index.html#/13%E5%9B%BE%E5%B1%82%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Layer)?id=method-thingxlayerdeactivate
      */
     Deactivate() {
 
@@ -45,7 +45,7 @@ export default class {
     /**
      * 取消所有激活的图层
      *      - THINGX.Layer.deactivateAll(); 取消所有激活的图层
-     *      可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Layer.html#.deactivateAll__anchor
+     *      可参考: http://123.124.196.193:2023/api/index.html#/13%E5%9B%BE%E5%B1%82%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Layer)?id=method-thingxlayerdeactivateall
      */
     DeactivateAll() {
         //由于取消业务不需要任何参数,无需进行参数校验,直接访问API即可
@@ -55,7 +55,7 @@ export default class {
     /**
      * 整个图层模块的显示
      *      - THINGX.Layer.show();显示图层模块
-     *      可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Layer.html#.show__anchor
+     *      可参考: http://123.124.196.193:2023/api/index.html#/13%E5%9B%BE%E5%B1%82%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Layer)?id=method-thingxlayershow
      */
     Show() {
         THINGX.Layer.show();
@@ -63,7 +63,7 @@ export default class {
     /**
      * 整个图层模块的隐藏
      *      - THINGX.Layer.hide();隐藏图层模块
-     *      可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Layer.html#.hide__anchor
+     *      可参考: http://123.124.196.193:2023/api/index.html#/13%E5%9B%BE%E5%B1%82%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Layer)?id=method-thingxlayerhide
      */
     Hide() {
         THINGX.Layer.hide();
@@ -71,7 +71,7 @@ export default class {
     /**
      * 整个图层模块的显示
      *      - THINGX.Layer.refresh();重新读取可视化配置 并根据当前层级重新创建图层
-     *      可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Layer.html#.refresh__anchor
+     *      可参考: http://123.124.196.193:2023/api/index.html#/13%E5%9B%BE%E5%B1%82%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Layer)?id=method-thingxlayerrefresh
      */
     Refresh() {
         THINGX.Layer.refresh();

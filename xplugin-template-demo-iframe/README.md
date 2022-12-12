@@ -5,12 +5,12 @@
 <!-- code_chunk_output -->
 
 - [开发帮助(我的第一个系统插件开发::消息监听)](#开发帮助我的第一个系统插件开发消息监听)
-  - [插件能力](#插件能力)
-  - [文件解构说明](#文件解构说明)
-  - [开发注意事项](#开发注意事项)
-  - [插件开发逻辑](#插件开发逻辑)
-  - [打包上传及部署](#打包上传及部署)
-  - [错误及特别注意 🧐](#错误及特别注意-)
+	- [插件能力](#插件能力)
+	- [文件解构说明](#文件解构说明)
+	- [开发注意事项](#开发注意事项)
+	- [插件开发逻辑](#插件开发逻辑)
+	- [打包上传及部署](#打包上传及部署)
+	- [错误及特别注意 🧐](#错误及特别注意-)
 
 <!-- /code_chunk_output -->
 
@@ -165,7 +165,7 @@
 	ThingJS API 在插件开发内被暴露于场景全局,THING 命名空间下
 	ThingJS-X API 在插件开发内被暴露于场景全局, THINGX 命名空间下
 	THING 命名空间API 的使用(可参考: https://docs.thingjs.com/cn/apidocs/)
-	THINGX 命名空间API 的使用(可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.html)
+	THINGX 命名空间API 的使用(可参考: http://123.124.196.193:2023/api/index.html#/01%E7%B3%BB%E7%BB%9F%E8%B0%83%E8%AF%95%E5%99%A8(THINGX.Debugger))
 
 ```
 > 4. 禁用uinv （即将弃用,强烈不推荐使用,推荐使用THINGX）
@@ -211,13 +211,13 @@
 >>> #需求分析设计
 ```javascript
 			1. 提供业务能力控制(包括不限于激活业务、取消激活、显示业务栏、隐藏业务栏等)
-				-参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Business.html
+				-参考: http://123.124.196.193:2023/api/index.html#/12%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Business)
 			2. 提供图层控制能力(包括不限于 图层激活、取消激活、图层刷新等)
-				-参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Layer.html
+				-参考: http://123.124.196.193:2023/api/index.html#/13%E5%9B%BE%E5%B1%82%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Layer)
 			3. 提供控制标记的能力(包括不限于 孪生体标记添加、显示、隐藏、移除等)
-				-参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Marker.html
+				-参考: http://123.124.196.193:2023/api/index.html#/18%E6%A0%87%E8%AE%B0%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Marker)
 			4. 提供操作集的运行、暂停、恢复运行、停止运行的能力
-				-参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.OpSet.html
+				-参考: http://123.124.196.193:2023/api/index.html#/17%E6%93%8D%E4%BD%9C%E9%9B%86%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.OperationSet)
 			5. ...
 
 ```

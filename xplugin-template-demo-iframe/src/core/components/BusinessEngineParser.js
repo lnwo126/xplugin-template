@@ -15,9 +15,9 @@ export default class {
      * 业务激活（系统业务同时仅有一个业务能够被激活,不能同时激活多个业务，参考: ThingJS-X 业务模块介绍）
      * 业务的激活其本质是对业务的切换
      *      - THINGX.Business.activate(name); 业务激活
-     *      可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Business.html#.activate__anchor
-     *      - THINGX.Business.getActivated(); 获取当前激活的业务信息
-     *      可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Business.html#.getActivated__anchor
+     *      可参考: http://123.124.196.193:2023/api/index.html#/12%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Business)?id=method-thingxbusinessactivate
+     *      - THINGX.Business.getActivatedName(); 获取当前激活的业务信息
+     *      可参考: http://123.124.196.193:2023/api/index.html#/12%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Business)?id=method-thingxbusinessgetactivatedname
      */
     Activate() {
         const validationresult = this.#validation();
@@ -28,7 +28,7 @@ export default class {
         // 可进行逻辑校验, 例如激活业务的能力，该业务已处于激活状态,那么我们可以
         // 提前进行判断拦截, 然后输出消息提醒即可,无需要进行API的重复调用
         // 是否添加校验逻辑, 依据具体需求和能力来确定
-        // if (THINGX.Business.getActivated()?.name === parameters.target) {
+        // if (THINGX.Business.getActivatedName() === parameters.target) {
         //     console.warn('%c [ iframe 消息引擎 ] The service is already active.', 'background: #FFFF37');
         //     return false;
         // }
@@ -41,7 +41,7 @@ export default class {
     /**
      * 业务取消激活
      *      - THINGX.Business.deactivate(); 取消当前激活的业务
-     *      可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Business.html#.deactivate__anchor
+     *      可参考: http://123.124.196.193:2023/api/index.html#/12%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Business)?id=method-thingxbusinessdeactivate
      */
     Deactivate() {
 
