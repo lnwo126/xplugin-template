@@ -1,0 +1,296 @@
+[
+  {
+    "key": "compassStyle",
+    "label": "风格",
+    "value": "",
+    "placeholder": "请选择风格",
+    "description": "选择指北针风格",
+    "hidden": false,
+    "readonly": false,
+    "required": true,
+    "prefix": "",
+    "suffix": "",
+    "dataset": [
+      {
+        "value": "ande",
+        "label": "安德"
+      },
+      {
+        "value": "misi",
+        "label": "密斯"
+      },
+      {
+        "value": "backEarth",
+        "label": "重返地球"
+      },
+      {
+        "value": "jzgm",
+        "label": "矩阵革命"
+      },
+      {
+        "value": "tklk",
+        "label": "太空旅客"
+      }
+    ],
+    "type": "select"
+  },
+  {
+    "key": "effectiveLevel",
+    "label": "生效层级",
+    "value": [],
+    "placeholder": "",
+    "description": "设置指北针生效显示层级",
+    "hidden": false,
+    "readonly": false,
+    "required": true,
+    "prefix": "",
+    "suffix": "",
+    "type": "multiple-selector"
+  },
+  {
+    "key": "compassWidth",
+    "label": "半径",
+    "value": 50,
+    "description": "设置指北针半径",
+    "hidden": false,
+    "readonly": false,
+    "required": true,
+    "prefix": "",
+    "suffix": "px",
+    "max": 200,
+    "min": 0,
+    "step": 10,
+    "type": "slider"
+  },
+  {
+    "key": "compassPostion",
+    "label": "位置",
+    "value": "topLeft",
+    "description": "设置指北针对于屏幕的位置",
+    "prefix": "",
+    "suffix": "",
+    "dataset": [
+      {
+        "value": "topLeft",
+        "label": "上左"
+      },
+      {
+        "value": "topRight",
+        "label": "上右"
+      },
+      {
+        "value": "bottomLeft",
+        "label": "下左"
+      },
+      {
+        "value": "bottomRight",
+        "label": "下右"
+      }
+    ],
+    "linkage": [
+      {
+        "key": "topLeftContainer",
+        "label": "上左",
+        "value": "topLeft",
+        "hidden": false,
+        "readonly": false
+      },
+      {
+        "key": "topRightContainer",
+        "label": "上右",
+        "value": "topRight",
+        "hidden": false,
+        "readonly": false
+      },
+      {
+        "key": "bottomLeftContainer",
+        "label": "下左",
+        "value": "bottomLeft",
+        "hidden": false,
+        "readonly": false
+      },
+      {
+        "key": "bottomRightContainer",
+        "label": "下右",
+        "value": "bottomRight",
+        "hidden": false,
+        "readonly": false
+      }
+    ],
+    "type": "linkage-radio",
+    "groups": [
+      {
+        "label": "",
+        "key": "topLeftContainer",
+        "value": "",
+        "description": "",
+        "prefix": "",
+        "suffix": "",
+        "type": "container",
+        "groups": [
+          {
+            "key": "tl_topMargin",
+            "label": "上边距",
+            "value": 100,
+            "placeholder": "",
+            "description": "",
+            "hidden": false,
+            "readonly": false,
+            "required": true,
+            "prefix": "",
+            "suffix": "px",
+            "max": 1000,
+            "min": 0,
+            "step": 1,
+            "type": "number"
+          },
+          {
+            "key": "tl_leftMargin",
+            "label": "左边距",
+            "value": 100,
+            "placeholder": "",
+            "description": "",
+            "hidden": false,
+            "readonly": false,
+            "required": true,
+            "prefix": "",
+            "suffix": "px",
+            "max": 1000,
+            "min": 0,
+            "step": 1,
+            "type": "number"
+          }
+        ]
+      },
+      {
+        "label": "",
+        "key": "topRightContainer",
+        "value": "",
+        "description": "",
+        "prefix": "",
+        "suffix": "",
+        "type": "container",
+        "groups": [
+          {
+            "key": "tr_topMargin",
+            "label": "上边距",
+            "value": 100,
+            "placeholder": "",
+            "description": "",
+            "hidden": false,
+            "readonly": false,
+            "required": true,
+            "prefix": "",
+            "suffix": "px",
+            "max": 1000,
+            "min": 0,
+            "step": 1,
+            "type": "number"
+          },
+          {
+            "key": "tr_rightMargin",
+            "label": "右边距",
+            "value": 100,
+            "placeholder": "",
+            "description": "",
+            "hidden": false,
+            "readonly": false,
+            "required": true,
+            "prefix": "",
+            "suffix": "px",
+            "max": 1000,
+            "min": 0,
+            "step": 1,
+            "type": "number"
+          }
+        ]
+      },
+      {
+        "label": "",
+        "key": "bottomLeftContainer",
+        "value": "",
+        "description": "",
+        "prefix": "",
+        "suffix": "",
+        "type": "container",
+        "groups": [
+          {
+            "key": "bl_bottomMargin",
+            "label": "下边距",
+            "value": 100,
+            "placeholder": "",
+            "description": "",
+            "hidden": false,
+            "readonly": false,
+            "required": true,
+            "prefix": "",
+            "suffix": "px",
+            "max": 1000,
+            "min": 0,
+            "step": 1,
+            "type": "number"
+          },
+          {
+            "key": "bl_leftMargin",
+            "label": "左边距",
+            "value": 100,
+            "placeholder": "",
+            "description": "",
+            "hidden": false,
+            "readonly": false,
+            "required": true,
+            "prefix": "",
+            "suffix": "px",
+            "max": 1000,
+            "min": 0,
+            "step": 1,
+            "type": "number"
+          }
+        ]
+      },
+      {
+        "label": "",
+        "key": "bottomRightContainer",
+        "value": "",
+        "description": "",
+        "prefix": "",
+        "suffix": "",
+        "type": "container",
+        "groups": [
+          {
+            "key": "br_bottomMargin",
+            "label": "下边距",
+            "value": 100,
+            "placeholder": "",
+            "description": "",
+            "hidden": false,
+            "readonly": false,
+            "required": true,
+            "prefix": "",
+            "suffix": "px",
+            "max": 1000,
+            "min": 0,
+            "step": 1,
+            "type": "number"
+          },
+          {
+            "key": "br_rightMargin",
+            "label": "右边距",
+            "value": 100,
+            "placeholder": "",
+            "description": "",
+            "hidden": false,
+            "readonly": false,
+            "required": true,
+            "prefix": "",
+            "suffix": "px",
+            "max": 1000,
+            "min": 0,
+            "step": 1,
+            "type": "number"
+          }
+        ]
+      }
+    ]
+  }
+]
