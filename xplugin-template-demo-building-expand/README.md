@@ -3,30 +3,26 @@
 <!-- code_chunk_output -->
 
 - [开发帮助(我的第一个扩展插件::指北针插件)](#开发帮助我的第一个扩展插件指北针插件)
-	- [插件能力](#插件能力)
-	- [文件解构说明](#文件解构说明)
-	- [开发注意事项](#开发注意事项)
-	- [插件开发逻辑](#插件开发逻辑)
-	- [打包上传及部署](#打包上传及部署)
-	- [错误及特别注意 🧐](#错误及特别注意-)
+  - [插件能力](#插件能力)
+  - [文件解构说明](#文件解构说明)
+  - [开发注意事项](#开发注意事项)
+  - [插件开发逻辑](#插件开发逻辑)
+  - [打包上传及部署](#打包上传及部署)
+  - [错误及特别注意 🧐](#错误及特别注意-)
 
 <!-- /code_chunk_output -->
 
 
-
-
-## 教程示例模板(指北针插件)
+## 教程示例模板(建筑展开插件)
 > 插件类型: 扩展插件
 ```text
-   在数字孪生场景/层级中,对场景方向进行指向,该工具用来指示方向，指针的方向指向场景地理的北极
+   在数字孪生场景/层级中,堆叠在一起而且没有名称导引的建筑楼层,无法清晰进行查看,该插件工具实现在园区、建筑层级进行建筑楼层的自动展开进行查看
 ```
 
 ## 效果展示
 
-<img src="./src/expand/resources/preview指北针1.png" width = "610" height = "460" alt="指北针" />
-<img src="./src/expand/resources/preview指北针2.png" width = "610" height = "460" alt="指北针" />
-<img src="./src/expand/resources/preview指北针3.png" width = "610" height = "460" alt="指北针" />
-<img src="./src/expand/resources/preview指北针4.png" width = "610" height = "460" alt="指北针" />
+<img src="./src/control/resources/preview建筑展开.png" width = "610" height = "460" alt="建筑展开" />
+
 ## 资源介绍
 
 > 配置项说明
@@ -34,66 +30,57 @@
 ||名称|描述|必填|多选|
 |-|----|----|----|----|
 |基础配置||||
-||风格|内置效果:安德、密斯、重返地球、矩阵革命、太空旅客|是|是|
-||生效层级|隐藏显示生效的层级|是|是|
-||半径|指北针尺寸半径大小|是|是|
-||位置|指北针显示位置:上左、上右、下左、下右|是|是|
-|边距设置||||
-||上边距| 指北针距离上边距距离,默认: 100px;||-|
-||下边距| 指北针距离下边距距离,默认: 100px;||-|
-||左边距| 指北针距离左边距距离,默认: 100px;||-|
-||右边距| 指北针距离右边距距离,默认: 100px;||-|
-
+||-|-|-|-|
 
 
 ## 使用场景
-> 指北针插件使用场景
+> 建筑展开插件使用场景
 ```text
-   当进入某个场景或层级时,希望清楚了解当前场景在地理坐标的实际方向以观察相关孪生体与显示世界方向的对照和映射,实现对场景中设备等的方向进行有效分析与设置
+   当进入某个园区场景或建筑层级时,希望清楚看到建筑的楼层整体结构及建筑内部细节,实现对场景建筑结构的观察等以便进行有效分析
 ```
 > 场景应用案例
 
 >> 案例介绍
 ```javascript
-   园区管理人员需要掌握园区建筑的方向情况
+   园区管理人员需要掌握园区建筑的楼层结构情况
 ```
 >> 配置步骤
 ```javascript
-  第1步：添加生效层级为园区。通过风格显示为 `矩阵革命` 与场景整体风格一致。
-  第2步：配置指北针风格及相关显示位置即可。
+  第1步：给园区孪生体集合添加该场景控制插件。通过场景控制插件激活与取消实现对园区层级下查看建筑楼层结构的情况。
+  第2步：给建筑孪生体集合添加该场景控制插件。通过进入建筑层级实现可在建筑层级进行建筑楼层结构情况的查看。
 ```
 >> 效果展示
 
-<img src="./src/expand/resources/preview指北针1.png" width = "610" height = "460" alt="指北针" />
+<img src="./src/control/resources/preview建筑展开.png" width = "610" height = "460" alt="建筑展开" />
 
 
 
 # 开发帮助(我的第一个扩展插件::指北针插件)
 
 ## 插件能力
-> 在数字孪生场景/层级中,对场景方向进行指向,该工具用来指示方向，指针的方向指向场景地理的北极，实现对场景中设备等的方向进行有效分析与设置
+> 在数字孪生场景/层级中,对场景建筑结构的检查查看,该工具插件用来将建筑楼层进行展开,实现对场景建筑楼层结构的有效分析
 
 
 ## 文件解构说明
 > /src/expand/index.js 开发入口文件(主要逻辑)
 ```javascript
-	/**
-	 * 该文件提供了相关插件生命周期函数,可进行插件逻辑功能实现
-	 *
-	 * onInstall 		-- 场景未加载前进行插件资源加载安装
-	 * onActivate 		-- 扩展插件被激活
-	 * onDeactivate 	-- 扩展插件激活状态被取消
-	 * onUninstall          -- 扩展插件被卸载安装
-	 * 
-	 */
-	
-	// 激活后该函数被调用	
-	 onActivate(widget){
-	 	console.warn("^_^:%s 指北针被激活");
-	 }
 
-	 ...
-	 ...
+      /**
+      * 该文件提供了相关插件生命周期函数,可进行插件逻辑功能实现
+      * onInstall 		  -- 场景未加载前进行插件资源加载安装 
+      * onInited			  -- 层级切换发生改变 
+      * onActivate 		  -- 插件被激活 
+      * onDeactivate 	  -- 插件激活状态被取消 
+      * onUninstall     -- 插件被卸载安装 
+      * /
+	
+      // 激活后该函数被调用	
+      onActivate(){
+        console.warn("^_^:%s 建筑展开被激活");
+      }
+
+      ...
+      ...
 ```
 
 > /src/expand/index.json 配置项控件文件
@@ -138,7 +125,7 @@
 	        //设置插件作者为 张光的邮箱
 	        this.bundle.setAuthor("zhangguang@uino.com");
 	        //设置插件的能力描述
-	        this.bundle.setDescription("在数字孪生场景/层级中,对场景方向进行指向,该工具用来指示方向，指针的方向指向场景地理的北极，实现对场景中设备等的方向进行有效分析与设置")
+	        this.bundle.setDescription("在数字孪生场景/层级中,对场景建筑结构的检查查看,该工具插件用来将建筑楼层进行展开,实现对场景建筑楼层结构的有效分析")
 	        //设置插件版权
 	        this.bundle.external.thingjsX.setLicense("XXX 科技有限公司版权所有");
 	    }
@@ -146,33 +133,33 @@
 
 
 	//方式二(JSON结构):
-	{
-	    "name": "指北针",
-	    "type": "plugin",
-	    "id": "6987950438838435841",
-	    "version": "1.0.0",
-	    "author": "zhangguang@uino.com",
-	    "description": "在数字孪生场景/层级中,对场景方向进行指向,该工具用来指示方向，指针的方向指向场景地理的北极，实现对场景中设备等的方向进行有效分析与设置",
-	    "main": "frame.js",
-	    "dependencies": {
-	        "thingjs": "1.2.7.17",
-	        "dpdVersion": ">1.0.2 <=2.3.4"
-	    },
-	    "external": {
-	        "use-standard": "0",
-	        "encrypt-files": [
-	            "frame.js"
-	        ],
-	        "standard": "Revision",
-	        "preview": "./resources/preview.png",
-	        "thingjs-x": {
-	            "plugin-type": "expand",
-	            "license": "XXX 科技有限公司版权所有",
-	            "date": "2022/10/25 11:47:59",
-	            "extend": {}
-	        }
-	    }
-	}
+  {
+    "name": "xplugin-template-demo-building-expand",
+    "type": "plugin",
+    "id": "7008308225896349696",
+    "version": "1.0.0",
+    "author": "",
+    "main": "frame.js",
+    "dependencies": {
+      "thingjs": "1.2.7.17",
+      "dpdVersion": ">1.0.2 <=2.3.4"
+    },
+    "external": {
+      "use-standard": "0",
+      "encrypt-files": [
+        "frame.js"
+      ],
+      "standard": "Revision",
+      "preview": "./resources/preview.png",
+      "thingjs-x": {
+        "plugin-type": "control",
+        "license": "北京优锘科技有限公司 版权所有",
+        "date": "2022/12/13 16:04:24",
+        "extend": {}
+      }
+    }
+  }
+
 
 ```
 > /config/index.js 环境配置文件(不建议进行更改的文件)
@@ -250,46 +237,31 @@
 ```
 
 ## 插件开发逻辑
-> 以 指北针插件为例 进行插件开发流程介绍
+> 以 建筑展开插件为例 进行插件开发流程介绍
 
 >> 1. 依据插件能力需求进行插件设计
 ```javascript
-      指北针插件主要能力体现在在场景中需要使用在明确清楚当前场景在定理方向的信息
-		经过思考需要解决的问题为
-         1. 指北针是否可以依据显示不同的主题风格样式
-         2. 指北针需要显示的位置及位置的调整
-         3. 指北针显示的尺寸大小
+      建筑展开插件主要能力体现在在场景中需要对建筑楼层进行展开以便查看建筑楼层内部的堆叠结构
+         1. 生效的层级,园区可以查看建筑结构、建筑层级可以查看建筑结构
 
       涉及到相关使用的api
-	    #Plugin
-	    THINGX.Plugin.getDigitalTwinsWithConfigData
-	          -通过元控件配置数据获取孪生体信息     
-	          -推荐使用该方法,可参考: http://123.124.196.193:2023/api/index.html#/21%E6%8F%92%E4%BB%B6%E6%A8%A1%E5%9D%97%E6%93%8D%E4%BD%9C%E7%9B%B8%E5%85%B3(THINGX.Plugin)?id=method-thingxplugingetdigitaltwinswithconfigdata
-
-        设计步骤思路拆解(让我思考思考)
-        	1. 设计不同风格的指北针用于适配不同主题的显示需求			
-        			-输入配置项为 下拉选择器 		
-        			-内置值为: 安德、密斯、重返地球、矩阵革命、太空旅客
-        	2. 获取层级信息用于控制指北针不同的生效层级信息
-        			-输入配置项为 孪生体选择器
-        			-插件的激活将符合条件的孪生体层级进行显示
-        	3. 显示位置的配置 
-        			-输入配置项为 联动选择器 满足不同条件的不同配置
-        			-配置插件的显示位置及位置的调整
-        	4. 更多高级功能设计(扩展)
-        			-可继续对配置项进行能力扩展,例如效果显示配置参数
-        			-针对相关新增配置参数调用符合条件的API或添加效果控制功能
+	    #showAllRoofs 显示/隐藏所有屋顶（房顶）
+        - https://docs.thingjs.com/cn/apidocs/THING.Building.html#showAllRoofs
+      #expandFloors 展开楼层
+        - https://docs.thingjs.com/cn/apidocs/THING.Building.html#expandFloors
+      #unexpandFloors 合并楼层
+        - https://docs.thingjs.com/cn/apidocs/THING.Building.html#unexpandFloors
+	   
 ```
 >> 2. 配置项控件设计
 
-<img src="./src/expand/resources/指北针配置项.png" width="572" height="442" alt="显示孪生体配置项">
-
+无
 
 >> 3. 入口主逻辑开发&快速开始
 
 ```javascript
 	/***
-	 * 1. 具体逻辑代码可详细阅读 /src/expand/index.js 开发入口文件(扩展插件主要逻辑在 index.vue文件内，主要入口文件负责引用作用未实现相关扩展能力 )
+	 * 1. 具体逻辑代码可详细阅读 /src/expand/index.js 开发入口文件
 	 * 2. 快速开始可继续阅读或直接访问: https://wiki.uino.com/book/thingjsx40-plugin/63564184cd00484b78b06a1a.html
 	 * 3. 使用插件开发工具包访问地址: https://www.npmjs.com/package/@thingjs-x/xplugin-cli
 	 */
@@ -345,9 +317,6 @@
 > 2. 禁用uinv （即将弃用,强烈不推荐使用,推荐使用THINGX）
 
 > 3. npm run test 检测插件工程依赖环境的可用性
-
-> 4. 该插件实现使用了相关地理角度计算知识，需掌握一定的计算公式  
-第二种实现方案可以参考相关ThingJS API 提供的相关能力，例如 地球场景指北针的组件api CMAP.EarthCompass (https://docs.thingjs.com/cn/apidocs/CMAP.EarthCompass.html)
 
 
 
