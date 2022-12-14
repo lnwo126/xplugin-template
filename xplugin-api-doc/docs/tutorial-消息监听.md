@@ -19,6 +19,8 @@
 
 
 ## 教程示例模板(消息监听插件)
+?>教程代码  https://github.com/GuangGuangZhang/xplugin-template/tree/main/xplugin-template-demo-iframe
+
 > 插件类型: 系统插件插件
 ```text
 
