@@ -120,6 +120,29 @@
 |-|XText| X+具体类型即为 控件最小单元,拥有控件通用元素,例如: </br>XText 是指 text类型的控件</br>XNumber 是指 number类型的控件</br>XSelect 是指 select类型的控件</br>...|
 |-|XNumber|number类型的控件 |
 |-|XSelect|select类型的控件 |
+|-|ValueLabelObject| 值名称对对象 `check-checkbox` `datalist-select` `datalist-checkbox` `multiple-select` `multiple-radio` `multiple-checkbox` `linkage-radio` `linkage-select` `linkage-checkbox` `selector-select` `multiple-selector-select`|
+|-|KeyValueObject|键值对象 `multiple-keyvalue` `articles` `mutex-attachment`|
+|-|RangeColorObject| 颜色范围对象 `range-color` |
+|-|RangeObject| 范围对象 `range-color` |
+|-|ContainerXControlObject|容器控件对象 `multiple-container` |
+|-|RadioObject| 单选对象 `linkage-radio` |
+|-|SelectObject| 下拉对象 `linkage-select` |
+|-|SwitchObject| 切换开关对象 `linkage-switch` |
+|-|CheckboxObject| 选择框对象 `linkage-checkbox` |
+|-|SelectorObject| 条件选择器对象 `selector` `selector-text` `selector-select` `selector-color` `selector-keyvalue` `selector-attachment` `selector-action` `multiple-selector` `multiple-selector-text` `multiple-selector-select` `multiple-selector-color` `multiple-selector-keyvalue` `multiple-selector-attachment` `multiple-selector-action`|
+|-|TwinObject| 孪生体集合对象 `selector` `selector-text` `selector-select` `selector-color` `selector-keyvalue` `selector-attachment` `selector-action` `multiple-selector` `multiple-selector-text` `multiple-selector-select` `multiple-selector-color` `multiple-selector-keyvalue` `multiple-selector-attachment` `multiple-selector-action` `selector-effect-text` `selector-text-attachment` `selector-color-text`|
+|-|DictionaryObject| 字典对象 `dictionary` `effect`|
+|-|DictionarySettingObject| 字典设置对象 `dictionary` |
+|-|XObject| 控件集合对象 `articles` |
+|-|KeyobjectsObject| 对象配置控件对象 `keyobjects` |
+|-|ModelObject| 模型对象 `model` |
+|-|MutexObject| 互斥关系对象 `mutex-attachment` |
+|-|ResourceObject| 资源对象 `selector-resource` |
+|-|SelectorEffectTextObject| 选择器效果文本对象 `selector-effect-text` |
+|-|EffectObject| 效果对象 `selector-effect-text` |
+|-|SelectorTextAttachmentObject| 选择器文本标记对象 `selector-text-attachment` |
+|-|SelectorColorTextObject| 选择器颜色文本对象 `selector-color-text` |
+
 
 
 ## Widget List
