@@ -8,8 +8,12 @@
 - [Tutorial](tutorial.md)
   - [消息监听](tutorial-消息监听.md)
   - [显示孪生体](tutorial-显示孪生体.md)
+  - [指北针插件](tutorial-指北针插件.md)
+  - [建筑展开插件](tutorial-建筑展开插件.md)
+  - [属性面板插件](tutorial-属性面板插件.md)
 - [Proposal](next-stage-release.md)
 - [Changelog](changelog)
+- [Faq](Faq.md)
 - **api list** 
   - [系统调试器(THINGX.Debugger)](01系统调试器(THINGX.Debugger).md)
   - [系统全局调度器(THINGX.Timer)](02系统全局调度器(THINGX.Timer).md)

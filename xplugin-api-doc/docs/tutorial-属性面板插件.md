@@ -1,66 +1,68 @@
-
-
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [开发帮助(我的第一个系统插件开发::消息监听)](#开发帮助我的第一个系统插件开发消息监听)
-	- [插件能力](#插件能力)
-	- [文件解构说明](#文件解构说明)
-	- [开发注意事项](#开发注意事项)
-	- [插件开发逻辑](#插件开发逻辑)
-	- [打包上传及部署](#打包上传及部署)
-	- [错误及特别注意 🧐](#错误及特别注意-)
+- [开发帮助(我的第一个面板插件::属性面板插件)](#开发帮助我的第一个面板插件属性面板插件)
+  - [插件能力](#插件能力)
+  - [文件解构说明](#文件解构说明)
+  - [开发注意事项](#开发注意事项)
+  - [插件开发逻辑](#插件开发逻辑)
+  - [打包上传及部署](#打包上传及部署)
+  - [错误及特别注意 🧐](#错误及特别注意-)
 
 <!-- /code_chunk_output -->
 
 
-
-
-
-## 教程示例模板(消息监听插件)
-> 插件类型: 系统插件插件
+## 教程示例模板(属性面板插件)
+> 插件类型: 面板插件
 ```text
-
+   在数字孪生场景/层级中,对场景中孪生体信息以面板形式进行展示,以便进行数据观察与分析
 ```
 
+## 效果展示
+<img src="./resources/tutorial/preview孪生体面板.png" width = "610" height = "460" alt="孪生体信息" />
 
-# 开发帮助(我的第一个系统插件开发::消息监听)
+
+# 开发帮助(我的第一个面板插件::属性面板插件)
 
 ## 插件能力
->  使数字孪生场景中能够监听接收第三方页系统面中向ThingJS-X平台发送的事件消息
-   使ThingJS-X 具有接收消息的能力,从而进行场景(内)的一些列控制操作等
+> 在数字孪生场景/层级中,对场景中孪生体信息以面板形式进行展示,以便进行数据观察与分析
 
 
 ## 文件解构说明
-> /src/layer/index.js 开发入口文件(主要逻辑)
+> /src/panel/index.js 开发入口文件(主要逻辑)
 ```javascript
 	/**
-	 * 该文件提供了相关图层生命周期函数,可进行插件逻辑功能实现
+	 * 该文件提供了相关插件生命周期函数,可进行插件逻辑功能实现
 	 *
-	 * onInstall 			-- 场景未加载前进行插件资源加载安装
-	 * onBeforeInit 		-- 场景初始化前执行
-	 * onInited				-- 场景初始化
-	 * onBeforeLoad 		-- 场景加载前
-	 * onBeforeLoadEarth 	-- 地球场景加载前执行
-	 * onEarthLoaded 		-- 地球场景加载完成
-	 * onBeforeLoadCampus 	-- 园区场景加载前执行(园区在地球场景加载中有存在多次回调的情况)
-	 * onCampusLoaded 		-- 园区场景加载完成
-	 * onLoaded 			-- 场景加载完成(场景所指的是3D场景,而非系统加载完成)
-	 * onUninstall 			-- 插件被卸载安装
+	 * onInstall 		-- 场景未加载前进行插件资源加载安装
+	 * onInited			-- 插件层级切换发生改变
+	 * onActivate 		-- 插件被激活
+	 * onDeactivate 	-- 插件激活状态被取消
+	 * onUninstall 		-- 插件被卸载安装
 	 * 
 	 */
 	
-	// 场景加载完成后调用	
-	 onLoaded(){
-	 	console.warn("^_^: 场景加载完成激活");
+	// 激活后该函数被调用	
+	 onActivate(xhost, widget){
+	 	console.warn("^_^ 面板插件激活");
+        console.warn("^_^ 面板插件宿主",xhost);//面板插件宿主，该实现主要为孪生体面板，宿主为孪生体信息
+        console.warn("^_^ 面板插件UI",widget);//面板插件UI实例
 	 }
 
 	 ...
 	 ...
 ```
+> /src/panel/index.vue 开发UI文件(主要显示逻辑及显示布局)
 
-> /src/layer/index.json 配置项控件文件
+```javascript
+
+    该显示文件为一个 vue 组件文件,开发者只需关注该文件的页面布局开发即可
+    文件结构与功能同vue组件开发一致,具备vue组件开发即可快速上手
+
+```
+
+> /src/panel/index.json 配置项控件文件
 ```javascript
 	
 	//插件配置项能力属于ThingJS 插件重要组成部分,需要对该部门内容有一定的了解
@@ -70,15 +72,14 @@
 	/**
 	 * 	配置项控件可视化工具
 	 *	为配置项开发提效进行了配置项规范的工具化落地,可参考使用工具快速完成配置项设计开发工作
-	 *	离线配置项工具下载地址: http://10.100.32.63/xelement/xelement.zip
+	 *	离线配置项工具下载地址: http://123.124.196.193:2023/api/index.html#/xplugin-specification?id=%e9%85%8d%e7%bd%ae%e9%a1%b9%e8%a7%84%e8%8c%83
 	 *	下载后解压安装(推荐管理员)即可使用,使用方式和方法请参考工具内文档
 	 *	
 	 */
-
 	
 ```
 
-> /src/layer/bundle.js 插件资源描述文件
+> /src/panel/bundle.js 插件资源描述文件
 ```javascript
 
 	//插件资源描述文件是针对插件资源进行描述解释的文件
@@ -92,10 +93,10 @@
 	 */
 	
 	//方式一(引入描述文件库SDK,通过API进行设置):
-		
-	import BundlePluginCore from "@thingjs-x/xplugin-bundle/dist/plugin/BundlePluginCore";
+	
+	import BundlePluginLayer from "@thingjs-x/xplugin-bundle/dist/plugin/BundlePluginLayer";
 
-	export default class extends BundlePluginCore {
+	export default class extends BundlePluginLayer {
 
 	    constructor() {
 	        super();
@@ -103,42 +104,40 @@
 	        //设置插件作者为 张光的邮箱
 	        this.bundle.setAuthor("zhangguang@uino.com");
 	        //设置插件的能力描述
-	        this.bundle.setDescription("三方系统通过iframe与ThingJS-X 系统集成,使得三方系统与ThingJS-X可以进行集成交互控制场景与反向驱动数据变化")
+	        this.bundle.setDescription("在数字孪生场景/层级中,对场景中孪生体信息以面板形式进行展示,以便进行数据观察与分析")
 	        //设置插件版权
 	        this.bundle.external.thingjsX.setLicense("XXX 科技有限公司版权所有");
 	    }
 	}
 
 
-
 	//方式二(JSON结构):
-	{
-	    "name": "教程示例模板(iframe消息监听集成插件)",
-	    "type": "plugin",
-	    "id": "6988728693405253632",
-	    "version": "1.0.0",
-	    "author": "zhangguang@uino.com",
-	    "description": "三方系统通过iframe与ThingJS-X 系统集成,使得三方系统与ThingJS-X可以进行集成交互控制场景与反向驱动数据变化",
-	    "main": "frame.js",
-	    "dependencies": {
-	        "thingjs": "1.2.7.17",
-	        "dpdVersion": ">1.0.2 <=2.3.4"
-	    },
-	    "external": {
-	        "use-standard": "0",
-	        "encrypt-files": [
-	            "frame.js"
-	        ],
-	        "standard": "Revision",
-	        "preview": "./resources/preview.png",
-	        "thingjs-x": {
-	            "plugin-type": "core",
-	            "license": "XXX 科技有限公司版权所有",
-	            "date": "2022/10/27 20:53:07",
-	            "extend": {}
-	        }
-	    }
-	}
+    {
+    "name": "xplugin-template-demo-property-panel",
+    "type": "plugin",
+    "id": "7008365457459642368",
+    "version": "1.0.0",
+    "author": "",
+    "main": "frame.js",
+    "dependencies": {
+        "thingjs": "1.2.7.17",
+        "dpdVersion": ">1.0.2 <=2.3.4"
+    },
+    "external": {
+        "use-standard": "0",
+        "encrypt-files": [
+        "frame.js"
+        ],
+        "standard": "Revision",
+        "preview": "./resources/preview.png",
+        "thingjs-x": {
+        "plugin-type": "panel",
+        "license": "北京优锘科技有限公司 版权所有",
+        "date": "2022/12/14 14:51:10",
+        "extend": {}
+        }
+    }
+    }
 
 ```
 > /config/index.js 环境配置文件(不建议进行更改的文件)
@@ -176,7 +175,7 @@
 	ThingJS API 在插件开发内被暴露于场景全局,THING 命名空间下
 	ThingJS-X API 在插件开发内被暴露于场景全局, THINGX 命名空间下
 	THING 命名空间API 的使用(可参考: https://docs.thingjs.com/cn/apidocs/)
-	THINGX 命名空间API 的使用(可参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.html)
+	THINGX 命名空间API 的使用(可参考: http://123.124.196.193:2023/api/index.html#/01%E7%B3%BB%E7%BB%9F%E8%B0%83%E8%AF%95%E5%99%A8(THINGX.Debugger))
 
 ```
 > 4. 禁用uinv （即将弃用,强烈不推荐使用,推荐使用THINGX）
@@ -216,69 +215,33 @@
 ```
 
 ## 插件开发逻辑
-> 以 教程示例模板(iframe消息监听集成插件)为例 进行插件开发流程介绍
+> 以 面板插件为例 进行插件开发流程介绍
 
 >> 1. 依据插件能力需求进行插件设计
->>> #需求分析设计
 ```javascript
-			1. 提供业务能力控制(包括不限于激活业务、取消激活、显示业务栏、隐藏业务栏等)
-				-参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Business.html
-			2. 提供图层控制能力(包括不限于 图层激活、取消激活、图层刷新等)
-				-参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Layer.html
-			3. 提供控制标记的能力(包括不限于 孪生体标记添加、显示、隐藏、移除等)
-				-参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.Marker.html
-			4. 提供操作集的运行、暂停、恢复运行、停止运行的能力
-				-参考: http://123.124.196.193:2023/thingjs-x-api/THINGX.OpSet.html
-			5. ...
+      面板插件发开存在宿主问题,例如开发的孪生体面板那么,该面板插件的宿主为孪生体,开发者可直接获取孪生体信息
+		经过思考需要解决的问题为
+         1. 孪生体面板显示相关宿主属性
+         2. 孪生体面板显示相关宿主监控指标信息
+         3. 本教程暂不针对配置项进行设置,开发者依据具体情况进行考量
 
-```
->>> #设计方案(统一语义格式、统一功能命名,定义语义化API)
+      涉及到相关使用的api
+	    #定时调度器
+	    THINGX.Timer.addInterval
+	          -添加定时器到全局调度管理中,同时进行相关逻辑开发     
+	          -推荐使用该方法,可参考: http://123.124.196.193:2023/api/index.html#/02%E7%B3%BB%E7%BB%9F%E5%85%A8%E5%B1%80%E8%B0%83%E5%BA%A6%E5%99%A8(THINGX.Timer)?id=method-thingxtimeraddinterval
 
-```javascript
-	//统一标准语义格式&使用postmessage发送消息指令
-	//1.构造标准操作语义格式
-    let InboundParameters = {
-      "type": "business", 	//能力,参考能力支持列表
-      "action": "activate",	//功能命名,参考统一功能的命名
-	  "parameters":{}		//参数化对象
-    };
-    //2.获取嵌入的ThingJS-X 的IFRAME
-    const xplus =document.getElementById("ThingJS-X-IFRAME");
-    const iframe = xplus.contentWindow;
-    //3.向嵌入的ThingJS-X 发送统一标准格式的消息 InboundParameters
-    iframe.postMessage(InboundParameters,'*');
-```
-
-<img src="./resources/tutorial/能力支持.png" width="1292" height="300" alt="能力支持">
-
-<img src="./resources/tutorial/统一功能的命名.png" width="1268" height="1160" alt="统一功能的命名">
-
->>> #设计步骤思路拆解(让我思考思考)
-```javascript
-
-        设计步骤思路拆解(让我思考思考)
-        	1. 系统插件为系统加载后启动			
-        			-暂不做配置项配置内容
-        			-启动后接收语义化JSON参数,拆解参数调用ThingJS-X 相关API
-        	2. 更多高级功能设计(扩展)
-        			-由于iframe的特殊性的一些考虑
-        			-e.g. 安全性处理
-        			-e.g. 全面支持的功能等
-        			-e.g. 载入性能处理
-					-e.g. 可视化调试处理
 ```
 >> 2. 配置项控件设计
 
-```javascript
-	//暂无配置项
-	//更多高级功能可自行进行扩展设计
-```
+无
+
 
 >> 3. 入口主逻辑开发&快速开始
 
 ```javascript
 	/***
-	 * 1. 具体逻辑代码可详细阅读 /src/layer/index.js 开发入口文件(主要逻辑)
+	 * 1. 具体逻辑代码可详细阅读 /src/expand/index.js 开发入口文件(扩展插件主要逻辑在 index.vue文件内，主要入口文件负责引用作用未实现相关扩展能力 )
 	 * 2. 快速开始可继续阅读或直接访问: https://wiki.uino.com/book/thingjsx40-plugin/63564184cd00484b78b06a1a.html
 	 * 3. 使用插件开发工具包访问地址: https://www.npmjs.com/package/@thingjs-x/xplugin-cli
 	 */
@@ -334,6 +297,11 @@
 > 2. 禁用uinv （即将弃用,强烈不推荐使用,推荐使用THINGX）
 
 > 3. npm run test 检测插件工程依赖环境的可用性
+
+
+
+
+
 
 
 
