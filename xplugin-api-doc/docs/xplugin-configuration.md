@@ -8,16 +8,16 @@
   - [Type Definitions](#type-definitions)
   - [Widget List](#widget-list)
     - [文本『 text 』::配置说明](#文本-text-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀-----)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀-----)
     - [数字『 number 』::配置说明](#数字-number-配置说明)
     - [日期『 date 』::配置说明](#日期-date-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------1)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------1)
     - [时间『 time 』::配置说明](#时间-time-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------2)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------2)
     - [下拉『 select 』::配置说明](#下拉-select-配置说明)
     - [色块『 color 』::配置说明](#色块-color-配置说明)
     - [开关『 switch 』::配置说明](#开关-switch-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------3)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------3)
     - [滑块『 slider 』::配置说明](#滑块-slider-配置说明)
     - [单选『 radio 』::配置说明](#单选-radio-配置说明)
     - [多选『 checkbox 』::配置说明](#多选-checkbox-配置说明)
@@ -26,11 +26,11 @@
     - [图片『 image 』::配置说明](#图片-image-配置说明)
     - [资源『 file 』::配置说明](#资源-file-配置说明)
     - [代码『 code 』::配置说明](#代码-code-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------4)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------4)
     - [文本域『 textarea 』::配置说明](#文本域-textarea-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------5)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------5)
     - [日期时间『 datetime 』::配置说明](#日期时间-datetime-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------6)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------6)
     - [折叠『 collapse 』::配置说明](#折叠-collapse-配置说明)
     - [容器『 container 』::配置说明](#容器-container-配置说明)
     - [检查框『 check-checkbox 』::配置说明](#检查框-check-checkbox-配置说明)
@@ -38,19 +38,19 @@
     - [多选下拉『 datalist-select 』::配置说明](#多选下拉-datalist-select-配置说明)
     - [多选框『 datalist-checkbox 』::配置说明](#多选框-datalist-checkbox-配置说明)
     - [多行文本『 multiple-text 』::配置说明](#多行文本-multiple-text-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------7)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------7)
     - [多行数字『 multiple-number 』::配置说明](#多行数字-multiple-number-配置说明)
     - [多行下拉『 multiple-select 』::配置说明](#多行下拉-multiple-select-配置说明)
     - [多行色块『 multiple-color 』::配置说明](#多行色块-multiple-color-配置说明)
     - [多行开关『 multiple-switch 』::配置说明](#多行开关-multiple-switch-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------8)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------8)
     - [多行单选『 multiple-radio 』::配置说明](#多行单选-multiple-radio-配置说明)
     - [多行多选『 multiple-checkbox 』::配置说明](#多行多选-multiple-checkbox-配置说明)
     - [多行键值『 multiple-keyvalue 』::配置说明](#多行键值-multiple-keyvalue-配置说明)
     - [多行容器『 multiple-container 』::配置说明](#多行容器-multiple-container-配置说明)
     - [联动单选『 linkage-radio 』::配置说明](#联动单选-linkage-radio-配置说明)
     - [联动下拉『 linkage-select 』::配置说明](#联动下拉-linkage-select-配置说明)
-    - [联动开关『 linkage-switch』::配置说明](#联动开关-linkage-switch配置说明)
+    - [联动开关『 linkage-switch 』::配置说明](#联动开关-linkage-switch-配置说明)
     - [联动多选『 linkage-checkbox 』::配置说明](#联动多选-linkage-checkbox-配置说明)
     - [条件选择器『 selector 』::配置说明](#条件选择器-selector-配置说明)
     - [条件文本『 selector-text 』::配置说明](#条件文本-selector-text-配置说明)
@@ -74,14 +74,14 @@
     - [模型『 model 』::配置说明](#模型-model-配置说明)
   - [|path| 资源路径 | string |  |-|](#path-资源路径--string----)
     - [事件『 event 』::配置说明](#事件-event-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------9)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------9)
     - [标记『 attachment 』::配置说明](#标记-attachment-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------10)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------10)
     - [操作集『 action 』::配置说明](#操作集-action-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------11)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------11)
     - [互斥标记『 mutex-attachment 』::配置说明](#互斥标记-mutex-attachment-配置说明)
     - [孪生体分类『 category 』::配置说明](#孪生体分类-category-配置说明)
-  - [|*|suffix|控件后缀|-| - |-|](#suffix控件后缀------12)
+  - [|\*|suffix|控件后缀|-| - |-|](#suffix控件后缀------12)
     - [资源选择器『 selector-resource 』::配置说明](#资源选择器-selector-resource-配置说明)
     - [选择器效果文本『 selector-effect-text 』::配置说明](#选择器效果文本-selector-effect-text-配置说明)
     - [选择器文本标记『 selector-text-attachment 』::配置说明](#选择器文本标记-selector-text-attachment-配置说明)
@@ -128,7 +128,7 @@
 
 >##### 控件效果
 
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAF_E8AABrSFDY1iI183.png" width = "630"/>
+<img src="./resources/configuration/text.png" width = "630"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -167,7 +167,7 @@
 ### 数字『 number 』::配置说明
 
 >###### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAPV8uAAC3A_AYWv4962.png" width = "720"/>
+<img src="./resources/configuration/number.png" width = "720"/>
 
 >###### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -210,7 +210,7 @@
 ### 日期『 date 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAY-zzAAHb0U1dGzQ207.png" width = "630"/>
+<img src="./resources/configuration/date.png" width = "630"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -249,7 +249,7 @@
 ### 时间『 time 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOABpHuAAFtklO1vVs436.png" width = "630"/>
+<img src="./resources/configuration/time.png" width = "630"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -287,7 +287,8 @@
 ### 下拉『 select 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAMP8CAAC6uQBb_80782.png" width = "755"/>
+<img src="./resources/configuration/select.png" width = "755"/>
+
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -338,8 +339,9 @@
 ### 色块『 color 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAf2-iAAH9DxsZDew841.png" width = "510"/>
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYomEdZGKAAAAAOoLGLY748.png" width = "510"/>
+<img src="./resources/configuration/color1.png" width = "510"/>
+<img src="./resources/configuration/color2.png" width = "510"/>
+
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -378,7 +380,7 @@
 ### 开关『 switch 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAYiEUAABnQJQI-H8564.png" width = "620"/>
+<img src="./resources/configuration/switch.png" width = "620"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -416,7 +418,7 @@
 ### 滑块『 slider 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAaHyIAACw4EK-7W8509.png" width = "690"/>
+<img src="./resources/configuration/slider.png" width = "690"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -459,7 +461,7 @@
 ### 单选『 radio 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAe9Z1AACGsUNMPFQ106.png" width = "755"/>
+<img src="./resources/configuration/radio.png" width = "755"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -510,7 +512,7 @@
 ### 多选『 checkbox 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAXDkzAADa5H0C35M718.png" width = "755"/>
+<img src="./resources/configuration/checkbox.png" width = "755"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -561,7 +563,7 @@
 ### 视频『 video 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOARJCvAADsR2dbJ4c719.png" width = "620"/>
+<img src="./resources/configuration/video.png" width = "620"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -617,7 +619,7 @@
 ### 音频『 audio 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAFF5ZAADQPjjbyEw156.png" width = "570"/>
+<img src="./resources/configuration/audio.png" width = "570"/>
 
 >##### 属性描述
 |-字段名|含义|默认值|描述|必填|
@@ -675,7 +677,7 @@
 ### 图片『 image 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAQmdLAADK0HpkYx8115.png" width = "565"/>
+<img src="./resources/configuration/image.png" width = "565"/>
 
 >##### 属性描述
 |字段名|含义|默认值|描述|必填|
@@ -737,7 +739,7 @@
 ### 资源『 file 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOADox0AAD1g1M1JAM961.png" width = "725"/>
+<img src="./resources/configuration/file.png" width = "725"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -797,7 +799,7 @@
 ### 代码『 code 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAcOtUAADwp0dKxjY678.png" width = "530"/>
+<img src="./resources/configuration/code.png" width = "530"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -835,7 +837,7 @@
 ### 文本域『 textarea 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAdrzRAADEnwprTQI087.png" width = "630"/>
+<img src="./resources/configuration/textarea.png" width = "630"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -873,7 +875,7 @@
 ### 日期时间『 datetime 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAQtJZAAJnQMvt9M0668.png" width = "630"/>
+<img src="./resources/configuration/datetime.png" width = "630"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -911,7 +913,7 @@
 ### 折叠『 collapse 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAX-H_AADIpzy2R7s610.png" width = "765"/>
+<img src="./resources/configuration/collapse.png" width = "765"/>
 
 >##### 属性描述
 |字段名|含义|默认值|描述|必填|
@@ -946,7 +948,7 @@
 ### 容器『 container 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAcLleAACtd8tDT5U767.png" width = "885"/>
+<img src="./resources/configuration/container.png" width = "885"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -980,7 +982,7 @@
 ### 检查框『 check-checkbox 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAQ8lJAABhh2E7t4A784.png" width = "660"/>
+<img src="./resources/configuration/check-checkbox.png" width = "660"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1029,7 +1031,7 @@
 ### 颜色分级『 range-color 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAPsK9AAMYMH-c6Yo894.png" width = "730"/>
+<img src="./resources/configuration/range-color.png" width = "730"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1091,7 +1093,7 @@
 ### 多选下拉『 datalist-select 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAOGGnAADuHvYlYs4626.png" width = "655"/>
+<img src="./resources/configuration/datalist-select.png" width = "655"/>
 
 >##### 属性描述
 |字段名|含义|默认值|描述|必填|
@@ -1142,7 +1144,7 @@
 ### 多选框『 datalist-checkbox 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAK19OAADa5H0C35M650.png" width = "655"/>
+<img src="./resources/configuration/datalist-checkbox.png" width = "655"/>
 
 >##### 属性描述
 |字段名|含义|默认值|描述|必填|
@@ -1193,7 +1195,7 @@
 ### 多行文本『 multiple-text 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAHo6oAAB9_VoxI4U675.png" width = "570"/>
+<img src="./resources/configuration/multiple-text.png" width = "570"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1231,7 +1233,7 @@
 ### 多行数字『 multiple-number 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAIh0DAACn5nrztWc309.png" width = "730"/>
+<img src="./resources/configuration/multiple-number.png" width = "730"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1274,7 +1276,7 @@
 ### 多行下拉『 multiple-select 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOANTSkAACi5jMHysk375.png" width = "660"/>
+<img src="./resources/configuration/multiple-select.png" width = "660"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1325,8 +1327,8 @@
 ### 多行色块『 multiple-color 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAfV6fAAIIy_cuDD0512.png" width = "490"/>
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGZBeEMeInAAAAACOiyfY751.png" width = "490"/>
+<img src="./resources/configuration/multiple-color1.png" width = "490"/>
+<img src="./resources/configuration/multiple-color2.png" width = "490"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1365,7 +1367,7 @@
 ### 多行开关『 multiple-switch 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAHJwoAABy6HjJp-4745.png" width = "590"/>
+<img src="./resources/configuration/multiple-switch.png" width = "590"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1403,7 +1405,7 @@
 ### 多行单选『 multiple-radio 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOARP-SAACEtxLE-U8601.png" width = "660"/>
+<img src="./resources/configuration/multiple-radio.png" width = "660"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1454,7 +1456,7 @@
 ### 多行多选『 multiple-checkbox 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOARSZuAACeD3JE8Mc502.png" width = "660"/>
+<img src="./resources/configuration/multiple-checkbox.png" width = "660"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1505,7 +1507,7 @@
 ### 多行键值『 multiple-keyvalue 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAf_6aAACjUb5pe60297.png" width = "660"/>
+<img src="./resources/configuration/multiple-keyvalue.png" width = "660"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1552,7 +1554,7 @@
 ### 多行容器『 multiple-container 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOASXv8AACsPYFkuoY211.png" width = "870"/>
+<img src="./resources/configuration/multiple-container.png" width = "870"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1595,7 +1597,7 @@
 ### 联动单选『 linkage-radio 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAa9OIAAEALdBkOGo363.png" width = "840"/>
+<img src="./resources/configuration/linkage-radio.png" width = "840"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1662,7 +1664,7 @@
 ### 联动下拉『 linkage-select 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAT7CqAAD9doQvmRI022.png" width = "750"/>
+<img src="./resources/configuration/linkage-select.png" width = "750"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1727,10 +1729,10 @@
 ```
 <h2 id="mubiao">目标位置</h2>
 
-### 联动开关『 linkage-switch』::配置说明
+### 联动开关『 linkage-switch 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAByTbAAC3rsWEluk941.png" width = "800"/>
+<img src="./resources/configuration/linkage-switch.png" width = "800"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1783,7 +1785,7 @@
 ### 联动多选『 linkage-checkbox 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAMydQAAC1AHUy6W8449.png" width = "780"/>
+<img src="./resources/configuration/linkage-checkbox.png" width = "780"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1850,7 +1852,7 @@
 ### 条件选择器『 selector 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAQmX4AAE6MvE-KG4661.png" width = "620"/>
+<img src="./resources/configuration/selector.png" width = "620"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1907,7 +1909,7 @@
 ### 条件文本『 selector-text 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAFxt_AAGnOaXedZ0266.png" width = "610"/>
+<img src="./resources/configuration/selector-text.png" width = "610"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -1966,7 +1968,7 @@
 ### 条件下拉『 selector-select 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAVCH1AAGFSZGksOY986.png" width = "660"/>
+<img src="./resources/configuration/selector-select.png" width = "660"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2041,7 +2043,7 @@
 ### 条件色块『 selector-color 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAfVU-AAFXWwCim3g435.png" width = "750"/>
+<img src="./resources/configuration/selector-color.png" width = "750"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2102,7 +2104,7 @@
 ### 条件键值『 selector-keyvalue 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAOH4eAAFrBFccTs0632.png" width = "610"/>
+<img src="./resources/configuration/selector-keyvalue.png" width = "610"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2163,7 +2165,7 @@
 ### 条件标记『 selector-attachment 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAcPjyAAGIE-JZiP4830.png" width = "620"/>
+<img src="./resources/configuration/selector-attachment.png" width = "620"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2222,7 +2224,7 @@
 ### 条件操作集『 selector-action 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOALaHWAAH3mAXRGo0660.png" width = "630"/>
+<img src="./resources/configuration/selector-action.png" width = "630"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2281,7 +2283,7 @@
 ### 多行选择器『 multiple-selector 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/04/CmQgP2NGYYOAU_inAAEJ0R6L7hM489.png" width = "685"/>
+<img src="./resources/configuration/multiple-selector.png" width = "685"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2342,7 +2344,7 @@
 ### 多条件文本『 multiple-selector-text 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAdGOYAAER6LdsSZ8569.png" width = "680"/>
+<img src="./resources/configuration/multiple-selector-text.png" width = "680"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2406,7 +2408,7 @@
 ### 多条件下拉『 multiple-selector-select 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAQhRQAAG0xClSueI269.png" width = "680"/>
+<img src="./resources/configuration/multiple-selector-select.png" width = "680"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2484,7 +2486,7 @@
 ### 多条件色块『 multiple-selector-color 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAWIGSAAETiZ1otGo353.png" width = "730"/>
+<img src="./resources/configuration/multiple-selector-color.png" width = "730"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2549,7 +2551,7 @@
 ### 多条件键值『 multiple-selector-keyvalue 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAXK08AAEQILHNm90406.png" width = "690"/>
+<img src="./resources/configuration/multiple-selector-keyvalue.png" width = "690"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2616,7 +2618,7 @@
 ### 多条件标记『 multiple-selector-attachment 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAeSEgAAGqseXeQ8c988.png" width = "700"/>
+<img src="./resources/configuration/multiple-selector-attachment.png" width = "700"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2679,7 +2681,7 @@
 ### 多条件操作集『 multiple-selector-action 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAA_SdAAI5HXbUF8s978.png" width = "700"/>
+<img src="./resources/configuration/multiple-selector-action.png" width = "700"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2742,7 +2744,7 @@
 ### 字典『 dictionary 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAWzFWAADsvZB1BpU843.png" width = "825"/>
+<img src="./resources/configuration/dictionary.png" width = "825"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2805,7 +2807,7 @@
 ### 效果『 effect 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAHDgrAAJrMZo8vt4808.png" width = "680"/>
+<img src="./resources/configuration/effect.png" width = "680"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2858,7 +2860,7 @@
 ### 文章『 articles 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAGHYMAACpvZoV_VA398.png" width = "660"/>
+<img src="./resources/configuration/articles.png" width = "660"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -2928,7 +2930,7 @@
 ### 对象配置『 keyobjects 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAB8rmAAD3AC8NKaw849.png" width = "670"/>
+<img src="./resources/configuration/keyobjects.png" width = "670"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3013,7 +3015,7 @@
 
 ### 标题『 title 』::配置说明
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOASW6HAABB0D-aMoo551.png" width = "555"/>
+<img src="./resources/configuration/title.png" width = "555"/>
 
 >#####  属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3038,7 +3040,7 @@
 ### 模型『 model 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAFQkrAAIgqmk_3_g945.png" width = "760"/>
+<img src="./resources/configuration/model.png" width = "760"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3113,7 +3115,7 @@
 ### 事件『 event 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAPJsDAALL_klHqw8585.png" width = "680"/>
+<img src="./resources/configuration/event.png" width = "680"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3151,7 +3153,7 @@
 ### 标记『 attachment 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAQjYxAAE35gYjlXI903.png" width = "560"/>
+<img src="./resources/configuration/attachment.png" width = "560"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3189,7 +3191,7 @@
 ### 操作集『 action 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAcfHNAAFrTKuuQLk324.png" width = "530"/>
+<img src="./resources/configuration/action.png" width = "530"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3233,7 +3235,7 @@
 	...
 	...
 ```
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAQX1fAAGwIj_ffME785.png" width = "680"/>
+<img src="./resources/configuration/mutex-attachment.png" width = "680"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3309,7 +3311,7 @@
 ### 孪生体分类『 category 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOASS-CAAFXcXFPSks346.png" width = "560"/>
+<img src="./resources/configuration/category.png" width = "560"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3356,7 +3358,7 @@
 ### 资源选择器『 selector-resource 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOASx2OAAM1pQNXo3U555.png" width = "800"/>
+<img src="./resources/configuration/selector-resource.png" width = "800"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3434,7 +3436,7 @@
 ### 选择器效果文本『 selector-effect-text 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAS6lNAAJUADNfYhM790.png" width = "730"/>
+<img src="./resources/configuration/selector-effect-text.png" width = "730"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3502,7 +3504,7 @@
 ### 选择器文本标记『 selector-text-attachment 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOADhm9AAHjy5RSgVQ056.png" width = "770"/>
+<img src="./resources/configuration/selector-text-attachment.png" width = "770"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
@@ -3562,7 +3564,7 @@
 ### 选择器色块文本『 selector-color-text 』::配置说明
 
 >##### 控件效果
-<img src="http://10.100.32.63:8888/group1/M00/00/05/CmQgP2NGYYOAe90dAAMn3CNxCPY871.png" width = "725"/>
+<img src="./resources/configuration/selector-color-text.png" width = "725"/>
 
 >##### 属性描述
 |-|字段名|含义|默认值|描述|必填|
