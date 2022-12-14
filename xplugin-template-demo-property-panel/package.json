@@ -1,11 +1,11 @@
 {
-    "name": "xplugin-template-control",
+    "name": "xplugin-template-panel",
     "version": "1.0.0",
-    "description": "xplugin 场景控制插件模板",
+    "description": "xplugin 面板插件模板",
     "main": "index.js",
     "defineXPlugin": {
-        "id": "7008308225896349696",
-        "name": "xplugin-template-demo-building-expand"
+        "id": "7008365457459642368",
+        "name": "xplugin-template-demo-property-panel"
     },
     "scripts": {
         "test": "xprobe",
