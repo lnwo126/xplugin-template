@@ -11,4 +11,9 @@ xpluginConfig.setArchive(archive);
 xpluginConfig.setStats(stats)//统计信息
 xpluginConfig.mergeDevServer(devServer);
 xpluginConfig.mergeSceneServer(sceneServer);
+// xpluginConfig.overwriteTerserOptions({
+//     compress: {
+//         pure_funcs: []
+//     }
+// });
 module.exports = xpluginConfig.buildConfig(buildEvn);
