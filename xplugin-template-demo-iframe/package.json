@@ -75,6 +75,6 @@
   "dependencies": {
     "@thingjs-x/xplugin-bundle": "^0.2.3",
     "@thingjs-x/xplugin-core": "^0.2.4",
-    "@thingjs-x/xplugin-plugin": "^0.3.0"
+    "@thingjs-x/xplugin-plugin": "^0.3.1"
   }
 }
