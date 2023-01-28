@@ -154,7 +154,7 @@
 * 规范
   > 请参考  
   > `文档传送门:` <a href="#/xplugin-configuration">**《配置项控件规范文档》**</a>  
-  > `可视化配置工具传送门:` <a href="http://10.100.32.63/xelement/xelement.zip">**xelement 工具下载**</a>
+  > `可视化配置工具传送门:` <a href="http://123.124.196.193:2023/api/xelement.zip">**xelement 工具下载**</a>
 
 * `itemConfig` 开发解构
   

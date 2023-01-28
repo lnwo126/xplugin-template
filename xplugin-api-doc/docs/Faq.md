@@ -35,3 +35,15 @@
     3. 插件开发中不推荐使用  THINGX.Debugger.setLevel 调试器api,若在插件中使用在进行打包时会进行强制剔除
 ```
 
+## 静态资源目录如何使用
+
+```javascript
+    //package.json 中升级依赖 "@thingjs-x/xplugin-plugin": "^0.3.1"
+    // OR
+    //xplugin upgrade 升级模板代码，重新进行工程创建
+
+    使用
+        1. 在工程src目录下创建 resources目录，该目录下的文件会按照实际目录结构进行拷贝 
+        2. 在 src/模板类型代码/resources目录下放置的文件会进行平铺拷贝不会，注意不会拷贝目录结构
+        3. src/resources 目录下的内容优先级高于 src/模板类型代码/resources 下文件
+```
