@@ -8,9 +8,9 @@
   - [事件类型(EventType)](#事件类型eventtype)
   - [事件标签(EventTag)](#事件标签eventtag)
 - [插件开发脚手架(XPlugin-cli)](#插件开发脚手架xplugin-cli)
-- [pre release stage](#pre-release-stage)
-- [next stage release](#next-stage-release)
-- [contact \& support](#contact--support)
+- [预发阶段](#预发阶段)
+- [提按阶段](#提按阶段)
+- [联系支持](#联系支持)
 <!-- /code_chunk_output -->
 # API & 插件开发指南说明
 
@@ -185,7 +185,7 @@
 [√ 插件开发脚手架(XPlugin-cli)](xplugin-cli.md)
 
 
-# pre release stage
+# 预发阶段
 
 ?> pre release stage <a href="#/pre-release-stage-content">命名空间详情列表</a>
 
@@ -196,7 +196,7 @@
 
 
 
-# next stage release
+# 提按阶段
 
 !> next stage release plan    
 **the function of the new API in the pre release stage is not perfect, and it is not recommended**
@@ -208,7 +208,7 @@
 
 
 
-# contact & support
+# 联系支持
 ?> 联系我们获得支持   
 **关于api 使用中的问题或错误欢迎联系我们进行反馈**
 - Follow 👨🏻‍💻 @zhangguang on [![U知](./lib/uzhi.png)U知](https://wiki.uino.com/personal/1791) and [![Github](./lib/github.svg)Github](https://github.com/GuangGuangZhang/xplugin-template) for announcements

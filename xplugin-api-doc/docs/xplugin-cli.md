@@ -10,7 +10,7 @@ xplugin-cli
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)]() 
 
 
-# Install
+# 安装
 Global Installation
 
 ```javascript
@@ -19,7 +19,7 @@ Global Installation
    //建议 nodejs version 16+ & npm version 8+
 ```
 
-# Usage
+# 使用
 
 View scaffold command version       
        
@@ -58,7 +58,7 @@ Create a project
 
 ```
 
-# Suport
+# 能力
 
 Supported ThingJS-X Plug-in Development Template
 
@@ -70,7 +70,7 @@ Supported ThingJS-X Plug-in Development Template
 - [ ] ~~原子插件模板~~
 - [ ] ~~界面模板模板~~
 
-# Documentation
+# 简介
 
 plug-in for ThingJS-X docs
 
