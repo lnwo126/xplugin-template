@@ -54,6 +54,9 @@
   > 插件可识别的描述文件名称及类型必须为 `bundle.json`    
 * 解构
   > `bundle.json` 插件描述文件完整示例结构
+
+  [√ 插件依赖库使用教程](xplugin-bundle)
+
   ```javascript
   {
     "name": "温度云图",                                 //插件名称

@@ -4,6 +4,7 @@
 - [配置项规范](xplugin-configuration.md)
 - [命名空间](pre-release-stage-content)
 - [插件脚手架](xplugin-cli.md)
+- [插件依赖库](xplugin-bundle.md)
 - [插件模板](xplugin-template.md)
 - [插件教程](tutorial.md)
   - [消息监听](tutorial-消息监听.md)
