@@ -227,6 +227,13 @@
 * 类型: void
 * 示例
     ```javascript 
+    
+        //获取业务面板配置,用于相关逻辑等判断
+
+        //示例1. 获取业务面板配置
+        const config = THINGX.Business.getPanelConfig();
+        console.warn("当前业务面板的配置属性有: ", config);
+        //config 类型详情查看 Type Definitions ：  THINGX.Business.PanelConfig
     ```   
     ***
 
