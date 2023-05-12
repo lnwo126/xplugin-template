@@ -218,7 +218,7 @@
         //示例1. 获取图层面板配置
         const config = THINGX.Layer.getPanelConfig();
         console.warn("当前图层面板的配置属性有: ", config);
-        //print result: 当前图层面板的配置属性有: config 对象,TODO 确认好了再进行添加
+        //config 类型详情查看 Type Definitions ：  THINGX.Layer.PanelConfig
 
     ```
     ***
